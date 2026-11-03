@@ -88,9 +88,9 @@ CITY_PREF = {
 TYPE_LABELS = {
     "stay": "お泊まり（短期入所）",
     "day": "日中のあずかり",
-    "helper": "家に来るヘルパー",
-    "outing": "外出の付きそい",
-    "ryoiku": "通う療育",
+    "home": "家に来るヘルパー",
+    "out": "外出の付きそい",
+    "therapy": "通う療育",
 }
 SUPPORT_LABELS = {
     "pimd": "重症心身障害",
@@ -104,6 +104,7 @@ SUPPORT_LABELS = {
     "autism": "自閉症",
     "physical": "肢体不自由",
     "epilepsy": "てんかん",
+    "mobility": "移動に支えが必要",
 }
 SUPPORT_STATUS_LABELS = {
     "yes": "受け入れの記載あり",
@@ -463,7 +464,15 @@ def load_facilities():
     if not os.path.exists(FACILITY_FILE):
         return None
     with open(FACILITY_FILE, encoding="utf-8") as f:
-        return json.load(f)
+        data = json.load(f)
+    # 同じ意味のキーをそろえる
+    for fac in data.get("facilities", []):
+        sup = fac.get("supports") or {}
+        if "tubeFeeding" in sup and "tube" not in sup:
+            sup["tube"] = sup.pop("tubeFeeding")
+        elif "tubeFeeding" in sup:
+            sup.pop("tubeFeeding")
+    return data
 
 
 def safe_id(s):
