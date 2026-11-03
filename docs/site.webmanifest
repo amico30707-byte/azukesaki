@@ -1,0 +1,24 @@
+{
+  "name": "あずけさき手帖",
+  "short_name": "あずけさき手帖",
+  "description": "重い障害のあるお子様の、あずけ先さがしと将来のじゅんび",
+  "lang": "ja",
+  "start_url": "/",
+  "scope": "/",
+  "display": "browser",
+  "background_color": "#f5f1e8",
+  "theme_color": "#f5f1e8",
+  "icons": [
+    {
+      "src": "/static/icons/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/static/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
