@@ -19,6 +19,7 @@ BASE_URL = "https://azukesaki.jp"  # 本番のドメインが決まったらこ�
 SITE_NAME = "あずけさき手帖"
 SITE_SUBTITLE = "重い障害のあるお子様の、あずけ先さがしと将来のじゅんび"
 CONTACT_EMAIL = "info@azukesaki.jp"
+GA_ID = "G-BTXQ8P2HPG"  # Googleアナリティクスの測定ID
 BUILD_DATE = datetime.date.today().isoformat()
 OGP_IMAGE = "/static/ogp.png"  # 1200×630。作り直すときは node make_images.js
 
@@ -239,6 +240,8 @@ def page(title, description, path, body, *, crumbs=None, og_type="website",
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script async src="https://www.googletagmanager.com/gtag/js?id={GA_ID}"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments);}}gtag('js',new Date());gtag('config','{GA_ID}');</script>
 <title>{esc(doc_title)}</title>
 <meta name="description" content="{esc(description)}">
 {robots}<link rel="canonical" href="{esc(canonical)}">
@@ -1088,7 +1091,7 @@ def build_privacy():
 <h2>お問い合わせでいただく情報</h2>
 <p>メールでいただいたお名前やメールアドレス、内容は、お返事と、サイトの内容を直すためだけに使います。法律で決められた場合をのぞき、ご本人の同意なく、ほかの人に渡すことはありません。</p>
 <h2>アクセス解析について</h2>
-<p>このサイトでは、今後、Googleのアクセス解析ツール「Googleアナリティクス」を使うことがあります。Googleアナリティクスは、Cookieを使って、どのページがどれくらい見られたかなどの情報を集めます。この情報に、お名前など個人を特定するものはふくまれません。Cookieは、ブラウザの設定で使わないようにできます。くわしくは、<a href="https://policies.google.com/technologies/partner-sites?hl=ja" rel="noopener">Googleのポリシーと規約</a>をご覧ください。</p>
+<p>このサイトでは、Googleのアクセス解析ツール「Googleアナリティクス」を使っています。Googleアナリティクスは、Cookieを使って、どのページがどれくらい見られたかなどの情報を集めます。この情報に、お名前など個人を特定するものはふくまれません。Cookieは、ブラウザの設定で使わないようにできます。くわしくは、<a href="https://policies.google.com/technologies/partner-sites?hl=ja" rel="noopener">Googleのポリシーと規約</a>をご覧ください。</p>
 <h2>広告について</h2>
 <p>一部の記事には広告（PR）がふくまれます。広告がある場所には「PR」と表示しています。</p>
 <p>{SITE_NAME}は、Amazon.co.jpを宣伝しリンクすることによってサイトが紹介料を獲得できる手段を提供することを目的に設定されたアフィリエイトプログラムである、Amazonアソシエイト・プログラムの参加者です。Amazonのアソシエイトとして、{SITE_NAME}は適格販売により収入を得ています。</p>
