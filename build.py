@@ -18,7 +18,7 @@ import markdown
 BASE_URL = "https://azukesaki.jp"  # 本番のドメインが決まったらここを変える
 SITE_NAME = "あずけさき手帖"
 SITE_SUBTITLE = "重い障害のあるお子様の、あずけ先さがしと将来のじゅんび"
-CONTACT_EMAIL = "【メールアドレス】"  # お問い合わせ用メールアドレスを入れる
+CONTACT_EMAIL = "info@azukesaki.jp"
 BUILD_DATE = datetime.date.today().isoformat()
 OGP_IMAGE = "/static/ogp.png"  # 1200×630。作り直すときは node make_images.js
 
