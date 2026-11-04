@@ -124,6 +124,7 @@ SUPPORT_LABELS = {
     "mobility": "移動に支えが必要",
 }
 SUPPORT_STATUS_LABELS = {
+    "listed": "受け入れの記載あり（公式情報より）",
     "yes": "受け入れの記載あり",
     "ok": "受け入れの記載あり",
     "available": "受け入れの記載あり",
