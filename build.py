@@ -84,6 +84,9 @@ CITY_PREF = {
     "和歌山市": "wakayama", "奈良市": "nara", "旭川市": "hokkaido", "郡山市": "fukushima",
     "いわき市": "fukushima", "前橋市": "gunma", "高崎市": "gunma", "長野市": "nagano",
     "那覇市": "okinawa", "下関市": "yamaguchi", "秋田市": "akita", "盛岡市": "iwate",
+    "世田谷区": "tokyo", "練馬区": "tokyo", "大田区": "tokyo", "江戸川区": "tokyo",
+    "足立区": "tokyo", "杉並区": "tokyo", "板橋区": "tokyo", "江東区": "tokyo",
+    "葛飾区": "tokyo", "品川区": "tokyo",
 }
 
 TYPE_LABELS = {
