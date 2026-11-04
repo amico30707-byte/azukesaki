@@ -1153,6 +1153,33 @@ def build_meta_files():
         json.dump(manifest, f, ensure_ascii=False, indent=2)
 
 
+def build_llms(articles, by_cat, fac_data):
+    """AI（大規模言語モデル）向けのサイト案内 llms.txt を作る"""
+    lines = [f"# {SITE_NAME}", "",
+             f"> {SITE_SUBTITLE}。重い障害・医療的ケアのあるお子様（重症心身障害児、医療的ケア児、重度知的障害、強度行動障害など）のご家族向けに、短期入所・日中一時支援・移動支援などのあずけ先と、制度や手続きを、自治体や施設の公式情報をもとにやさしい日本語でまとめた日本のサイトです。",
+             "",
+             f"- 運営：株式会社Bright Future Family（お問い合わせ：{CONTACT_EMAIL}）",
+             f"- 記事：{len(articles)}本。都道府県ごとのまとめ、政令市・中核市・東京23区ごとのあずけ先、制度の解説。",
+             "- 施設：全国47都道府県の施設情報。受け入れや空きは、かならず施設に確認するよう案内しています。",
+             "- 情報は公式ページで確かめたものだけをのせ、各ページに出典を書いています。", ""]
+    lines += ["## 主なページ", "",
+              f"- [トップ・施設さがし]({abs_url('/')})", f"- [施設さがし]({abs_url('/search/')})",
+              f"- [よみもの一覧]({abs_url('/blog/')})", f"- [運営者について]({abs_url('/about/')})", ""]
+    if fac_data:
+        lines += ["## 都道府県のページ", ""]
+        for pr in fac_data.get("prefectures", []):
+            lines.append(f"- [{pr['name']}]({abs_url('/' + pr['slug'] + '/')})")
+        lines.append("")
+    for cat, arts in by_cat.items():
+        lines += [f"## {cat}", ""]
+        for a in arts:
+            d = (a.get("description") or "").replace("\n", " ")
+            lines.append(f"- [{a['title']}]({abs_url(a['path'])})" + (f": {d}" if d else ""))
+        lines.append("")
+    with open(os.path.join(OUT_DIR, "llms.txt"), "w", encoding="utf-8") as f:
+        f.write("\n".join(lines))
+
+
 # ---------------------------------------------------------------- main
 def main():
     if os.path.exists(OUT_DIR):
@@ -1197,6 +1224,7 @@ def main():
     build_privacy()
     build_404()
     build_meta_files()
+    build_llms(articles, by_cat, fac_data)
     nfac = sum(1 for p in PAGES if p.startswith("/facility/"))
     print(f"完了: 記事 {len(articles)} 本 / 施設 {nfac} 件 / sitemap {len(PAGES)} URL → {OUT_DIR}")
 
