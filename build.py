@@ -93,6 +93,8 @@ CITY_PREF = {
     "八尾市": "osaka", "寝屋川市": "osaka", "水戸市": "ibaraki", "福島市": "fukushima",
     "青森市": "aomori", "甲府市": "yamanashi", "福井市": "fukui", "山形市": "yamagata",
     "佐世保市": "nagasaki", "松江市": "shimane",
+    "鳥取市": "tottori", "呉市": "hiroshima", "八戸市": "aomori", "町田市": "tokyo",
+    "藤沢市": "kanagawa",
 }
 
 TYPE_LABELS = {
