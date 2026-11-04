@@ -87,6 +87,9 @@ CITY_PREF = {
     "世田谷区": "tokyo", "練馬区": "tokyo", "大田区": "tokyo", "江戸川区": "tokyo",
     "足立区": "tokyo", "杉並区": "tokyo", "板橋区": "tokyo", "江東区": "tokyo",
     "葛飾区": "tokyo", "品川区": "tokyo",
+    "松本市": "nagano", "吹田市": "osaka", "豊橋市": "aichi", "川越市": "saitama",
+    "大津市": "shiga", "所沢市": "saitama", "高知市": "kochi", "明石市": "hyogo",
+    "久留米市": "fukuoka", "函館市": "hokkaido",
 }
 
 TYPE_LABELS = {
