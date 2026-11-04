@@ -100,6 +100,9 @@ CITY_PREF = {
     "津市": "mie", "松戸市": "chiba",
     "墨田区": "tokyo", "港区": "tokyo", "文京区": "tokyo", "荒川区": "tokyo",
     "台東区": "tokyo", "渋谷区": "tokyo", "中央区": "tokyo", "千代田区": "tokyo",
+    "茨木市": "osaka", "岸和田市": "osaka", "平塚市": "kanagawa", "茅ヶ崎市": "kanagawa",
+    "四日市市": "mie", "鳴門市": "tokushima", "唐津市": "saga", "宇部市": "yamaguchi",
+    "つくば市": "ibaraki", "草津市": "shiga",
 }
 
 TYPE_LABELS = {
