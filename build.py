@@ -95,6 +95,9 @@ CITY_PREF = {
     "佐世保市": "nagasaki", "松江市": "shimane",
     "鳥取市": "tottori", "呉市": "hiroshima", "八戸市": "aomori", "町田市": "tokyo",
     "藤沢市": "kanagawa",
+    "中野区": "tokyo", "北区": "tokyo", "新宿区": "tokyo", "豊島区": "tokyo",
+    "目黒区": "tokyo", "徳島市": "tokushima", "佐賀市": "saga", "山口市": "yamaguchi",
+    "津市": "mie", "松戸市": "chiba",
 }
 
 TYPE_LABELS = {
