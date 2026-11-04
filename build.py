@@ -90,6 +90,9 @@ CITY_PREF = {
     "松本市": "nagano", "吹田市": "osaka", "豊橋市": "aichi", "川越市": "saitama",
     "大津市": "shiga", "所沢市": "saitama", "高知市": "kochi", "明石市": "hyogo",
     "久留米市": "fukuoka", "函館市": "hokkaido",
+    "八尾市": "osaka", "寝屋川市": "osaka", "水戸市": "ibaraki", "福島市": "fukushima",
+    "青森市": "aomori", "甲府市": "yamanashi", "福井市": "fukui", "山形市": "yamagata",
+    "佐世保市": "nagasaki", "松江市": "shimane",
 }
 
 TYPE_LABELS = {
