@@ -232,6 +232,7 @@ FOOTER = f"""<footer class="site-footer">
         <li><a href="/about/">運営者情報</a></li>
         <li><a href="/contact/">お問い合わせ</a></li>
         <li><a href="/for-facilities/">施設・事業所の方へ</a></li>
+        <li><a href="/jobs/">求人</a></li>
         <li><a href="/privacy/">プライバシー</a></li>
       </ul>
     </nav>
@@ -1028,7 +1029,7 @@ def build_for_facilities():
         ("見学・相談の予約ボタン（施設のフォームや電話へ）", "なし", "○", "○"),
         ("お知らせ（見学会、職員さんの紹介など）", "なし", "月2件まで", "何件でも"),
         ("都道府県ページの「PR」枠での紹介", "なし", "なし", "○"),
-        ("求人の掲載（準備中）", "なし", "なし", "1件まで料金なし"),
+        ("求人の掲載（1件 月5,500円）", "なし", "なし", "1件まで料金なし"),
     ]
 
     def cell(v):
@@ -1089,14 +1090,24 @@ def build_for_facilities():
 <li>料金をいただいているかどうかで、記事の中身を変えることはありません</li>
 </ul>
 
-<h2 id="kyujin">求人掲載（準備中）</h2>
-<p>重症心身障害や医療的ケアのあるお子様を受け入れる施設の求人をのせるページを、準備しています。職種は、看護師、保育士、支援員（児童指導員など）、ヘルパーからはじめます。</p>
+<h2 id="kyujin">求人掲載</h2>
+<p>重症心身障害や医療的ケアのあるお子様を受け入れる施設の求人を、<a href="/jobs/">求人のページ</a>にのせられます。職種は、看護師、保育士、支援員（児童指導員など）、ヘルパーなどです。</p>
 <ul>
-<li>料金は、1件 月5,500円（税込）の予定です。プラスプランの施設は、1件まで料金はかかりません</li>
+<li>料金は、1件 月5,500円（税込）です。プラスプランの施設は、1件まで料金はかかりません。はじめの3か月は、施設の掲載プランと同じく料金をいただきません（2027年3月31日までのお申し込み）</li>
 <li>応募は施設に直接していただく形です。{SITE_NAME}では、応募する方の情報をおあずかりしません</li>
 <li>求人のページから、その施設のページへつなげます。「どんなお子様が通っているか」も、あわせて見ていただけます</li>
+<li>Googleの求人検索にも出やすい形でのせます</li>
 </ul>
-<p>はじまったら、このページでお知らせします。</p>
+<h3>求人のお申し込みに書いていただくこと</h3>
+<p>メールの件名に「求人掲載について」と書いて、次のことをお送りください。</p>
+<ul>
+<li>施設の名前、ご担当者様のお名前</li>
+<li>職種、雇用の形（正社員・パートなど）、お給料（時給・月給の幅）</li>
+<li>働く時間、休み、仕事の内容、必要な資格</li>
+<li>応募の方法（施設の応募フォームのURL、メールアドレスなど）</li>
+<li>いつまで募集するか</li>
+</ul>
+<p>いただいた内容でページを作り、施設の方に見ていただいてから公開します。</p>
 
 <h2 id="contact">お問い合わせ</h2>
 <p>掲載内容のまちがいや、取り下げのご希望も、こちらで受けつけています。ご不明な点は、お気軽にご連絡ください。</p>
@@ -1187,6 +1198,88 @@ def build_llms(articles, by_cat, fac_data):
         f.write("\n".join(lines))
 
 
+JOBS_FILE = os.path.join(ROOT, "data", "jobs.json")
+EMPLOY_LABELS = {"FULL_TIME": "正社員・常勤", "PART_TIME": "パート・非常勤", "CONTRACTOR": "業務委託", "TEMPORARY": "期間限定", "OTHER": "そのほか"}
+SALARY_UNIT_LABELS = {"HOUR": "時給", "DAY": "日給", "MONTH": "月給", "YEAR": "年収"}
+
+
+def load_jobs():
+    if not os.path.exists(JOBS_FILE):
+        return []
+    with open(JOBS_FILE, encoding="utf-8") as f:
+        jobs = json.load(f)
+    today = BUILD_DATE
+    return [j for j in jobs if not j.get("valid_through") or j["valid_through"] >= today]
+
+
+def build_jobs(fac_data):
+    jobs = load_jobs()
+    facs = {f["id"]: f for f in (fac_data or {}).get("facilities", [])}
+    prefs = {p["slug"]: p for p in (fac_data or {}).get("prefectures", [])}
+    cards = []
+    for j in jobs:
+        jid = safe_id(j["id"])
+        path = f"/jobs/{jid}.html"
+        fac = facs.get(j.get("facility_id"))
+        fac_name = j.get("facility_name") or (fac or {}).get("name", "")
+        pref = prefs.get(j.get("pref") or (fac or {}).get("pref", ""), {})
+        sal = ""
+        if j.get("salary_min"):
+            unit = SALARY_UNIT_LABELS.get(j.get("salary_unit", ""), "")
+            sal = f"{unit} {j['salary_min']:,}円" + (f"〜{j['salary_max']:,}円" if j.get("salary_max") else "〜")
+        rows = [("施設", f'<a href="{facility_path(fac)}">{esc(fac_name)}</a>' if fac else esc(fac_name)),
+                ("場所", esc(" ".join(x for x in [pref.get("name", ""), j.get("location", "") or (fac or {}).get("area", "")] if x))),
+                ("職種", esc(j.get("job_type", ""))),
+                ("雇用の形", esc(EMPLOY_LABELS.get(j.get("employment_type", ""), j.get("employment_type", "")))),
+                ("お給料", esc(sal)),
+                ("働く時間", esc(j.get("hours", ""))),
+                ("休み", esc(j.get("holidays", ""))),
+                ("必要な資格", esc(j.get("requirements", ""))),
+                ("募集の期限", esc(j.get("valid_through", "")))]
+        dl = "".join(f"<dt>{k}</dt><dd>{v}</dd>" for k, v in rows if v)
+        apply = j.get("apply_url")
+        apply_html = (f'<p class="back-home"><a class="button" href="{esc(apply)}" rel="noopener">施設の応募ページへ</a></p>' if apply
+                      else f'<p class="box">応募方法：{esc(j.get("apply_how", "施設に直接お問い合わせください"))}</p>')
+        desc = "".join(f"<p>{esc(x)}</p>" for x in str(j.get("description", "")).split("\n") if x.strip())
+        body = f"""<article class="prose"><h1>{esc(j['title'])}</h1>
+<p class="lead">{esc(fac_name)}の求人です。応募は施設に直接お願いします。{SITE_NAME}では、応募する方の情報をおあずかりしません。</p>
+<dl class="info">{dl}</dl>
+<h2>仕事の内容</h2>{desc}
+{apply_html}
+<p class="note">掲載日：{esc(j.get('date_posted', ''))}。内容は施設からいただいた情報です。くわしくは施設にご確認ください。</p>
+</article>"""
+        ld = {"@context": "https://schema.org", "@type": "JobPosting", "title": j["title"],
+              "description": desc or esc(j["title"]), "datePosted": j.get("date_posted", BUILD_DATE),
+              "hiringOrganization": {"@type": "Organization", "name": j.get("organization", fac_name)},
+              "jobLocation": {"@type": "Place", "address": {"@type": "PostalAddress", "addressCountry": "JP",
+                              "addressRegion": pref.get("name", ""), "addressLocality": j.get("location", "") or (fac or {}).get("area", ""),
+                              **({"streetAddress": j["street_address"]} if j.get("street_address") else {})}},
+              "employmentType": j.get("employment_type", "OTHER"), "directApply": False}
+        if j.get("valid_through"):
+            ld["validThrough"] = j["valid_through"]
+        if j.get("salary_min"):
+            ld["baseSalary"] = {"@type": "MonetaryAmount", "currency": "JPY",
+                                "value": {"@type": "QuantitativeValue", "minValue": j["salary_min"],
+                                          **({"maxValue": j["salary_max"]} if j.get("salary_max") else {}),
+                                          "unitText": j.get("salary_unit", "MONTH")}}
+        crumbs = [("トップ", "/"), ("求人", "/jobs/"), (j["title"], path)]
+        write_page(path, page(j["title"], f"{fac_name}の求人（{j.get('job_type', '')}）です。重い障害や医療的ケアのあるお子様を受け入れる施設で働きたい方へ。", path, body, crumbs=crumbs, extra_ld=ld))
+        cards.append(f'<li><a href="{path}">{esc(j["title"])}</a>（{esc(fac_name)}・{esc(pref.get("name", ""))}）</li>')
+    lst = f'<ul class="link-list">{"".join(cards)}</ul>' if cards else '<p class="box">いまのせている求人はありません。施設の方からの求人のお申し込みを受けつけています。</p>'
+    body = f"""<article class="prose"><h1>求人（重い障害・医療的ケアのあるお子様の施設）</h1>
+<p class="lead">重症心身障害や医療的ケアのあるお子様を受け入れる施設の求人をのせています。看護師、保育士、支援員（児童指導員など）、ヘルパーなど、お子様とご家族をささえる仕事です。</p>
+<h2>のせている求人</h2>
+{lst}
+<p>応募は、それぞれの施設に直接お願いします。{SITE_NAME}では、応募する方の情報をおあずかりしません。</p>
+<h2>施設の方へ</h2>
+<p>求人をのせたい施設の方は、<a href="/for-facilities/#kyujin">施設・事業所の方へ</a>をご覧ください。1件 月5,500円（税込）、プラスプランの施設は1件まで無料です。</p>
+</article>"""
+    crumbs = [("トップ", "/"), ("求人", "/jobs/")]
+    write_page("/jobs/", page("求人（重い障害・医療的ケアのあるお子様の施設）",
+                              "重症心身障害や医療的ケアのあるお子様を受け入れる施設の求人です。看護師・保育士・児童指導員・ヘルパーなど。応募は施設に直接どうぞ。",
+                              "/jobs/", body, crumbs=crumbs))
+
+
 # ---------------------------------------------------------------- main
 def main():
     if os.path.exists(OUT_DIR):
@@ -1228,6 +1321,7 @@ def main():
     build_about()
     build_contact()
     build_for_facilities()
+    build_jobs(fac_data)
     build_privacy()
     build_404()
     build_meta_files()
