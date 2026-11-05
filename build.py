@@ -107,6 +107,8 @@ CITY_PREF = {
     "草加市": "saitama", "府中市（東京都）": "tokyo", "調布市": "tokyo", "厚木市": "kanagawa",
     "大和市": "kanagawa", "小田原市": "kanagawa", "春日井市": "aichi", "大垣市": "gifu",
     "沼津市": "shizuoka", "富士市": "shizuoka", "長岡市": "niigata",
+    "西東京市": "tokyo", "三鷹市": "tokyo", "立川市": "tokyo", "鈴鹿市": "mie",
+    "上越市": "niigata",
 }
 
 TYPE_LABELS = {
