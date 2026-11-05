@@ -610,8 +610,21 @@ def build_facility_detail(f, prefinfo):
                 if v.get("checked"):
                     parts.append(f"確認日：{esc(str(v['checked']))}")
                 for ek, ev in v.items():
-                    if ek not in ("status", "note", "source", "checked") and ev not in (None, "", [], {}):
-                        parts.append(f"{esc(ek)}：{esc(fmt_value(ev))}")
+                    if ek in ("status", "note", "source", "checked", "label") or ev in (None, "", [], {}):
+                        continue
+                    if ek == "services":
+                        svc = ev if isinstance(ev, list) else [ev]
+                        parts.append("対象のサービス：" + esc("、".join(type_labels(svc))))
+                    elif ek == "sources":
+                        for sv in (ev if isinstance(ev, list) else [ev]):
+                            if isinstance(sv, (list, tuple)) and len(sv) == 2:
+                                parts.append("出典：" + link_or_text(sv[0], sv[1]))
+                            elif isinstance(sv, dict):
+                                parts.append("出典：" + link_or_text(sv.get("label"), sv.get("url")))
+                            else:
+                                parts.append("出典：" + link_or_text(sv, sv))
+                    elif ek == "condition":
+                        parts.append("条件：" + esc(fmt_value(ev)))
                 txt = "<br>".join(parts)
             else:
                 txt = esc(SUPPORT_STATUS_LABELS.get(str(v).lower(), fmt_value(v)))
