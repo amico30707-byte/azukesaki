@@ -579,6 +579,12 @@ def build_facility_detail(f, prefinfo):
     if f.get("medical") not in (None, ""):
         row("医療的ケア", esc(fmt_value(f["medical"])))
     row("医療的ケアについて", esc(str(f.get("medicalNote", ""))) if f.get("medicalNote") else "")
+    # 時間・曜日・料金などは、決まった「要確認」の文だけのときは出さない
+    for _k, _lab in (("hours", "利用できる時間"), ("days", "曜日・休み"), ("region", "地域・送迎"),
+                     ("fee", "料金"), ("careNote", "ケアの体制"), ("address", "住所"), ("alert", "お知らせ")):
+        _v = f.get(_k)
+        if _v and not re.fullmatch(r"(利用できる時間|利用できる曜日|利用料・食事や外出などの実費|お住まいの地域から利用できるか)は要確認", str(_v)):
+            row(_lab, esc(fmt_value(_v)))
     if f.get("phone"):
         tel = re.sub(r"[^0-9+]", "", str(f["phone"]))
         row("電話", f'<a href="tel:{esc(tel)}">{esc(str(f["phone"]))}</a>' if tel else esc(str(f["phone"])))
