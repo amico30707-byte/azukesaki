@@ -103,6 +103,10 @@ CITY_PREF = {
     "茨木市": "osaka", "岸和田市": "osaka", "平塚市": "kanagawa", "茅ヶ崎市": "kanagawa",
     "四日市市": "mie", "鳴門市": "tokushima", "唐津市": "saga", "宇部市": "yamaguchi",
     "つくば市": "ibaraki", "草津市": "shiga",
+    "市川市": "chiba", "加古川市": "hyogo", "宝塚市": "hyogo", "春日部市": "saitama",
+    "草加市": "saitama", "府中市（東京都）": "tokyo", "調布市": "tokyo", "厚木市": "kanagawa",
+    "大和市": "kanagawa", "小田原市": "kanagawa", "春日井市": "aichi", "大垣市": "gifu",
+    "沼津市": "shizuoka", "富士市": "shizuoka", "長岡市": "niigata",
 }
 
 TYPE_LABELS = {
