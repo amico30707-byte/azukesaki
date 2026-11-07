@@ -112,6 +112,8 @@ CITY_PREF = {
     "東広島市": "hiroshima", "宇治市": "kyoto",
     "帯広市": "hokkaido", "栃木市": "tochigi", "伊丹市": "hyogo", "出雲市": "shimane",
     "今治市": "ehime",
+    "弘前市": "aomori", "日立市": "ibaraki", "上田市": "nagano", "米子市": "tottori",
+    "都城市": "miyazaki",
 }
 
 TYPE_LABELS = {
