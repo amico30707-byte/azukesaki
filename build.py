@@ -110,6 +110,8 @@ CITY_PREF = {
     "西東京市": "tokyo", "三鷹市": "tokyo", "立川市": "tokyo", "鈴鹿市": "mie",
     "上越市": "niigata", "八千代市": "chiba", "上尾市": "saitama", "太田市": "gunma",
     "東広島市": "hiroshima", "宇治市": "kyoto",
+    "帯広市": "hokkaido", "栃木市": "tochigi", "伊丹市": "hyogo", "出雲市": "shimane",
+    "今治市": "ehime",
 }
 
 TYPE_LABELS = {
