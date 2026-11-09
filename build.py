@@ -127,6 +127,8 @@ CITY_PREF = {
     "尾道市": "hiroshima",
     "丸亀市": "kagawa", "橿原市": "nara", "鶴岡市": "yamagata", "奥州市": "iwate",
     "田辺市": "wakayama",
+    "野田市": "chiba", "焼津市": "shizuoka", "大崎市": "miyagi", "釧路市": "hokkaido",
+    "西尾市": "aichi",
 }
 
 TYPE_LABELS = {
