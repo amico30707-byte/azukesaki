@@ -121,6 +121,8 @@ CITY_PREF = {
     "別府市": "oita",
     "岩国市": "yamaguchi", "八代市": "kumamoto", "伊勢市": "mie", "浦添市": "okinawa",
     "佐倉市": "chiba",
+    "長浜市": "shiga", "津山市": "okayama", "宗像市": "fukuoka", "鹿屋市": "kagoshima",
+    "新居浜市": "ehime",
 }
 
 TYPE_LABELS = {
