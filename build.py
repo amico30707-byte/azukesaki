@@ -116,6 +116,7 @@ CITY_PREF = {
     "都城市": "miyazaki",
     "伊勢崎市": "gunma", "熊谷市": "saitama", "高岡市": "toyama", "松阪市": "mie",
     "和泉市": "osaka",
+    "石巻市": "miyagi", "豊川市": "aichi", "苫小牧市": "hokkaido", "川西市": "hyogo",
 }
 
 TYPE_LABELS = {
