@@ -123,6 +123,8 @@ CITY_PREF = {
     "佐倉市": "chiba",
     "長浜市": "shiga", "津山市": "okayama", "宗像市": "fukuoka", "鹿屋市": "kagoshima",
     "新居浜市": "ehime",
+    "彦根市": "shiga", "糸島市": "fukuoka", "舞鶴市": "kyoto", "名護市": "okinawa",
+    "尾道市": "hiroshima",
 }
 
 TYPE_LABELS = {
