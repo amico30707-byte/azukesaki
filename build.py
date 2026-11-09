@@ -125,6 +125,8 @@ CITY_PREF = {
     "新居浜市": "ehime",
     "彦根市": "shiga", "糸島市": "fukuoka", "舞鶴市": "kyoto", "名護市": "okinawa",
     "尾道市": "hiroshima",
+    "丸亀市": "kagawa", "橿原市": "nara", "鶴岡市": "yamagata", "奥州市": "iwate",
+    "田辺市": "wakayama",
 }
 
 TYPE_LABELS = {
