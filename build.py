@@ -119,6 +119,8 @@ CITY_PREF = {
     "石巻市": "miyagi", "豊川市": "aichi", "苫小牧市": "hokkaido", "川西市": "hyogo",
     "小山市": "tochigi", "鎌倉市": "kanagawa", "周南市": "yamaguchi", "諫早市": "nagasaki",
     "別府市": "oita",
+    "岩国市": "yamaguchi", "八代市": "kumamoto", "伊勢市": "mie", "浦添市": "okinawa",
+    "佐倉市": "chiba",
 }
 
 TYPE_LABELS = {
