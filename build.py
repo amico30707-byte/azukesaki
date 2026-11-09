@@ -114,6 +114,8 @@ CITY_PREF = {
     "今治市": "ehime",
     "弘前市": "aomori", "日立市": "ibaraki", "上田市": "nagano", "米子市": "tottori",
     "都城市": "miyazaki",
+    "伊勢崎市": "gunma", "熊谷市": "saitama", "高岡市": "toyama", "松阪市": "mie",
+    "和泉市": "osaka",
 }
 
 TYPE_LABELS = {
