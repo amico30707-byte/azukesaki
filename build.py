@@ -130,7 +130,8 @@ CITY_PREF = {
     "野田市": "chiba", "焼津市": "shizuoka", "大崎市": "miyagi", "釧路市": "hokkaido",
     "西尾市": "aichi",
     "刈谷市": "aichi", "成田市": "chiba", "北見市": "hokkaido", "霧島市": "kagoshima",
-    "沖縄市": "okinawa",
+    "沖縄市": "okinawa", "流山市": "chiba", "新座市": "saitama", "秦野市": "kanagawa",
+    "磐田市": "shizuoka", "浦安市": "chiba",
 }
 
 TYPE_LABELS = {
