@@ -578,6 +578,34 @@ def is_medical(f):
     return False
 
 
+# 受付の休止・閉所などのしるし。施設のデータ（field の文）に、すでにそう書いてあるものだけ。
+# データからその文が消えたら、しるしも自動で消える。データは変えない。
+# id: (しるしの文字, データの項目, その項目にふくまれている言葉)
+STATUS_BADGES = {
+    "aichi-tokai-nijiiro-medical-shortstay": ("新規受付を休止中", "alert", "新規登録（利用登録）を一時中断"),
+    "hokkaido-kushiro-pass-home-out-day": ("新規受付を休止中", "alert", "新規登録の受付を見合わせ"),
+    "kanagawa-nanairo-shortstay": ("新規受付を休止中", "alert", "新規利用の相談受付休止"),
+    "tokyo-machida-kanon-mobility-action": ("新規受付を休止中", "vacancy", "新規受付は休止中"),
+    "chiba-noda-aoisora-day": ("短期入所は休止", "alert", "短期入所は2026年6月末で休止"),
+    "kanagawa-yokohama-biscuit-kikuna-medical-day": ("宿泊の短期入所は閉所中", "alert", "当面の間閉所"),
+    "niigata-shibata-nakai-sakura-medical-child-day": ("宿泊の受け入れは終了", "alert", "宿泊受け入れは終了"),
+    "shimane-gotsu-nanairo-child-therapy": ("児童発達支援は休止中", "alert", "児童発達支援は江津市の2025年10月現在一覧で休止中"),
+}
+
+
+def status_badge(f):
+    """(しるしの文字, その根拠の文) か None"""
+    b = STATUS_BADGES.get(f.get("id"))
+    if not b:
+        return None
+    label, field, needle = b
+    text = str(f.get(field) or "")
+    if needle not in text:
+        return None
+    sent = next((s for s in re.findall(r"[^。]+。?", text) if needle in s), text)
+    return label, sent.strip()
+
+
 def support_keys(f):
     """検索とカードで使う、お子様の状態のキー（医療的ケアは処置の記載からも付ける）"""
     keys = [k for k, v in (f.get("supports") or {}).items() if support_on(v)]
@@ -597,6 +625,9 @@ def tags_html(labels, cls="tag"):
 def facility_card(f):
     supports = [SUPPORT_LABELS.get(k, k) for k in support_keys(f)]
     rows = []
+    badge = status_badge(f)
+    if badge:
+        rows.append(f'<p class="tags"><span class="tag tag-alert">{esc(badge[0])}</span></p>')
     if f.get("area"):
         rows.append(f'<p class="fac-area">{esc(f["area"])}</p>')
     rows.append(f'<p class="tags">{tags_html(type_labels(f.get("types")))}</p>')
@@ -647,7 +678,7 @@ def build_facility_detail(f, prefinfo):
     row("医療的ケアについて", esc(str(f.get("medicalNote", ""))) if f.get("medicalNote") else "")
     # 時間・曜日・料金などは、決まった「要確認」の文だけのときは出さない
     for _k, _lab in (("hours", "利用できる時間"), ("days", "曜日・休み"), ("region", "地域・送迎"),
-                     ("fee", "料金"), ("careNote", "ケアの体制"), ("address", "住所"), ("alert", "お知らせ")):
+                     ("fee", "料金"), ("careNote", "ケアの体制"), ("address", "住所")):
         _v = f.get(_k)
         if _v and not re.fullmatch(r"(利用できる時間|利用できる曜日|利用料・食事や外出などの実費|お住まいの地域から利用できるか)は要確認", str(_v)):
             row(_lab, esc(fmt_value(_v)))
@@ -709,9 +740,22 @@ def build_facility_detail(f, prefinfo):
                 lis.append("<li>" + link_or_text(s, s) + "</li>")
         src_html = "<h2>出典</h2><ul>" + "".join(lis) + "</ul>"
 
+    alert_html = ""
+    badge = status_badge(f)
+    if f.get("alert") or badge:
+        inner = []
+        if badge:
+            inner.append(f'<span class="tag tag-alert">{esc(badge[0])}</span>')
+        else:
+            inner.append('<span class="alert-label">お知らせ</span>')
+        if f.get("alert"):
+            inner.append(f'<span class="alert-text">{esc(fmt_value(f["alert"]))}</span>')
+        elif badge:
+            inner.append(f'<span class="alert-text">{esc(badge[1])}</span>')
+        alert_html = '<p class="alert-box" role="note">' + "".join(inner) + "</p>\n"
     body = f"""<article class="prose">
 <h1>{esc(f['name'])}</h1>
-<p class="notice">{FACILITY_NOTE}</p>
+{alert_html}<p class="notice">{FACILITY_NOTE}</p>
 <h2>施設のこと</h2>
 <dl class="info">{''.join(dl)}</dl>
 {sup_html}
@@ -1039,6 +1083,7 @@ def build_search(fac_data):
             "id": safe_id(f["id"]), "pref": f.get("pref"), "name": f.get("name"), "area": f.get("area", ""),
             "types": f.get("types") or [],
             "support": support_keys(f),
+            **({"status": status_badge(f)[0]} if status_badge(f) else {}),
         } for f in facs],
     }
     os.makedirs(os.path.join(OUT_DIR, "search"), exist_ok=True)

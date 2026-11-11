@@ -54,6 +54,7 @@
       var sp = it.support.map(function (s) { return '<span class="tag tag-soft">' + esc(data.supports[s] || s) + "</span>"; }).join("");
       var href = "/facility/" + encodeURIComponent(it.pref) + "/" + encodeURIComponent(it.id) + ".html";
       return '<li class="card fac-card"><h3>' + esc(it.name) + "</h3>" +
+        (it.status ? '<p class="tags"><span class="tag tag-alert">' + esc(it.status) + "</span></p>" : "") +
         '<p class="fac-area">' + esc(data.prefs[it.pref] || "") + (it.area ? "・" + esc(it.area) : "") + "</p>" +
         '<p class="tags">' + types + "</p>" + (sp ? '<p class="tags">' + sp + "</p>" : "") +
         '<p class="more"><a href="' + href + '">くわしく<span class="visually-hidden">（' + esc(it.name) + "）</span></a></p></li>";
