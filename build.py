@@ -316,6 +316,9 @@ def page(title, description, path, body, *, crumbs=None, og_type="website",
     crumb_html = breadcrumb_html(crumbs) if crumbs else ""
     robots = '<meta name="robots" content="noindex">\n' if noindex else ""
     canonical = abs_url(path)
+    # noindex のページには canonical を付けない（404 など）
+    canonical_tag = "" if noindex else f'<link rel="canonical" href="{esc(canonical)}">\n'
+
     nav_links = "".join(f'<li><a href="{h}">{n}</a></li>' for n, h in NAV_ITEMS)
     main_cls = "wrap wrap-wide" if wide else "wrap"
     return f"""<!DOCTYPE html>
@@ -323,12 +326,12 @@ def page(title, description, path, body, *, crumbs=None, og_type="website",
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no">
 <script async src="https://www.googletagmanager.com/gtag/js?id={GA_ID}"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments);}}gtag('js',new Date());gtag('config','{GA_ID}');</script>
 <title>{esc(doc_title)}</title>
 <meta name="description" content="{esc(description)}">
-{robots}<link rel="canonical" href="{esc(canonical)}">
-<meta property="og:site_name" content="{SITE_NAME}">
+{robots}{canonical_tag}<meta property="og:site_name" content="{SITE_NAME}">
 <meta property="og:locale" content="ja_JP">
 <meta property="og:type" content="{og_type}">
 <meta property="og:title" content="{esc(doc_title)}">
@@ -936,6 +939,25 @@ def nearby_html(f, pref_facs, city_articles):
     return '<section class="nearby" aria-labelledby="nb-h"><h2 id="nb-h">同じ地域のほかの施設</h2>' + "".join(parts) + "</section>"
 
 
+def facility_description(f, pname, limit=120):
+    """施設ページの meta description。文の切れ目で終わる、120字くらいまでの文"""
+    city = fac_city(f)
+    place = pname + (city if city and city != pname else "")
+    cands = [f"{place}の{f['name']}。"]
+    types = type_labels(f.get("types"))
+    if types:
+        cands.append("サービス：" + "・".join(types) + "。")
+    cands += [x.strip() for x in re.findall(r"[^。]+。", str(f.get("summary") or "")) if x.strip()]
+    sups = [SUPPORT_LABELS.get(k, k) for k in support_keys(f)][:3]
+    if sups:
+        cands.append("受け入れの記載：" + "・".join(sups) + "。")
+    out = ""
+    for c in cands:
+        if len(out) + len(c) <= limit:
+            out += c
+    return out or cands[0][:limit]
+
+
 def build_facility_detail(f, prefinfo, pref_facs=(), city_articles=()):
     pref = f["pref"]
     pname = prefinfo.get("name") or PREF_NAME.get(pref, pref)
@@ -1066,8 +1088,9 @@ def build_facility_detail(f, prefinfo, pref_facs=(), city_articles=()):
 {nearby_html(f, pref_facs, city_articles)}
 <p><a href="/{pref}/">{esc(pname)}のページにもどる</a>　<a href="/search/">ほかの施設をさがす</a></p>
 </article>"""
-    desc = f"{pname}{('・' + f['area']) if f.get('area') else ''}の{f['name']}。" + (f.get("summary") or "") + FACILITY_NOTE + "。"
-    write_page(facility_path(f), page(f["name"], desc[:160], facility_path(f), body, crumbs=crumbs),
+    city = fac_city(f)
+    title = f"{f['name']}（{city}）" if city and city not in f["name"] and city != pname else f["name"]
+    write_page(facility_path(f), page(title, facility_description(f, pname), facility_path(f), body, crumbs=crumbs),
                lastmod=norm_date(f.get("checked")))
 
 
@@ -1290,7 +1313,11 @@ def build_categories(by_cat):
         else:
             body = head + items_html(arts)
         crumbs = [("トップ", "/"), ("よみもの", "/blog/"), (name, path)]
-        write_page(path, page(name, f"あずけさき手帖の「{name}」の記事の一覧です。", path, body, crumbs=crumbs),
+        sample = "".join(f"「{a['h1']}」" for a in arts[:2])
+        cdesc = f"あずけさき手帖の「{name}」の記事の一覧です。{len(arts)}本の記事があります。" + (f"{sample}など。" if sample else "")
+        if len(cdesc) > 120 and arts:
+            cdesc = f"あずけさき手帖の「{name}」の記事の一覧です。{len(arts)}本の記事があります。「{arts[0]['h1']}」など。"
+        write_page(path, page(name, cdesc, path, body, crumbs=crumbs),
                    lastmod=newest(a["modified"] for a in arts))
 
 
@@ -1475,7 +1502,8 @@ def build_search(fac_data):
 <h2>都道府県からさがす</h2>
 {pref_grid_html()}
 </div>"""
-    write_page(path, page("施設さがし", "都道府県・使いたい支援・必要なケアから、障害のあるお子様のあずけ先をさがせます。", path, body,
+    write_page(path, page("施設さがし", "重い障害や医療的ケアのあるお子様のあずけ先を、都道府県・使いたい支援（短期入所や日中一時支援など）・必要なケア・市区町村の名前からさがせます。"
+                          + FACILITY_NOTE + "。", path, body,
                           crumbs=crumbs, scripts='<script src="/static/search.js" defer></script>\n'),
                lastmod=newest(f.get("checked") for f in facs))
 
@@ -1509,7 +1537,7 @@ def build_contact():
 <p>このサイトは、医療や福祉の専門の相談窓口ではありません。お子様のことで迷ったときは、相談支援事業所、市区町村の窓口、医療的ケア児支援センターにご相談ください。</p>
 </article>"""
     crumbs = [("トップ", "/"), ("お問い合わせ", "/contact/")]
-    write_page("/contact/", page("お問い合わせ", "あずけさき手帖へのお問い合わせはメールで受けつけています。", "/contact/", body, crumbs=crumbs))
+    write_page("/contact/", page("お問い合わせ", "あずけさき手帖へのお問い合わせはメールで受けつけています。内容のまちがいや修正のご希望、施設の掲載・取り下げのご希望、サイトについてのご意見をお送りください。", "/contact/", body, crumbs=crumbs))
 
 
 def build_for_facilities():
@@ -1774,7 +1802,8 @@ def build_jobs(fac_data):
     crumbs = [("トップ", "/"), ("求人", "/jobs/")]
     write_page("/jobs/", page("求人（重い障害・医療的ケアのあるお子様の施設）",
                               "重症心身障害や医療的ケアのあるお子様を受け入れる施設の求人です。看護師・保育士・児童指導員・ヘルパーなど。応募は施設に直接どうぞ。",
-                              "/jobs/", body, crumbs=crumbs))
+                              "/jobs/", body, crumbs=crumbs, noindex=not jobs),
+               sitemap=bool(jobs))
 
 
 # ---------------------------------------------------------------- main
