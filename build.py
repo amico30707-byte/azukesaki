@@ -138,6 +138,8 @@ CITY_PREF = {
     "掛川市": "shizuoka",
     "安城市": "aichi", "大牟田市": "fukuoka", "那須塩原市": "tochigi", "小牧市": "aichi",
     "生駒市": "nara",
+    "戸田市": "saitama", "日野市": "tokyo", "西条市": "ehime", "土浦市": "ibaraki",
+    "ひたちなか市": "ibaraki",
 }
 
 TYPE_LABELS = {
