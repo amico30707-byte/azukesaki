@@ -798,6 +798,44 @@ def phone_html(f, with_label=True):
     return h
 
 
+def source_link(url):
+    """出典のリンク（文字はドメイン名だけにして短くする）"""
+    m = re.match(r"^https?://([^/]+)", str(url))
+    if not m:
+        return esc(str(url))
+    host = re.sub(r"^www\.", "", m.group(1))
+    return f'<a href="{esc(str(url))}" rel="noopener">{esc(host)}</a>'
+
+
+def official_source(f):
+    """いちばんはじめの公式ページ (名前, URL)"""
+    for s in f.get("sources") or []:
+        if isinstance(s, (list, tuple)) and len(s) == 2 and re.match(r"^https?://", str(s[1])):
+            return str(s[0] or ""), str(s[1])
+        if isinstance(s, dict) and re.match(r"^https?://", str(s.get("url", ""))):
+            return str(s.get("label") or ""), str(s["url"])
+        if isinstance(s, str) and re.match(r"^https?://", s):
+            return "", s
+    return None
+
+
+def next_step_html(f):
+    """ページの上のほうの「利用を考えるときは」：公式ページ、電話、確認日"""
+    rows = []
+    off = official_source(f)
+    if off:
+        label = f'<span class="ns-sub">{esc(off[0])}</span>' if off[0] else ""
+        rows.append(f'<p class="ns-row"><a class="button ns-button" href="{esc(off[1])}" rel="noopener">公式ページを見る</a>{label}</p>')
+    if f.get("phone"):
+        rows.append('<p class="ns-row"><span class="ns-label">電話</span>' + phone_html(f, with_label=False) + "</p>")
+    if f.get("checked"):
+        rows.append(f'<p class="ns-row ns-date">確認日：{time_html(f["checked"])}（あずけさき手帖が公式の情報を確かめた日）</p>')
+    if not rows:
+        return ""
+    return ('<section class="next-step" aria-labelledby="ns-h"><h2 id="ns-h" class="ns-title">利用を考えるときは</h2>'
+            + "".join(rows) + "</section>")
+
+
 def build_facility_detail(f, prefinfo):
     pref = f["pref"]
     pname = prefinfo.get("name") or PREF_NAME.get(pref, pref)
@@ -812,6 +850,7 @@ def build_facility_detail(f, prefinfo):
     row("サービスの種類", tags_html(type_labels(f.get("types"))) if f.get("types") else "")
     row("対象年齢", esc(str(f.get("age", ""))) if f.get("age") else "")
     row("ひとこと", esc(str(f.get("summary", ""))) if f.get("summary") else "")
+    row("空き・受付について", esc(fmt_value(f["vacancy"])) if f.get("vacancy") else "")
     row("利用の条件", esc(fmt_value(f["condition"])) if f.get("condition") else "")
     row("利用までの流れ", esc(fmt_value(f["flow"])) if f.get("flow") else "")
     if f.get("medical") not in (None, ""):
@@ -868,6 +907,26 @@ def build_facility_detail(f, prefinfo):
             items.append(f"<dt>{esc(label)}</dt><dd>{txt}</dd>")
         sup_html = '<h2>お子様の状態ごとの受け入れ</h2><dl class="info">' + "".join(items) + "</dl>"
 
+    svc_html = ""
+    if f.get("serviceDetails"):
+        items = []
+        for sd in f["serviceDetails"]:
+            if not isinstance(sd, dict) or not (sd.get("label") or sd.get("note")):
+                continue
+            parts = [esc(str(sd["note"]))] if sd.get("note") else []
+            urls = []
+            for u in ([sd.get("source")] if sd.get("source") else []) + list(sd.get("sources") or []):
+                u = u[1] if isinstance(u, (list, tuple)) and len(u) == 2 else u
+                if isinstance(u, str) and u not in urls:
+                    urls.append(u)
+            if urls:
+                parts.append("出典：" + "、".join(source_link(u) for u in urls))
+            if sd.get("checked"):
+                parts.append(f"確認日：{time_html(sd['checked'])}")
+            items.append(f"<dt>{esc(str(sd.get('label') or ''))}</dt><dd>{'<br>'.join(parts)}</dd>")
+        if items:
+            svc_html = '<h2>サービスごとのこと</h2><dl class="info">' + "".join(items) + "</dl>"
+
     src_html = ""
     if f.get("sources"):
         lis = []
@@ -896,8 +955,10 @@ def build_facility_detail(f, prefinfo):
     body = f"""<article class="prose">
 <h1>{esc(f['name'])}</h1>
 {alert_html}<p class="notice">{FACILITY_NOTE}</p>
+{next_step_html(f)}
 <h2>施設のこと</h2>
 <dl class="info">{''.join(dl)}</dl>
+{svc_html}
 {sup_html}
 {src_html}
 <p class="note">このページは、上の公式ページの内容を、あずけさき手帖がまとめたものです。施設が書いたものや、施設に認められたものではありません。いちばん新しい内容は、公式ページでご確認ください。施設の方へ：まちがいのご連絡や、のせないでほしいご希望は、<a href="mailto:info@azukesaki.jp">info@azukesaki.jp</a> までお知らせください。すぐに直します。</p>

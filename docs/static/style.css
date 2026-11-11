@@ -487,3 +487,14 @@ label.check input { width: 20px; height: 20px; accent-color: var(--green); }
 .promise-list li:last-child { margin-bottom: 0; }
 .back-home { margin: 8px 0 8px; }
 .nw { white-space: nowrap; }
+
+/* 施設ページの「利用を考えるときは」 */
+.next-step { background: var(--surface); border: 1px solid var(--line); border-left: 5px solid var(--green); border-radius: var(--r-lg); padding: 16px 20px; margin: 20px 0 8px; }
+.next-step .ns-title { font-size: 1.1rem; margin: 0 0 10px; padding: 0; border: 0; color: var(--green-dark); }
+.next-step .ns-title::after { display: none; }
+.ns-row { margin: 0 0 12px; }
+.ns-row:last-child { margin-bottom: 0; }
+.ns-button { display: inline-block; min-height: 48px; line-height: 1.6; padding: 11px 24px; }
+.ns-sub { display: block; margin-top: 4px; font-size: 0.86rem; color: var(--muted); }
+.ns-label { display: block; font-size: 0.86rem; color: var(--muted); }
+.ns-date { font-size: 0.9rem; color: var(--muted); }
