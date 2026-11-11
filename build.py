@@ -158,6 +158,10 @@ CITY_PREF = {
     "各務原市": "gifu",
     "亀岡市": "kyoto", "鎌ケ谷市": "chiba", "一関市": "iwate", "小金井市": "tokyo",
     "廿日市市": "hiroshima",
+    "城陽市": "kyoto", "京田辺市": "kyoto", "八幡市": "kyoto", "向日市": "kyoto",
+    "青梅市": "tokyo",
+    "国分寺市": "tokyo", "東久留米市": "tokyo", "千歳市": "hokkaido", "米沢市": "yamagata",
+    "桐生市": "gunma",
 }
 
 TYPE_LABELS = {
