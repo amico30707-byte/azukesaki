@@ -1015,6 +1015,10 @@ def quick_search_html(fac_data):
     <legend class="finder-label">お子様の状態<span class="finder-hint">（いくつでも）</span></legend>
     <div class="chip-row">{sup_chips}</div>
   </fieldset>
+  <div class="finder-field finder-city">
+    <label for="qs-q" class="finder-label">市区町村の名前<span class="finder-hint">（なくてもさがせます）</span></label>
+    <input id="qs-q" name="q" type="search" autocomplete="off" placeholder="例：岡崎市、山科区">
+  </div>
   <p class="finder-submit"><button type="submit" class="button">この条件でさがす</button></p>
 </form>
 <script>
@@ -1189,6 +1193,12 @@ def build_prefs(articles, fac_data):
                               '<div class="prose">' + "".join(parts) + "</div>", crumbs=crumbs), lastmod=lm)
 
 
+def search_address(f):
+    """検索用の住所（「（詳細は公式ページで確認）」などのかっこ書きはのぞく）"""
+    a = re.sub(r"[（(][^）)]*[）)]", "", str(f.get("address") or "")).strip()
+    return a
+
+
 def build_search(fac_data):
     path = "/search/"
     crumbs = [("トップ", "/"), ("施設さがし", path)]
@@ -1233,6 +1243,7 @@ def build_search(fac_data):
         "supports": {k: SUPPORT_LABELS.get(k, k) for k in used_sup},
         "items": [{
             "id": safe_id(f["id"]), "pref": f.get("pref"), "name": f.get("name"), "area": f.get("area", ""),
+            **({"addr": search_address(f)} if search_address(f) else {}),
             "types": f.get("types") or [],
             "support": support_keys(f),
             **({"status": status_badge(f)[0]} if status_badge(f) else {}),
@@ -1250,16 +1261,18 @@ def build_search(fac_data):
 <h1>施設さがし</h1>
 <p>都道府県や、使いたい支援、お子様に必要なケアをえらんでください。</p>
 <p class="notice">{FACILITY_NOTE}</p>
-<form id="search-form" class="search-form" role="search" onsubmit="return false">
+<form id="search-form" class="search-form" role="search" action="/search/" method="get">
   <div class="field"><label for="f-pref">都道府県</label>
     <select id="f-pref" name="pref"><option value="">すべて</option>{pref_opts}</select></div>
   <div class="field"><label for="f-type">使いたい支援</label>
     <select id="f-type" name="type"><option value="">すべて</option>{type_opts}</select></div>
   {'<fieldset class="field"><legend>お子様に必要なこと（えらんだものすべてに合う施設）</legend>' + sup_boxes + '</fieldset>' if sup_boxes else ''}
-  <div class="field"><label for="f-q">名前・地域で しぼりこむ</label>
-    <input id="f-q" name="q" type="search" autocomplete="off"></div>
+  <div class="field"><label for="f-q">名前・市区町村・住所で しぼりこむ</label>
+    <input id="f-q" name="q" type="search" autocomplete="off" placeholder="例：岡崎市、山科区"></div>
+  <p class="search-submit"><button type="submit" class="button">この条件でさがす</button></p>
 </form>
 <p id="result-count" class="result-count" aria-live="polite"></p>
+<div id="no-result-help" class="box no-result-help" hidden></div>
 <ul id="results" class="fac-list"></ul>
 <noscript><p class="box">この検索はJavaScriptを使います。都道府県のページからも施設の一覧を見られます。</p></noscript>
 <h2>都道府県からさがす</h2>
