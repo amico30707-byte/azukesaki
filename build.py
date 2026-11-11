@@ -136,6 +136,8 @@ CITY_PREF = {
     "会津若松市": "fukushima",
     "箕面市": "osaka", "守口市": "osaka", "小樽市": "hokkaido", "江別市": "hokkaido",
     "掛川市": "shizuoka",
+    "安城市": "aichi", "大牟田市": "fukuoka", "那須塩原市": "tochigi", "小牧市": "aichi",
+    "生駒市": "nara",
 }
 
 TYPE_LABELS = {
