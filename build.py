@@ -675,6 +675,7 @@ def build_facility_detail(f, prefinfo):
 <dl class="info">{''.join(dl)}</dl>
 {sup_html}
 {src_html}
+<p class="note">このページは、上の公式ページの内容を、あずけさき手帖がまとめたものです。施設が書いたものや、施設に認められたものではありません。いちばん新しい内容は、公式ページでご確認ください。施設の方へ：まちがいのご連絡や、のせないでほしいご希望は、<a href="mailto:info@azukesaki.jp">info@azukesaki.jp</a> までお知らせください。すぐに直します。</p>
 <p class="notice">{FACILITY_NOTE}</p>
 <p><a href="/{pref}/">{esc(pname)}のページにもどる</a>　<a href="/search/">ほかの施設をさがす</a></p>
 </article>"""
