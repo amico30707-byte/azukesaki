@@ -688,9 +688,9 @@ def article_pref(a):
             if a["title"].startswith(n) or a["title"].startswith(n.rstrip("都府県")):
                 return s
     if a["category"] == "市ごとのあずけ先":
-        for city, pref in sorted(CITY_PREF.items(), key=lambda x: -len(x[0])):
-            if a["title"].startswith(city):
-                return pref
+        ac = article_city(a)
+        if ac:
+            return ac[0]
     return None
 
 
@@ -1270,10 +1270,25 @@ def build_categories(by_cat):
     for name, slug in CATEGORIES:
         arts = sorted(by_cat.get(name, []), key=lambda x: x["num"])
         path = f"/category/{slug}/"
-        items = "".join(f'<li><a href="{a["path"]}"><span class="li-title">{esc(a["h1"])}</span></a>'
-                        f'<p class="li-desc">{esc(a["description"])}</p></li>' for a in arts)
-        body = (f'<header class="cat-head">{icon_svg(slug, "cat-icon cat-icon-lg")}<h1>{esc(name)}</h1>'
-                f'<p class="small">{len(arts)}本の記事があります。</p></header><ul class="article-list">{items}</ul>')
+        def items_html(lst):
+            return '<ul class="article-list">' + "".join(
+                f'<li><a href="{a["path"]}"><span class="li-title">{esc(a["h1"])}</span></a>'
+                f'<p class="li-desc">{esc(a["description"])}</p></li>' for a in lst) + "</ul>"
+        head = (f'<header class="cat-head">{icon_svg(slug, "cat-icon cat-icon-lg")}<h1>{esc(name)}</h1>'
+                f'<p class="small">{len(arts)}本の記事があります。</p></header>')
+        if slug == "shi":
+            # 市ごとの記事は、都道府県ごとに分ける（北から南の順）
+            by_pref = {}
+            for a in arts:
+                by_pref.setdefault(article_pref(a) or "", []).append(a)
+            order = [s for s, _, _ in PREFS if s in by_pref] + ([""] if "" in by_pref else [])
+            chips = "".join(f'<li><a href="#p-{s or "other"}">{esc(PREF_NAME.get(s, "そのほか"))}（{len(by_pref[s])}）</a></li>'
+                            for s in order)
+            secs = "".join(f'<section><h2 id="p-{s or "other"}" class="pref-group">{esc(PREF_NAME.get(s, "そのほか"))}</h2>'
+                           + items_html(by_pref[s]) + "</section>" for s in order)
+            body = head + f'<nav class="jump" aria-label="都道府県"><ul class="chips">{chips}</ul></nav>' + secs
+        else:
+            body = head + items_html(arts)
         crumbs = [("トップ", "/"), ("よみもの", "/blog/"), (name, path)]
         write_page(path, page(name, f"あずけさき手帖の「{name}」の記事の一覧です。", path, body, crumbs=crumbs),
                    lastmod=newest(a["modified"] for a in arts))
