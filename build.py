@@ -162,6 +162,10 @@ CITY_PREF = {
     "青梅市": "tokyo",
     "国分寺市": "tokyo", "東久留米市": "tokyo", "千歳市": "hokkaido", "米沢市": "yamagata",
     "桐生市": "gunma",
+    "須賀川市": "fukushima", "稲沢市": "aichi", "綾部市": "kyoto", "白山市": "ishikawa",
+    "東近江市": "shiga",
+    "池田市": "osaka", "河内長野市": "osaka", "春日市": "fukuoka", "筑紫野市": "fukuoka",
+    "宜野湾市": "okinawa",
 }
 
 TYPE_LABELS = {
