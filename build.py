@@ -614,6 +614,71 @@ def load_articles():
     return articles
 
 
+def city_key_name(key):
+    """CITY_PREF のキー「府中市（東京都）」→ 市の名前「府中市」"""
+    return re.sub(r"[（(][^）)]*[）)]$", "", key)
+
+
+def article_city(a):
+    """市ごとの記事 → (都道府県スラッグ, 市区の名前) か None。
+    タイトルが「府中市…」でも「東京都府中市…」でも見つける"""
+    if a["category"] != "市ごとのあずけ先":
+        return None
+    for key, pref in sorted(CITY_PREF.items(), key=lambda x: -len(city_key_name(x[0]))):
+        name = city_key_name(key)
+        if a["title"].startswith(name) or a["title"].startswith(PREF_NAME.get(pref, "") + name):
+            return pref, name
+    return None
+
+
+def norm_city(text):
+    """施設の area などの文字から、市区町村の名前を取り出す（「札幌市東区」→「札幌市」、「羽後町林崎」→「羽後町」）"""
+    t = re.split(r"[（(・、,，\s]", str(text or ""), maxsplit=1)[0]
+    m = re.match(r"^(.+?市)(?!市)", t)
+    if m:
+        return m.group(1)
+    m = re.match(r"^(.+?[区町村])(?![区町村])", t)
+    if m:
+        return m.group(1)
+    return t
+
+
+def fac_city(f):
+    area = str(f.get("area") or "")
+    pn = PREF_NAME.get(f.get("pref"), "")
+    if pn and area.startswith(pn) and len(area) > len(pn):
+        area = area[len(pn):]
+    return norm_city(area)
+
+
+def fac_addr(f):
+    a = re.sub(r"^申請・相談窓口[：:]", "", str(f.get("address") or "")).strip()
+    pn = PREF_NAME.get(f.get("pref"), "")
+    return a[len(pn):] if pn and a.startswith(pn) else a
+
+
+def fac_in_city(f, pref, city):
+    """施設がその市区にあるか（京都市の「山科区」のように区だけのときは住所で見る）"""
+    if f.get("pref") != pref:
+        return False
+    c = fac_city(f)
+    if c == city:
+        return True
+    return c.endswith("区") and not city.endswith("区") and fac_addr(f).startswith(city)
+
+
+def fac_mini_list(facs):
+    """施設の小さな一覧（名前のリンク・地域・サービスの種類）"""
+    lis = []
+    for f in facs:
+        badge = status_badge(f)
+        meta = "・".join(x for x in [str(f.get("area") or ""), "、".join(type_labels(f.get("types")))] if x)
+        lis.append(f'<li><a href="{facility_path(f)}">{esc(f["name"])}</a>'
+                   + (f' <span class="tag tag-alert">{esc(badge[0])}</span>' if badge else "")
+                   + (f'<span class="mini-meta">{esc(meta)}</span>' if meta else "") + "</li>")
+    return '<ul class="fac-mini">' + "".join(lis) + "</ul>"
+
+
 def article_pref(a):
     """記事が関係する都道府県スラッグ（なければ None）"""
     if a["category"] == "都道府県のあずけ先":
@@ -836,7 +901,42 @@ def next_step_html(f):
             + "".join(rows) + "</section>")
 
 
-def build_facility_detail(f, prefinfo):
+def valid_facilities(fac_data):
+    return [f for f in (fac_data or {}).get("facilities", [])
+            if f.get("pref") in PREF_NAME and f.get("id") and f.get("name")]
+
+
+def nearby_html(f, pref_facs, city_articles):
+    """「同じ地域のほかの施設」：同じ市区から6か所まで。足りなければ同じ都道府県から"""
+    city = fac_city(f)
+    pref_facs = list(pref_facs)
+    n = len(pref_facs)
+    me = next((i for i, x in enumerate(pref_facs) if x is f), 0)
+
+    def near(x):  # 一覧（地域・名前の順）で近いものから。いつも同じ施設ばかりにならないように
+        d = abs(pref_facs.index(x) - me)
+        return min(d, n - d)
+    others = [x for x in pref_facs if x is not f]
+    same = sorted((x for x in others if city and fac_city(x) == city), key=near)
+    picks = same[:6]
+    if len(picks) < 6:
+        types = set(f.get("types") or [])
+        rest = sorted((x for x in others if x not in picks),
+                      key=lambda x: (not (types & set(x.get("types") or [])), near(x)))
+        picks += rest[:6 - len(picks)]
+    picks.sort(key=lambda x: (fac_city(x) != city, x.get("area") or "", x.get("name") or ""))
+    parts = []
+    if picks:
+        parts.append(fac_mini_list(picks))
+    arts = [a for a in city_articles if fac_in_city(f, *article_city(a))]
+    if arts:
+        parts.append('<p class="more">' + "　".join(f'<a href="{a["path"]}">{esc(a["h1"])}</a>' for a in arts[:2]) + "</p>")
+    if not parts:
+        return ""
+    return '<section class="nearby" aria-labelledby="nb-h"><h2 id="nb-h">同じ地域のほかの施設</h2>' + "".join(parts) + "</section>"
+
+
+def build_facility_detail(f, prefinfo, pref_facs=(), city_articles=()):
     pref = f["pref"]
     pname = prefinfo.get("name") or PREF_NAME.get(pref, pref)
     crumbs = [("トップ", "/"), (pname, f"/{pref}/"), (f["name"], facility_path(f))]
@@ -963,6 +1063,7 @@ def build_facility_detail(f, prefinfo):
 {src_html}
 <p class="note">このページは、上の公式ページの内容を、あずけさき手帖がまとめたものです。施設が書いたものや、施設に認められたものではありません。いちばん新しい内容は、公式ページでご確認ください。施設の方へ：まちがいのご連絡や、のせないでほしいご希望は、<a href="mailto:info@azukesaki.jp">info@azukesaki.jp</a> までお知らせください。すぐに直します。</p>
 <p class="notice">{FACILITY_NOTE}</p>
+{nearby_html(f, pref_facs, city_articles)}
 <p><a href="/{pref}/">{esc(pname)}のページにもどる</a>　<a href="/search/">ほかの施設をさがす</a></p>
 </article>"""
     desc = f"{pname}{('・' + f['area']) if f.get('area') else ''}の{f['name']}。" + (f.get("summary") or "") + FACILITY_NOTE + "。"
@@ -976,7 +1077,7 @@ def article_list_html(arts, cls="link-list"):
         f'<li><a href="{a["path"]}">{esc(a["h1"])}</a></li>' for a in arts) + "</ul>"
 
 
-def build_article(a, by_slug):
+def build_article(a, by_slug, facilities=()):
     cat = a["category"]
     cat_path = f"/category/{CAT_SLUG[cat]}/" if cat in CAT_SLUG else "/blog/"
     crumbs = [("トップ", "/"), (cat or "よみもの", cat_path), (a["title"], a["path"])]
@@ -998,6 +1099,15 @@ def build_article(a, by_slug):
     if a["modified"] != a["published"]:
         dates_html += f'<span class="date-sep">　</span>更新日：{time_html(a["modified"])}'
     body_html, toc = add_heading_ids(md_to_html(a["body"]))
+    city_html = ""
+    ac = article_city(a)
+    if ac:
+        cfacs = sorted((f for f in facilities if fac_in_city(f, ac[0], ac[1])),
+                       key=lambda f: (f.get("area") or "", f.get("name") or ""))
+        if cfacs:
+            city_html = (f'<section class="city-facs" aria-labelledby="cf-h"><h2 id="cf-h">{esc(ac[1])}の施設</h2>'
+                         f'<p>あずけさき手帖の施設の一覧から、{esc(ac[1])}にある施設をのせています（{len(cfacs)}か所）。'
+                         f'{FACILITY_NOTE}。</p>' + fac_mini_list(cfacs) + "</section>")
     toc_html = ""
     if len(toc) >= 2:
         toc_html = ('<nav class="toc" aria-labelledby="toc-h"><p class="toc-title" id="toc-h">この記事でわかること</p><ul>'
@@ -1010,6 +1120,7 @@ def build_article(a, by_slug):
 </header>
 {toc_html}
 {body_html}
+{city_html}
 {pref_box}
 </article>
 <p class="cta-box"><a href="/search/"><span class="cta-text">お住まいの地域のあずけ先をさがす →</span><span class="cta-sub">都道府県や、お子様に必要なケアからさがせます</span></a></p>
@@ -1237,12 +1348,22 @@ def build_prefs(articles, fac_data):
         else:
             facs = sorted(facs_by_pref.get(slug, []), key=lambda f: (f.get("area") or "", f.get("name") or ""))
             if facs:
-                parts.append(f"<p>{len(facs)}か所をのせています。</p>")
-                parts.append('<ul class="fac-list">' + "".join(facility_card(f) for f in facs) + "</ul>")
+                parts.append(f"<p>{len(facs)}か所をのせています。市区町村ごとに分けています。</p>")
+                groups = {}
+                for f in facs:
+                    groups.setdefault(fac_city(f) or "そのほか", []).append(f)
+                order = sorted(groups, key=lambda g: (g == "そのほか", g))
+                gids = {g: f"area-{i + 1}" for i, g in enumerate(order)}
+                parts.append('<nav class="jump" aria-label="市区町村"><ul class="chips">'
+                             + "".join(f'<li><a href="#{gids[g]}">{esc(g)}（{len(groups[g])}）</a></li>' for g in order)
+                             + "</ul></nav>")
+                for g in order:
+                    parts.append(f'<h3 id="{gids[g]}" class="area-head">{esc(g)}</h3>'
+                                 '<ul class="fac-list">' + "".join(facility_card(f) for f in groups[g]) + "</ul>")
             else:
                 parts.append('<p class="box">この県の施設は、ただいま整理しています。まとめの記事や、お住まいの市区町村の窓口もご覧ください。</p>')
             for f in facs:
-                build_facility_detail(f, info or {"name": name})
+                build_facility_detail(f, info or {"name": name}, facs, cities)
         parts.append('<p class="more"><a href="/search/">条件をえらんで施設をさがす</a></p>')
         crumbs = [("トップ", "/"), (name, path)]
         desc = f"{name}で、重い障害や医療的ケアのあるお子様をあずけられる短期入所・日中一時支援などの施設と、医療的ケア児支援センターなどの相談先をまとめています。"
@@ -1673,7 +1794,7 @@ def main():
         print("お知らせ: data/azukesaki_facilities.json がないので、施設の一覧なしで作ります。")
 
     for a in articles:
-        build_article(a, by_slug)
+        build_article(a, by_slug, valid_facilities(fac_data))
     build_top(articles, by_cat, fac_data)
     build_blog_index(by_cat)
     build_categories(by_cat)

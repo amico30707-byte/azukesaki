@@ -498,3 +498,12 @@ label.check input { width: 20px; height: 20px; accent-color: var(--green); }
 .ns-sub { display: block; margin-top: 4px; font-size: 0.86rem; color: var(--muted); }
 .ns-label { display: block; font-size: 0.86rem; color: var(--muted); }
 .ns-date { font-size: 0.9rem; color: var(--muted); }
+
+/* 施設の小さな一覧（同じ地域のほかの施設・市の記事の施設） */
+.fac-mini { list-style: none; margin: 0 0 1.2em; padding: 0 !important; }
+.fac-mini li { margin: 0; padding: 10px 0; border-bottom: 1px solid var(--line); }
+.fac-mini li:last-child { border-bottom: 0; }
+.fac-mini a { display: inline-block; min-height: 44px; line-height: 1.6; padding-top: 10px; }
+.mini-meta { display: block; font-size: 0.88rem; color: var(--muted); }
+.fac-mini .tag-alert { margin-left: 4px; }
+.area-head { scroll-margin-top: 100px; }
