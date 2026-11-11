@@ -154,6 +154,10 @@ CITY_PREF = {
     "桑名市": "mie",
     "海老名市": "kanagawa", "座間市": "kanagawa", "長岡京市": "kyoto", "福知山市": "kyoto",
     "うるま市": "okinawa",
+    "市原市": "chiba", "朝霞市": "saitama", "三郷市": "saitama", "藤枝市": "shizuoka",
+    "各務原市": "gifu",
+    "亀岡市": "kyoto", "鎌ケ谷市": "chiba", "一関市": "iwate", "小金井市": "tokyo",
+    "廿日市市": "hiroshima",
 }
 
 TYPE_LABELS = {
