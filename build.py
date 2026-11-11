@@ -315,6 +315,7 @@ FOOTER = f"""<footer class="site-footer">
         <li><a href="/contact/">お問い合わせ</a></li>
         <li><a href="/for-facilities/">施設・事業所の方へ</a></li>
         <li><a href="/jobs/">求人</a></li>
+        <li><a href="/koushin/">更新のきろく</a></li>
         <li><a href="/privacy/">プライバシー</a></li>
       </ul>
     </nav>
@@ -1629,12 +1630,91 @@ def build_search(fac_data):
                lastmod=newest(f.get("checked") for f in facs))
 
 
+KOUSHIN_PATH = "/koushin/"
+KOUSHIN_DAYS = 60
+KOUSHIN_FOLD = 12  # これより多い日は、たたんで見せる
+
+
+def build_koushin(articles, fac_data):
+    """更新のきろく：記事をのせた日・見なおした日ごと（新しい順、さいきんの60日）と、施設を確認した日ごとの数"""
+    today = datetime.date.fromisoformat(BUILD_DATE)
+    since = (today - datetime.timedelta(days=KOUSHIN_DAYS - 1)).isoformat()
+    cat_order = {n: i for i, (n, _) in enumerate(CATEGORIES)}
+    days = {}
+    for a in articles:
+        if a["published"] >= since:
+            days.setdefault(a["published"], {"new": [], "upd": []})["new"].append(a)
+        if a["modified"] != a["published"] and a["modified"] >= since:
+            days.setdefault(a["modified"], {"new": [], "upd": []})["upd"].append(a)
+
+    def art_list(arts, label):
+        arts = sorted(arts, key=lambda x: (cat_order.get(x["category"], 99), x["num"], x["slug"]))
+        lis = article_list_html(arts)
+        head = f'<h4 class="koushin-kind">{label}（{len(arts)}本）</h4>'
+        if len(arts) > KOUSHIN_FOLD:
+            return head + f'<details class="koushin-more"><summary>{len(arts)}本の記事を見る</summary>{lis}</details>'
+        return head + lis
+
+    secs = []
+    for d in sorted(days, reverse=True):
+        g = days[d]
+        parts = []
+        if g["new"]:
+            parts.append(art_list(g["new"], "新しくのせた記事"))
+        if g["upd"]:
+            parts.append(art_list(g["upd"], "内容を見なおした記事"))
+        secs.append(f'<section class="koushin-day"><h3 class="koushin-date">{time_html(d)}</h3>' + "".join(parts) + "</section>")
+    art_html = "".join(secs) if secs else "<p>この期間に、のせたり見なおしたりした記事はありません。</p>"
+
+    fac_html = ""
+    fac_newest = None
+    facs = valid_facilities(fac_data)
+    if facs:
+        cnt = {}
+        for f in facs:
+            d = norm_date(f.get("checked"))
+            if d:
+                cnt[d] = cnt.get(d, 0) + 1
+        fac_newest = max(cnt) if cnt else None
+        recent = sorted((d for d in cnt if d >= since), reverse=True)
+        older = sum(n for d, n in cnt.items() if d < since)
+        rows = "".join(f'<tr><th scope="row">{time_html(d)}</th><td>{cnt[d]}か所</td></tr>' for d in recent)
+        if older:
+            rows += f'<tr><th scope="row">{jp_date(since)}より前</th><td>{older}か所</td></tr>'
+        fac_html = f"""<h2 id="shisetsu">施設の情報を確認した日</h2>
+<p>のせている{len(facs)}か所の施設について、公式の情報を確かめた日（確認日）ごとの数です。それぞれの施設のページにも、確認日をのせています。</p>
+<div class="table-wrap"><table class="koushin-table"><caption class="visually-hidden">確認した日ごとの施設の数</caption>
+<thead><tr><th scope="col">確認した日</th><th scope="col">施設の数</th></tr></thead><tbody>{rows}</tbody></table></div>
+<p class="notice">{FACILITY_NOTE}。</p>"""
+
+    body = f"""<div class="prose">
+<h1>更新のきろく</h1>
+<p>あずけさき手帖で、記事をのせた日や、内容を見なおした日のきろくです。さいきんの{KOUSHIN_DAYS}日の分を、新しい順にのせています。</p>
+<nav aria-label="このページの中"><ul class="chips"><li><a href="#kiji">記事</a></li>{'<li><a href="#shisetsu">施設の確認日</a></li>' if fac_html else ''}</ul></nav>
+<h2 id="kiji">記事</h2>
+{art_html}
+{fac_html}
+</div>"""
+    crumbs = [("トップ", "/"), ("更新のきろく", KOUSHIN_PATH)]
+    lm = newest([d for d in days] + ([fac_newest] if fac_newest else []))
+    write_page(KOUSHIN_PATH, page("更新のきろく",
+                                  f"あずけさき手帖の更新のきろくです。さいきんの{KOUSHIN_DAYS}日に、のせた記事や見なおした記事を日ごとに、施設の情報を確認した日ごとの数とあわせてのせています。",
+                                  KOUSHIN_PATH, body, crumbs=crumbs), lastmod=lm)
+
+
+ABOUT_CHECK_LINE = ("確認する時期は、施設ごとにちがいます。確認日は、それぞれの施設のページにのせています"
+                    f'（確認した日ごとの数は「<a href="{KOUSHIN_PATH}">更新のきろく</a>」で見られます）')
+
+
 def build_about():
     text = open(os.path.join(CONTENT_DIR, ABOUT_FILE), encoding="utf-8").read()
     text = SETTING_RE.sub("", text).strip()
     text = re.sub(r"^#\s+.+\n", "", text, count=1).strip()
     # 「お問い合わせ」ページへのリンク
     h = md_to_html(text).replace("「お問い合わせ」ページ", '「<a href="/contact/">お問い合わせ</a>」ページ', 1)
+    # 「情報の確かめ方」の「確かめた日」の行のあとに、確認日の見方を1行たす
+    h = re.sub(r"(<li>施設ごとに、公式ページを確かめた日をのせています</li>)",
+               lambda m: m.group(1) + f"\n<li>{ABOUT_CHECK_LINE}</li>", h, count=1)
     body = f'<article class="prose"><h1>運営者情報</h1>{h}</article>'
     crumbs = [("トップ", "/"), ("運営者情報", "/about/")]
     write_page("/about/", page("運営者情報", "あずけさき手帖の運営者情報です。運営は株式会社Bright Future Family。サイトを作った理由や、情報の確かめ方をのせています。",
@@ -1965,6 +2045,7 @@ def main():
     build_categories(by_cat)
     build_prefs(articles, fac_data)
     build_search(fac_data)
+    build_koushin(articles, fac_data)
     build_about()
     build_contact()
     build_for_facilities()

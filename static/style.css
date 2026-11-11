@@ -429,6 +429,21 @@ label.check input { width: 24px; height: 24px; margin: 0; accent-color: var(--gr
 .button-sub:hover { background: var(--green-soft); color: var(--green-dark); }
 .finder-city { max-width: 22em; }
 
+/* 更新のきろく */
+.koushin-day { border-top: 1px solid var(--line); padding-top: 4px; margin-top: 18px; }
+.koushin-date { font-size: 1.12rem; }
+.koushin-kind { font-size: 0.96rem; color: var(--muted); margin: 12px 0 4px; }
+.koushin-day:first-of-type { border-top: 0; margin-top: 0; }
+.koushin-more summary { display: inline-flex; align-items: center; gap: 10px; min-height: 44px; cursor: pointer; color: var(--green-dark); list-style: none; text-decoration: underline; text-underline-offset: 4px; }
+.koushin-more summary::-webkit-details-marker { display: none; }
+.koushin-more summary::before {
+  content: ""; flex: none; width: 8px; height: 8px; margin-left: 2px;
+  border-right: 2px solid var(--green); border-bottom: 2px solid var(--green); transform: rotate(-45deg);
+}
+.koushin-more[open] summary::before { transform: rotate(45deg); }
+.koushin-more summary:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+.koushin-table { min-width: 0; max-width: 28em; }
+
 /* ---------------- フッター ---------------- */
 .site-footer { background: var(--paper-deep); border-top: 1px solid var(--line); padding: 32px 0 40px; font-size: 0.88rem; color: var(--muted); }
 .footer-brand { display: flex; align-items: center; gap: 8px; font-family: var(--serif); font-weight: 600; color: var(--ink); font-size: 1.02rem; letter-spacing: 0.1em; margin-bottom: 12px; }
