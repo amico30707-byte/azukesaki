@@ -557,6 +557,35 @@ def support_on(v):
     return st not in SUPPORT_NEGATIVE
 
 
+# 医療的ケアの処置の項目（supports のキーや medicalServices に出てくる名前）
+MEDICAL_ITEMS = {"tube", "tubeFeeding", "suction", "ventilator", "respirator", "oxygen",
+                 "tracheostomy", "catheter", "medical"}
+# medical: true を「医療的ケア」に数えるのは、根拠（fieldEvidence.medical）が公式の記載のときだけ
+MEDICAL_FLAG_STATUSES = {"listed", "partial"}
+
+
+def is_medical(f):
+    """施設のデータに、医療的ケアの受け入れの記載があるか"""
+    for k, v in (f.get("supports") or {}).items():
+        if k in MEDICAL_ITEMS and support_on(v):
+            return True
+    if any(m in MEDICAL_ITEMS for m in (f.get("medicalServices") or [])):
+        return True
+    if f.get("medical") is True:
+        ev = (f.get("fieldEvidence") or {}).get("medical") or {}
+        if str(ev.get("status", "")).lower() in MEDICAL_FLAG_STATUSES:
+            return True
+    return False
+
+
+def support_keys(f):
+    """検索とカードで使う、お子様の状態のキー（医療的ケアは処置の記載からも付ける）"""
+    keys = [k for k, v in (f.get("supports") or {}).items() if support_on(v)]
+    if "medical" not in keys and is_medical(f):
+        keys.insert(0, "medical")
+    return keys
+
+
 def type_labels(types):
     return [TYPE_LABELS.get(t, t) for t in (types or [])]
 
@@ -566,7 +595,7 @@ def tags_html(labels, cls="tag"):
 
 
 def facility_card(f):
-    supports = [SUPPORT_LABELS.get(k, k) for k, v in (f.get("supports") or {}).items() if support_on(v)]
+    supports = [SUPPORT_LABELS.get(k, k) for k in support_keys(f)]
     rows = []
     if f.get("area"):
         rows.append(f'<p class="fac-area">{esc(f["area"])}</p>')
@@ -992,9 +1021,10 @@ def build_search(fac_data):
     facs = [f for f in fac_data.get("facilities", []) if f.get("pref") in PREF_NAME and f.get("id") and f.get("name")]
     used_sup = []
     for f in facs:
-        for k, v in (f.get("supports") or {}).items():
-            if support_on(v) and k not in used_sup:
+        for k in support_keys(f):
+            if k not in used_sup:
                 used_sup.append(k)
+    used_sup.sort(key=lambda k: list(SUPPORT_LABELS).index(k) if k in SUPPORT_LABELS else 99)
     used_types = []
     for f in facs:
         for t in f.get("types") or []:
@@ -1008,7 +1038,7 @@ def build_search(fac_data):
         "items": [{
             "id": safe_id(f["id"]), "pref": f.get("pref"), "name": f.get("name"), "area": f.get("area", ""),
             "types": f.get("types") or [],
-            "support": [k for k, v in (f.get("supports") or {}).items() if support_on(v)],
+            "support": support_keys(f),
         } for f in facs],
     }
     os.makedirs(os.path.join(OUT_DIR, "search"), exist_ok=True)
