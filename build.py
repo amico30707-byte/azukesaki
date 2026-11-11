@@ -150,6 +150,10 @@ CITY_PREF = {
     "深谷市": "saitama",
     "鴻巣市": "saitama", "我孫子市": "chiba", "室蘭市": "hokkaido", "高砂市": "hyogo",
     "十和田市": "aomori",
+    "小平市": "tokyo", "東村山市": "tokyo", "武蔵野市": "tokyo", "多摩市": "tokyo",
+    "桑名市": "mie",
+    "海老名市": "kanagawa", "座間市": "kanagawa", "長岡京市": "kyoto", "福知山市": "kyoto",
+    "うるま市": "okinawa",
 }
 
 TYPE_LABELS = {
