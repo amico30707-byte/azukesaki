@@ -9,7 +9,9 @@ import html
 import json
 import os
 import re
+import hashlib
 import shutil
+import subprocess
 import sys
 
 import markdown
@@ -184,11 +186,12 @@ FACILITY_NOTE = "空きや受け入れは、かならず施設にご確認くだ
 
 # ---------------------------------------------------------------- 共通
 esc = html.escape
-PAGES = []  # sitemap 用の URL パス
+PAGES = []  # sitemap 用の (URL パス, 最終更新日 or None)
 
 
-def write_page(path, content, sitemap=True):
-    """path はサイト内のパス（/blog/x.html や /about/）"""
+def write_page(path, content, sitemap=True, lastmod=None):
+    """path はサイト内のパス（/blog/x.html や /about/）。
+    lastmod は、そのページの中身がほんとうに変わった日（わからないときは None で、sitemap に書かない）"""
     rel = path.lstrip("/")
     if rel == "" or rel.endswith("/"):
         rel += "index.html"
@@ -197,7 +200,7 @@ def write_page(path, content, sitemap=True):
     with open(full, "w", encoding="utf-8") as f:
         f.write(content)
     if sitemap:
-        PAGES.append(path)
+        PAGES.append((path, lastmod))
 
 
 def abs_url(path):
@@ -254,8 +257,26 @@ def icon_svg(slug, cls="cat-icon"):
 
 
 def jp_date(iso):
-    y, m, d = iso.split("-")
-    return f"{int(y)}年{int(m)}月{int(d)}日"
+    """2026-10-07 → 2026年10月7日、2026-03 → 2026年3月（読めない形はそのまま）"""
+    s = str(iso or "").strip()
+    m = re.fullmatch(r"(\d{4})-(\d{1,2})-(\d{1,2})", s)
+    if m:
+        return f"{int(m.group(1))}年{int(m.group(2))}月{int(m.group(3))}日"
+    m = re.fullmatch(r"(\d{4})-(\d{1,2})", s)
+    if m:
+        return f"{int(m.group(1))}年{int(m.group(2))}月"
+    return s
+
+
+def newest(dates):
+    ds = [d for d in (norm_date(x) for x in dates) if d]
+    return max(ds) if ds else None
+
+
+def time_html(iso):
+    if re.fullmatch(r"\d{4}-\d{2}-\d{2}", str(iso or "")):
+        return f'<time datetime="{iso}">{jp_date(iso)}</time>'
+    return esc(jp_date(iso))
 
 
 FOOTER = f"""<footer class="site-footer">
@@ -465,31 +486,113 @@ def parse_links(s):
     return res
 
 
+def split_articles(text):
+    """記事ファイルの文字 → [(設定, h1, 本文, スラッグ)]"""
+    text = text.replace("\r\n", "\n")
+    out = []
+    matches = list(SETTING_RE.finditer(text))
+    for i, m in enumerate(matches):
+        st = parse_settings(m.group(1))
+        end = matches[i + 1].start() if i + 1 < len(matches) else len(text)
+        body = text[m.end():end]
+        # 記事の区切り線（----------）より後ろは次の記事のもの
+        body = re.split(r"\n-{6,}\s*\n", body)[0].strip()
+        h1 = ""
+        mh = re.match(r"^#\s+(.+)\n", body + "\n")
+        if mh:
+            h1 = mh.group(1).strip()
+            body = body[mh.end():].strip()
+        slug = st.get("スラッグ") or ""
+        if not slug:
+            url = st.get("URL", "")
+            slug = os.path.splitext(os.path.basename(url))[0]
+        out.append((st, h1, body, slug))
+    return out
+
+
+def article_hash(h1, body):
+    return hashlib.sha1((h1 + "\n" + body).encode("utf-8")).hexdigest()
+
+
+def norm_date(s):
+    """「2026-11-11」「2026/11/11」「2026年11月11日」→ 2026-11-11（読めなければ None）"""
+    m = re.match(r"^\s*(\d{4})\s*[-/年.]\s*(\d{1,2})\s*[-/月.]\s*(\d{1,2})\s*日?\s*$", str(s or ""))
+    if not m:
+        return None
+    try:
+        return datetime.date(int(m.group(1)), int(m.group(2)), int(m.group(3))).isoformat()
+    except ValueError:
+        return None
+
+
+def git_article_dates():
+    """git の記録から、記事ごとに {スラッグ: (はじめてのった日, 本文が最後に変わった日)} を作る。
+    記事ファイルを1回のコミットごとに読み、本文（見出しと中身）が変わった日を「更新日」にする。"""
+    def git(*args, inp=None):
+        return subprocess.run(["git", "-C", ROOT, "-c", "core.quotepath=false", *args], input=inp,
+                              capture_output=True, check=True).stdout
+    try:
+        log = git("log", "--reverse", "--format=%H %ad", "--date=short", "--", "content").decode()
+    except (OSError, subprocess.CalledProcessError):
+        return {}, {}, {}
+    first, last, cur = {}, {}, {}
+    for line in log.splitlines():
+        sha, day = line.split()
+        tree = git("ls-tree", "--name-only", sha, "content/").decode().splitlines()
+        names = [n for n in tree if n.endswith(".md") and os.path.basename(n) != ABOUT_FILE]
+        if not names:
+            continue
+        blobs = git("cat-file", "--batch", inp="".join(f"{sha}:{n}\n" for n in names).encode())
+        seen = {}
+        pos = 0
+        for _ in names:
+            nl = blobs.index(b"\n", pos)
+            header = blobs[pos:nl].split()
+            size = int(header[2])
+            text = blobs[nl + 1:nl + 1 + size].decode("utf-8", "replace")
+            pos = nl + 1 + size + 1
+            for st, h1, body, slug in split_articles(text):
+                if slug:
+                    seen[slug] = article_hash(h1, body)
+        for slug, h in seen.items():
+            first.setdefault(slug, day)
+            if cur.get(slug) != h:
+                last[slug] = day
+                cur[slug] = h
+    return first, last, cur
+
+
+def git_file_date(relpath):
+    """そのファイルの最後のコミットの日（なければ None）"""
+    try:
+        out = subprocess.run(["git", "-C", ROOT, "log", "-1", "--format=%ad", "--date=short", "--", relpath],
+                             capture_output=True, check=True).stdout.decode().strip()
+        return out or None
+    except (OSError, subprocess.CalledProcessError):
+        return None
+
+
 def load_articles():
     articles = []
+    g_first, g_last, g_hash = git_article_dates()
     for fn in sorted(os.listdir(CONTENT_DIR)):
         if not fn.endswith(".md") or fn == ABOUT_FILE:
             continue
-        text = open(os.path.join(CONTENT_DIR, fn), encoding="utf-8").read().replace("\r\n", "\n")
-        matches = list(SETTING_RE.finditer(text))
-        for i, m in enumerate(matches):
-            st = parse_settings(m.group(1))
-            end = matches[i + 1].start() if i + 1 < len(matches) else len(text)
-            body = text[m.end():end]
-            # 記事の区切り線（----------）より後ろは次の記事のもの
-            body = re.split(r"\n-{6,}\s*\n", body)[0].strip()
-            h1 = ""
-            mh = re.match(r"^#\s+(.+)\n", body + "\n")
-            if mh:
-                h1 = mh.group(1).strip()
-                body = body[mh.end():].strip()
-            slug = st.get("スラッグ") or ""
-            if not slug:
-                url = st.get("URL", "")
-                slug = os.path.splitext(os.path.basename(url))[0]
+        text = open(os.path.join(CONTENT_DIR, fn), encoding="utf-8").read()
+        for st, h1, body, slug in split_articles(text):
             if not slug:
                 print(f"警告: スラッグがない記事を飛ばしました ({fn})", file=sys.stderr)
                 continue
+            # 日付：【設定】の「公開日」「更新日」があればそれ。なければ git の記録。
+            # git にまだない（コミット前の）記事や、コミット後に本文を変えた記事は、今日の日付。
+            h = article_hash(h1, body)
+            published = norm_date(st.get("公開日")) or g_first.get(slug) or BUILD_DATE
+            modified = norm_date(st.get("更新日"))
+            if not modified:
+                modified = g_last.get(slug) if g_hash.get(slug) == h else BUILD_DATE
+                modified = modified or BUILD_DATE
+            if modified < published:
+                modified = published
             title_full = st.get("タイトル", h1)
             title = re.sub(r"｜" + SITE_NAME + r"$", "", title_full).strip()
             articles.append({
@@ -505,6 +608,8 @@ def load_articles():
                 "links": parse_links(st.get("つなぐ記事", "")),
                 "body": body,
                 "guide": fn == GUIDE_FILE,
+                "published": published,
+                "modified": modified,
             })
     return articles
 
@@ -720,7 +825,7 @@ def build_facility_detail(f, prefinfo):
             row(_lab, esc(fmt_value(_v)))
     if f.get("phone"):
         row("電話", phone_html(f))
-    row("確認日", esc(str(f.get("checked", ""))) if f.get("checked") else "")
+    row("確認日", time_html(f["checked"]) if f.get("checked") else "")
 
     sup_html = ""
     sups = f.get("supports") or {}
@@ -740,7 +845,7 @@ def build_facility_detail(f, prefinfo):
                     else:
                         parts.append("出典：" + link_or_text(src, src))
                 if v.get("checked"):
-                    parts.append(f"確認日：{esc(str(v['checked']))}")
+                    parts.append(f"確認日：{time_html(v['checked'])}")
                 for ek, ev in v.items():
                     if ek in ("status", "note", "source", "checked", "label") or ev in (None, "", [], {}):
                         continue
@@ -800,7 +905,8 @@ def build_facility_detail(f, prefinfo):
 <p><a href="/{pref}/">{esc(pname)}のページにもどる</a>　<a href="/search/">ほかの施設をさがす</a></p>
 </article>"""
     desc = f"{pname}{('・' + f['area']) if f.get('area') else ''}の{f['name']}。" + (f.get("summary") or "") + FACILITY_NOTE + "。"
-    write_page(facility_path(f), page(f["name"], desc[:160], facility_path(f), body, crumbs=crumbs))
+    write_page(facility_path(f), page(f["name"], desc[:160], facility_path(f), body, crumbs=crumbs),
+               lastmod=norm_date(f.get("checked")))
 
 
 # ---------------------------------------------------------------- ページ生成
@@ -827,6 +933,9 @@ def build_article(a, by_slug):
     if pref:
         pref_box = (f'<p class="pref-box"><a href="/{pref}/">{esc(PREF_NAME[pref])}のページを見る'
                     f'（施設の一覧・相談先）</a></p>')
+    dates_html = f"公開日：{time_html(a['published'])}"
+    if a["modified"] != a["published"]:
+        dates_html += f'<span class="date-sep">　</span>更新日：{time_html(a["modified"])}'
     body_html, toc = add_heading_ids(md_to_html(a["body"]))
     toc_html = ""
     if len(toc) >= 2:
@@ -836,7 +945,7 @@ def build_article(a, by_slug):
 <header class="article-head">
 <p class="cat-label"><a href="{cat_path}">{esc(cat)}</a></p>
 <h1>{esc(a['h1'])}</h1>
-<p class="updated">更新日：<time datetime="{BUILD_DATE}">{jp_date(BUILD_DATE)}</time></p>
+<p class="updated">{dates_html}</p>
 </header>
 {toc_html}
 {body_html}
@@ -848,12 +957,13 @@ def build_article(a, by_slug):
         "@context": "https://schema.org", "@type": "Article",
         "headline": a["h1"], "description": a["description"],
         "inLanguage": "ja", "mainEntityOfPage": abs_url(a["path"]),
-        "datePublished": BUILD_DATE, "dateModified": BUILD_DATE,
+        "datePublished": a["published"], "dateModified": a["modified"],
         "author": {"@type": "Organization", "name": SITE_NAME, "url": abs_url("/about/")},
         "publisher": {"@type": "Organization", "name": "株式会社Bright Future Family"},
     }
     write_page(a["path"], page(a["title"], a["description"], a["path"], body, crumbs=crumbs,
-                               og_type="article", extra_ld=ld, full_title=a["title_full"]))
+                               og_type="article", extra_ld=ld, full_title=a["title_full"]),
+               lastmod=a["modified"])
 
 
 def article_card(r):
@@ -961,8 +1071,9 @@ def build_top(articles, by_cat, fac_data):
 </section>"""
     ld = {"@context": "https://schema.org", "@type": "WebSite", "name": SITE_NAME,
           "url": abs_url("/"), "inLanguage": "ja", "description": SITE_SUBTITLE}
+    lm = newest([a["modified"] for a in articles] + [f.get("checked") for f in (fac_data or {}).get("facilities", [])])
     write_page("/", page(SITE_NAME, f"{SITE_SUBTITLE}。短期入所や日中一時支援などのあずけ先を、都道府県や必要なケアからさがせます。",
-                         "/", body, extra_ld=ld, wide=True))
+                         "/", body, extra_ld=ld, wide=True), lastmod=lm)
 
 
 def build_blog_index(by_cat):
@@ -975,7 +1086,8 @@ def build_blog_index(by_cat):
     body = f'<h1>よみもの</h1><nav aria-label="カテゴリ"><ul class="chips">{toc}</ul></nav>' + "".join(secs)
     crumbs = [("トップ", "/"), ("よみもの", "/blog/")]
     write_page("/blog/", page("よみもの", "あずけさき手帖の記事の一覧です。はじめての方へ、あずけ先の種類、お子様の状態別、家族の暮らし、18歳から先のこと、都道府県・市ごとのあずけ先。",
-                              "/blog/", body, crumbs=crumbs))
+                              "/blog/", body, crumbs=crumbs),
+               lastmod=newest(a["modified"] for arts in by_cat.values() for a in arts))
 
 
 def build_categories(by_cat):
@@ -987,7 +1099,8 @@ def build_categories(by_cat):
         body = (f'<header class="cat-head">{icon_svg(slug, "cat-icon cat-icon-lg")}<h1>{esc(name)}</h1>'
                 f'<p class="small">{len(arts)}本の記事があります。</p></header><ul class="article-list">{items}</ul>')
         crumbs = [("トップ", "/"), ("よみもの", "/blog/"), (name, path)]
-        write_page(path, page(name, f"あずけさき手帖の「{name}」の記事の一覧です。", path, body, crumbs=crumbs))
+        write_page(path, page(name, f"あずけさき手帖の「{name}」の記事の一覧です。", path, body, crumbs=crumbs),
+                   lastmod=newest(a["modified"] for a in arts))
 
 
 def build_prefs(articles, fac_data):
@@ -1031,7 +1144,7 @@ def build_prefs(articles, fac_data):
             if c.get("source"):
                 srcs.append("出典：" + link_or_text(c["source"], c["source"]) if re.match(r"^https?://", str(c["source"])) else "出典：" + esc(str(c["source"])))
             if c.get("sourceAsOf"):
-                srcs.append(f"確認日：{esc(str(c['sourceAsOf']))}")
+                srcs.append(f"確認日：{time_html(c['sourceAsOf'])}")
             if srcs:
                 ctext.append(f'<p class="small">{"　".join(srcs)}</p>')
             parts.append('<div class="box center-box">' + "".join(ctext) + "</div>")
@@ -1046,7 +1159,7 @@ def build_prefs(articles, fac_data):
                 if r.get("note"):
                     extra.append(esc(str(r["note"])))
                 if r.get("checked"):
-                    extra.append(f"確認日：{esc(str(r['checked']))}")
+                    extra.append(f"確認日：{time_html(r['checked'])}")
                 lis.append(f"<li>{t}" + (f'<br><span class="small">{"　".join(extra)}</span>' if extra else "") + "</li>")
             parts.append("<h2>公式の相談先・案内</h2><ul>" + "".join(lis) + "</ul>")
         if matome or cities:
@@ -1068,8 +1181,12 @@ def build_prefs(articles, fac_data):
         parts.append('<p class="more"><a href="/search/">条件をえらんで施設をさがす</a></p>')
         crumbs = [("トップ", "/"), (name, path)]
         desc = f"{name}で、重い障害や医療的ケアのあるお子様をあずけられる短期入所・日中一時支援などの施設と、医療的ケア児支援センターなどの相談先をまとめています。"
+        lm = newest([f.get("checked") for f in facs_by_pref.get(slug, [])]
+                    + [a["modified"] for a in matome + cities]
+                    + [c.get("pageChecked"), c.get("sourceChecked")]
+                    + [r.get("checked") for r in info.get("resources") or []])
         write_page(path, page(f"{name}の障害児のあずけ先・短期入所", desc, path,
-                              '<div class="prose">' + "".join(parts) + "</div>", crumbs=crumbs))
+                              '<div class="prose">' + "".join(parts) + "</div>", crumbs=crumbs), lastmod=lm)
 
 
 def build_search(fac_data):
@@ -1149,7 +1266,8 @@ def build_search(fac_data):
 {pref_grid_html()}
 </div>"""
     write_page(path, page("施設さがし", "都道府県・使いたい支援・必要なケアから、障害のあるお子様のあずけ先をさがせます。", path, body,
-                          crumbs=crumbs, scripts='<script src="/static/search.js" defer></script>\n'))
+                          crumbs=crumbs, scripts='<script src="/static/search.js" defer></script>\n'),
+               lastmod=newest(f.get("checked") for f in facs))
 
 
 def build_about():
@@ -1161,7 +1279,8 @@ def build_about():
     body = f'<article class="prose"><h1>運営者情報</h1>{h}</article>'
     crumbs = [("トップ", "/"), ("運営者情報", "/about/")]
     write_page("/about/", page("運営者情報", "あずけさき手帖の運営者情報です。運営は株式会社Bright Future Family。サイトを作った理由や、情報の確かめ方をのせています。",
-                               "/about/", body, crumbs=crumbs))
+                               "/about/", body, crumbs=crumbs),
+               lastmod=git_file_date("content/" + ABOUT_FILE))
 
 
 def build_contact():
@@ -1319,7 +1438,8 @@ def build_404():
 
 
 def build_meta_files():
-    urls = "".join(f"<url><loc>{esc(abs_url(p))}</loc><lastmod>{BUILD_DATE}</lastmod></url>\n" for p in PAGES)
+    urls = "".join(f"<url><loc>{esc(abs_url(p))}</loc>" + (f"<lastmod>{lm}</lastmod>" if lm else "") + "</url>\n"
+                   for p, lm in PAGES)
     with open(os.path.join(OUT_DIR, "sitemap.xml"), "w", encoding="utf-8") as f:
         f.write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + urls + "</urlset>\n")
     with open(os.path.join(OUT_DIR, "robots.txt"), "w", encoding="utf-8") as f:
@@ -1493,7 +1613,7 @@ def main():
     build_404()
     build_meta_files()
     build_llms(articles, by_cat, fac_data)
-    nfac = sum(1 for p in PAGES if p.startswith("/facility/"))
+    nfac = sum(1 for p, _ in PAGES if p.startswith("/facility/"))
     print(f"完了: 記事 {len(articles)} 本 / 施設 {nfac} 件 / sitemap {len(PAGES)} URL → {OUT_DIR}")
 
 
