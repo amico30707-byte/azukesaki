@@ -166,6 +166,10 @@ CITY_PREF = {
     "東近江市": "shiga",
     "池田市": "osaka", "河内長野市": "osaka", "春日市": "fukuoka", "筑紫野市": "fukuoka",
     "宜野湾市": "okinawa",
+    "羽曳野市": "osaka", "摂津市": "osaka", "泉佐野市": "osaka", "交野市": "osaka",
+    "伊勢原市": "kanagawa",
+    "安曇野市": "nagano", "佐久市": "nagano", "飯田市": "nagano", "伊那市": "nagano",
+    "塩尻市": "nagano",
 }
 
 TYPE_LABELS = {
