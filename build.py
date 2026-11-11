@@ -134,6 +134,8 @@ CITY_PREF = {
     "磐田市": "shizuoka", "浦安市": "chiba",
     "習志野市": "chiba", "久喜市": "saitama", "富士宮市": "shizuoka", "門真市": "osaka",
     "会津若松市": "fukushima",
+    "箕面市": "osaka", "守口市": "osaka", "小樽市": "hokkaido", "江別市": "hokkaido",
+    "掛川市": "shizuoka",
 }
 
 TYPE_LABELS = {
