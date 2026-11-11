@@ -811,6 +811,68 @@ def support_keys(f):
     return keys
 
 
+# 医療的ケアの内容でしぼりこむ項目。キー: (表示の名前, データでの別名)
+# 施設のデータにある項目だけを使う（およそ CARE_MIN か所以上あるものだけ、画面に出す）
+CARE_ITEMS = {
+    "suction": ("たんの吸引", ()),
+    "tube": ("経管栄養（胃ろう・鼻からなど）", ("tubeFeeding",)),
+    "ventilator": ("人工呼吸器", ("respirator",)),
+    "oxygen": ("酸素", ()),
+    "tracheostomy": ("気管切開", ()),
+    "catheter": ("導尿", ()),
+}
+CARE_MIN = 5
+# 公式の情報に「のっている」とみなす根拠のしるし（「施設に相談」はふくめない）
+CARE_OK_STATUSES = {"listed", "partial"}
+CARE_NOTE = "施設の公式情報にのっている内容です。受け入れはかならず施設にご確認ください"
+
+
+def _ev_status(v):
+    if isinstance(v, dict):
+        return str(v.get("status", "")).strip().lower()
+    return str(v or "").strip().lower()
+
+
+def care_keys(f):
+    """その施設の公式情報に、のっている（listed / partial）医療的ケアの項目のキー"""
+    sups = f.get("supports") or {}
+    ev = f.get("fieldEvidence") or {}
+    ms = set(f.get("medicalServices") or [])
+    med_ev = _ev_status(ev.get("medical"))
+    out = []
+    for k, (_, alias) in CARE_ITEMS.items():
+        names = (k,) + alias
+        sup = next((sups[n] for n in names if n in sups), None)
+        if sup is not None:
+            # supports にあるときは、その根拠のしるしだけで決める（「相談」なら入れない）
+            ok = _ev_status(sup) in CARE_OK_STATUSES
+        elif any(_ev_status(ev.get(n)) in CARE_OK_STATUSES for n in names):
+            ok = True
+        elif any(n in ms for n in names):
+            # medicalServices にだけあるときは、医療的ケアの根拠（fieldEvidence.medical）で決める
+            ok = med_ev in CARE_OK_STATUSES
+        else:
+            ok = False
+        if ok:
+            out.append(k)
+    return out
+
+
+def care_counts(facs):
+    """{キー: 施設の数}（CARE_ITEMS の順）"""
+    cnt = {k: 0 for k in CARE_ITEMS}
+    for f in facs:
+        for k in care_keys(f):
+            cnt[k] += 1
+    return cnt
+
+
+def shown_care_items(facs):
+    """画面に出す項目 [(キー, 名前)]"""
+    cnt = care_counts(facs)
+    return [(k, CARE_ITEMS[k][0]) for k in CARE_ITEMS if cnt[k] >= CARE_MIN]
+
+
 def type_labels(types):
     return [TYPE_LABELS.get(t, t) for t in (types or [])]
 
@@ -1202,6 +1264,30 @@ def pref_grid_html(hlevel=3):
 QUICK_SUPPORTS = ["medical", "pimd", "ventilator", "tube", "suction", "behavior"]
 
 
+def care_fieldset_html(items, *, finder):
+    """医療的ケアの内容のチェックボックス（name="care"）。items: [(キー, 名前)]"""
+    if not items:
+        return ""
+    if finder:
+        boxes = "".join(
+            f'<label class="chip"><input type="checkbox" name="care" value="{esc(k)}"><span>{esc(n)}</span></label>'
+            for k, n in items)
+        return f"""<details class="finder-field finder-care" id="qs-care">
+    <summary class="care-summary">医療的ケアの内容でさがす</summary>
+    <fieldset class="care-set" aria-describedby="qs-care-note">
+      <legend class="finder-label">必要な医療的ケア<span class="finder-hint">（えらんだものすべてに合う施設）</span></legend>
+      <div class="chip-row">{boxes}</div>
+    </fieldset>
+    <p id="qs-care-note" class="care-note">{CARE_NOTE}。</p>
+  </details>"""
+    boxes = "".join(
+        f'<label class="check"><input type="checkbox" name="care" value="{esc(k)}"> {esc(n)}</label>'
+        for k, n in items)
+    return f"""<fieldset class="field care-set" aria-describedby="f-care-note"><legend>医療的ケアの内容（えらんだものすべてに合う施設）</legend>
+    {boxes}
+    <p id="f-care-note" class="care-note">{CARE_NOTE}。</p></fieldset>"""
+
+
 def about_excerpt():
     """運営者情報の「このサイトを作った理由」のはじめの2文"""
     text = open(os.path.join(CONTENT_DIR, ABOUT_FILE), encoding="utf-8").read()
@@ -1216,9 +1302,13 @@ def quick_search_html(fac_data):
     type_chips = '<label class="chip"><input type="radio" name="type" value="" checked><span>こだわらない</span></label>' + "".join(
         f'<label class="chip"><input type="radio" name="type" value="{k}"><span>{esc(v)}</span></label>'
         for k, v in TYPE_LABELS.items())
+    care_items = shown_care_items(valid_facilities(fac_data)) if fac_data else []
+    care_set = {k for k, _ in care_items}
+    # 医療的ケアの内容（吸引など）は、下の「医療的ケアの内容でさがす」でえらぶ
     sup_chips = "".join(
         f'<label class="chip"><input type="checkbox" name="support" value="{k}"><span>{esc(SUPPORT_LABELS[k])}</span></label>'
-        for k in QUICK_SUPPORTS if k in SUPPORT_LABELS)
+        for k in QUICK_SUPPORTS if k in SUPPORT_LABELS and k not in care_set)
+    care_html = care_fieldset_html(care_items, finder=True)
     has = "1" if fac_data else "0"
     return f"""<form id="quick-search" class="finder" action="/search/" method="get" data-facilities="{has}" aria-labelledby="finder-h">
   <h2 id="finder-h" class="finder-title">あずけ先をさがす</h2>
@@ -1234,6 +1324,7 @@ def quick_search_html(fac_data):
     <legend class="finder-label">お子様の状態<span class="finder-hint">（いくつでも）</span></legend>
     <div class="chip-row">{sup_chips}</div>
   </fieldset>
+  {care_html}
   <div class="finder-field finder-city">
     <label for="qs-q" class="finder-label">市区町村の名前<span class="finder-hint">（なくてもさがせます）</span></label>
     <input id="qs-q" name="q" type="search" autocomplete="off" placeholder="例：岡崎市、山科区">
@@ -1479,6 +1570,8 @@ def build_search(fac_data):
             if k not in used_sup:
                 used_sup.append(k)
     used_sup.sort(key=lambda k: list(SUPPORT_LABELS).index(k) if k in SUPPORT_LABELS else 99)
+    care_items = shown_care_items(facs)
+    care_set = {k for k, _ in care_items}
     used_types = []
     for f in facs:
         for t in f.get("types") or []:
@@ -1489,11 +1582,13 @@ def build_search(fac_data):
         "prefs": {s: n for s, n, _ in PREFS},
         "types": {t: TYPE_LABELS.get(t, t) for t in used_types},
         "supports": {k: SUPPORT_LABELS.get(k, k) for k in used_sup},
+        "care": {k: n for k, n in care_items},
         "items": [{
             "id": safe_id(f["id"]), "pref": f.get("pref"), "name": f.get("name"), "area": f.get("area", ""),
             **({"addr": search_address(f)} if search_address(f) else {}),
             "types": f.get("types") or [],
             "support": support_keys(f),
+            **({"care": [k for k in care_keys(f) if k in care_set]} if any(k in care_set for k in care_keys(f)) else {}),
             **({"status": status_badge(f)[0]} if status_badge(f) else {}),
         } for f in facs],
     }
@@ -1504,7 +1599,8 @@ def build_search(fac_data):
     type_opts = "".join(f'<option value="{t}">{esc(TYPE_LABELS.get(t, t))}</option>' for t in used_types)
     sup_boxes = "".join(
         f'<label class="check"><input type="checkbox" name="support" value="{esc(k)}"> {esc(SUPPORT_LABELS.get(k, k))}</label>'
-        for k in used_sup)
+        for k in used_sup if k not in care_set)
+    care_html = care_fieldset_html(care_items, finder=False)
     body = f"""<div class="prose">
 <h1>施設さがし</h1>
 <p>都道府県や、使いたい支援、お子様に必要なケアをえらんでください。</p>
@@ -1515,6 +1611,7 @@ def build_search(fac_data):
   <div class="field"><label for="f-type">使いたい支援</label>
     <select id="f-type" name="type"><option value="">すべて</option>{type_opts}</select></div>
   {'<fieldset class="field"><legend>お子様に必要なこと（えらんだものすべてに合う施設）</legend>' + sup_boxes + '</fieldset>' if sup_boxes else ''}
+  {care_html}
   <div class="field"><label for="f-q">名前・市区町村・住所で しぼりこむ</label>
     <input id="f-q" name="q" type="search" autocomplete="off" placeholder="例：岡崎市、山科区"></div>
   <p class="search-submit"><button type="submit" class="button">この条件でさがす</button></p>

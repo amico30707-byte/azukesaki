@@ -17,7 +17,7 @@
 
   function hasParams() {
     var p = new URLSearchParams(location.search);
-    return !!(p.get("pref") || p.get("type") || p.get("q") || p.getAll("support").length);
+    return !!(p.get("pref") || p.get("type") || p.get("q") || p.getAll("support").length || p.getAll("care").length);
   }
 
   function readParams() {
@@ -26,16 +26,25 @@
     if (p.get("type")) form.type.value = p.get("type");
     if (p.get("q")) form.q.value = p.get("q");
     var sups = p.getAll("support");
+    var cares = p.getAll("care");
+    // 前のURL（support=suction など）も、医療的ケアの内容のチェックにする
+    var careBoxes = form.querySelectorAll('input[name="care"]');
+    var careVals = Array.prototype.map.call(careBoxes, function (b) { return b.value; });
+    sups.forEach(function (s) { if (careVals.indexOf(s) !== -1 && cares.indexOf(s) === -1) cares.push(s); });
     Array.prototype.forEach.call(form.querySelectorAll('input[name="support"]'), function (b) {
       b.checked = sups.indexOf(b.value) !== -1;
     });
+    Array.prototype.forEach.call(careBoxes, function (b) {
+      b.checked = cares.indexOf(b.value) !== -1;
+    });
   }
 
-  function writeParams(pref, type, sups, q) {
+  function writeParams(pref, type, sups, cares, q) {
     var p = new URLSearchParams();
     if (pref) p.set("pref", pref);
     if (type) p.set("type", type);
     sups.forEach(function (s) { p.append("support", s); });
+    cares.forEach(function (s) { p.append("care", s); });
     if (q) p.set("q", q);
     var qs = p.toString();
     history.replaceState(null, "", location.pathname + (qs ? "?" + qs : ""));
@@ -52,13 +61,17 @@
       pref: form.pref.value,
       type: form.type.value,
       q: (form.q.value || "").trim(),
-      sups: Array.prototype.map.call(form.querySelectorAll('input[name="support"]:checked'), function (b) { return b.value; })
+      sups: Array.prototype.map.call(form.querySelectorAll('input[name="support"]:checked'), function (b) { return b.value; }),
+      cares: Array.prototype.map.call(form.querySelectorAll('input[name="care"]:checked'), function (b) { return b.value; })
     };
   }
 
   function noResultHelp(c) {
     if (!helpEl) return;
     var items = [];
+    if (c.cares.length) {
+      items.push('<li><button type="button" class="button button-sub" data-clear="care">医療的ケアの内容の条件をはずす</button></li>');
+    }
     if (c.type || c.sups.length) {
       items.push('<li><button type="button" class="button button-sub" data-clear="conditions">使いたい支援とお子様の状態の条件をはずす</button></li>');
     }
@@ -79,9 +92,9 @@
   function render() {
     if (!data) return;
     var c = current();
-    writeParams(c.pref, c.type, c.sups, c.q);
+    writeParams(c.pref, c.type, c.sups, c.cares, c.q);
     if (helpEl) { helpEl.hidden = true; helpEl.innerHTML = ""; }
-    if (!c.pref && !c.type && !c.q && !c.sups.length) {
+    if (!c.pref && !c.type && !c.q && !c.sups.length && !c.cares.length) {
       list.innerHTML = "";
       countEl.textContent = "都道府県や条件をえらぶと、ここに施設が出ます（ぜんぶで" + data.items.length + "か所）。";
       return;
@@ -90,6 +103,8 @@
       if (c.pref && it.pref !== c.pref) return false;
       if (c.type && it.types.indexOf(c.type) === -1) return false;
       for (var i = 0; i < c.sups.length; i++) if (it.support.indexOf(c.sups[i]) === -1) return false;
+      var care = it.care || [];
+      for (var j = 0; j < c.cares.length; j++) if (care.indexOf(c.cares[j]) === -1) return false;
       if (c.q && (it.name + " " + it.area + " " + (it.addr || "") + " " + (data.prefs[it.pref] || "")).indexOf(c.q) === -1) return false;
       return true;
     });
@@ -117,7 +132,9 @@
     helpEl.addEventListener("click", function (e) {
       var b = e.target.closest("button[data-clear]");
       if (!b) return;
-      if (b.getAttribute("data-clear") === "conditions") {
+      if (b.getAttribute("data-clear") === "care") {
+        Array.prototype.forEach.call(form.querySelectorAll('input[name="care"]'), function (x) { x.checked = false; });
+      } else if (b.getAttribute("data-clear") === "conditions") {
         form.type.value = "";
         Array.prototype.forEach.call(form.querySelectorAll('input[name="support"]'), function (x) { x.checked = false; });
       } else {
