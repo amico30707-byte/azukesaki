@@ -657,6 +657,42 @@ def link_or_text(label, url):
     return esc(str(label or url or ""))
 
 
+PHONE_SPLIT_RE = re.compile(r"\s*(?:/|／|・|、|，|,)\s*")
+PHONE_CHECK_NOTE = "番号は公式ページでご確認ください"
+
+
+def phone_links(phone):
+    """電話の文字を番号ごとに分け、10けた以上のものだけ tel: リンクにする"""
+    out = []
+    for part in PHONE_SPLIT_RE.split(str(phone).strip()):
+        if not part:
+            continue
+        digits = re.sub(r"[^0-9]", "", part)
+        if len(digits) >= 10:
+            out.append(f'<a class="tel" href="tel:{esc(digits)}">{esc(part)}</a>')
+        else:
+            out.append(f'<span class="tel-text">{esc(part)}</span>')
+    return out
+
+
+def phone_needs_check(f):
+    """番号の根拠が「公式に掲載」でないとき、または市外局番がなくてリンクにできないとき"""
+    ev = (f.get("fieldEvidence") or {}).get("phone") or {}
+    if str(ev.get("status", "")).lower() != "listed":
+        return True
+    return any(len(re.sub(r"[^0-9]", "", p)) < 10 for p in PHONE_SPLIT_RE.split(str(f.get("phone") or "")) if p)
+
+
+def phone_html(f, with_label=True):
+    parts = phone_links(f["phone"])
+    h = '<span class="tel-list">' + "".join(f'<span class="tel-item">{p}</span>' for p in parts) + "</span>"
+    if with_label and f.get("phoneLabel"):
+        h += f'<span class="tel-label">{esc(str(f["phoneLabel"]))}</span>'
+    if phone_needs_check(f):
+        h += f'<span class="tel-check">{PHONE_CHECK_NOTE}</span>'
+    return h
+
+
 def build_facility_detail(f, prefinfo):
     pref = f["pref"]
     pname = prefinfo.get("name") or PREF_NAME.get(pref, pref)
@@ -683,8 +719,7 @@ def build_facility_detail(f, prefinfo):
         if _v and not re.fullmatch(r"(利用できる時間|利用できる曜日|利用料・食事や外出などの実費|お住まいの地域から利用できるか)は要確認", str(_v)):
             row(_lab, esc(fmt_value(_v)))
     if f.get("phone"):
-        tel = re.sub(r"[^0-9+]", "", str(f["phone"]))
-        row("電話", f'<a href="tel:{esc(tel)}">{esc(str(f["phone"]))}</a>' if tel else esc(str(f["phone"])))
+        row("電話", phone_html(f))
     row("確認日", esc(str(f.get("checked", ""))) if f.get("checked") else "")
 
     sup_html = ""

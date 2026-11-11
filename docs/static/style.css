@@ -374,6 +374,13 @@ td + td, th + th { border-left: 1px solid #ece6d9; }
 .tag { display: inline-block; font-size: 0.8rem; line-height: 1.6; padding: 1px 10px; border-radius: 999px; background: var(--green-soft); color: var(--green-dark); }
 .tag-soft { background: var(--apricot-soft); color: var(--apricot-ink); }
 .tag-alert { background: #a8442a; color: #fff; }
+
+/* 電話 */
+.tel-list { display: block; }
+.tel-item { display: block; }
+a.tel { display: inline-block; min-height: 44px; line-height: 44px; font-size: 1.06rem; }
+.tel-label { display: block; font-size: 0.9rem; color: var(--muted); line-height: 1.7; }
+.tel-check { display: block; margin-top: 4px; font-size: 0.9rem; color: var(--apricot-ink); }
 dl.info { margin: 0 0 1.6em; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-lg); padding: 4px 20px; }
 dl.info dt { font-size: 0.86rem; color: var(--muted); padding-top: 12px; }
 dl.info dd { margin: 0; padding-bottom: 12px; border-bottom: 1px solid var(--line); }
