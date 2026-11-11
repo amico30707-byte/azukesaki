@@ -140,6 +140,10 @@ CITY_PREF = {
     "生駒市": "nara",
     "戸田市": "saitama", "日野市": "tokyo", "西条市": "ehime", "土浦市": "ibaraki",
     "ひたちなか市": "ibaraki",
+    "飯塚市": "fukuoka", "酒田市": "yamagata", "狭山市": "saitama", "入間市": "saitama",
+    "足利市": "tochigi",
+    "古河市": "ibaraki", "大東市": "osaka", "瀬戸市": "aichi", "薩摩川内市": "kagoshima",
+    "岩見沢市": "hokkaido",
 }
 
 TYPE_LABELS = {
