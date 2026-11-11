@@ -146,6 +146,10 @@ CITY_PREF = {
     "足利市": "tochigi",
     "古河市": "ibaraki", "大東市": "osaka", "瀬戸市": "aichi", "薩摩川内市": "kagoshima",
     "岩見沢市": "hokkaido",
+    "延岡市": "miyazaki", "半田市": "aichi", "芦屋市": "hyogo", "佐野市": "tochigi",
+    "深谷市": "saitama",
+    "鴻巣市": "saitama", "我孫子市": "chiba", "室蘭市": "hokkaido", "高砂市": "hyogo",
+    "十和田市": "aomori",
 }
 
 TYPE_LABELS = {
