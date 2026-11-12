@@ -187,7 +187,9 @@ CITY_PREF = {
     "横手市": "akita", "伊万里市": "saga", "島原市": "nagasaki", "天草市": "kumamoto",
     "萩市": "yamaguchi",
     "真庭市": "okayama", "南国市": "kochi", "長門市": "yamaguchi", "柳井市": "yamaguchi",
-    "安来市": "shimane",
+    "安来市": "shimane", "印西市": "chiba", "四街道市": "chiba", "君津市": "chiba",
+    "袖ケ浦市": "chiba", "牛久市": "ibaraki",
+    "和光市": "saitama", "志木市": "saitama", "飯能市": "saitama", "東松山市": "saitama",
 }
 
 TYPE_LABELS = {
