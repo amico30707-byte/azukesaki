@@ -207,6 +207,9 @@ SUPPORT_STATUS_LABELS = {
 SUPPORT_NEGATIVE = {"no", "none", "unknown", "", "false", "不可"}
 
 FACILITY_NOTE = "空きや受け入れは、かならず施設にご確認ください"
+AKI_NOTE = "空きは毎日かわります。かならず公式ページや施設でご確認ください"
+AKI_FILE = os.path.join(ROOT, "data", "aki_links.json")
+SUPPORT_SHEET_PATH = "/support-book-sheet/"
 
 # ---------------------------------------------------------------- 共通
 esc = html.escape
@@ -1182,6 +1185,44 @@ def build_facility_detail(f, prefinfo, pref_facs=(), city_articles=()):
 
 
 # ---------------------------------------------------------------- ページ生成
+def load_aki_links():
+    """data/aki_links.json（自治体の空き・予約のしくみの公式ページ）を、県ごとにまとめる"""
+    if not os.path.exists(AKI_FILE):
+        return {}
+    with open(AKI_FILE, encoding="utf-8") as f:
+        items = json.load(f)
+    by_pref = {}
+    for it in items:
+        if it.get("pref") in PREF_NAME and it.get("name") and re.match(r"^https?://", str(it.get("url") or "")):
+            by_pref.setdefault(it["pref"], []).append(it)
+        else:
+            print(f"警告: aki_links.json の項目を飛ばしました: {it.get('name')}", file=sys.stderr)
+    return by_pref
+
+
+AKI_LINKS = {}
+
+
+def aki_links_html(pref, hlevel=2, hid="aki"):
+    """県のページ・市の記事に出す「空きや予約のしくみ（公式）」"""
+    items = AKI_LINKS.get(pref) or []
+    if not items:
+        return ""
+    lis = []
+    for it in items:
+        meta = []
+        if it.get("pageUpdated"):
+            meta.append(f"<span>ページの更新日：{time_html(it['pageUpdated'])}</span>")
+        if it.get("checked"):
+            meta.append(f"<span>確認日：{time_html(it['checked'])}</span>")
+        lis.append(f'<li><a href="{esc(it["url"])}" rel="noopener">{esc(it["name"])}</a>'
+                   + (f'<br>{esc(it["description"])}' if it.get("description") else "")
+                   + (f'<br><span class="small aki-meta">{"　".join(meta)}</span>' if meta else "") + "</li>")
+    return (f'<section class="box aki-box" aria-labelledby="{hid}-h"><h{hlevel} id="{hid}-h">空きや予約のしくみ（公式）</h{hlevel}>'
+            f'<ul class="aki-list">{"".join(lis)}</ul>'
+            f'<p class="small">{AKI_NOTE}。</p></section>')
+
+
 def article_list_html(arts, cls="link-list"):
     return f'<ul class="{cls}">' + "".join(
         f'<li><a href="{a["path"]}">{esc(a["h1"])}</a></li>' for a in arts) + "</ul>"
@@ -1203,7 +1244,8 @@ def build_article(a, by_slug, facilities=()):
     pref = article_pref(a)
     pref_box = ""
     if pref:
-        pref_box = (f'<p class="pref-box"><a href="/{pref}/">{esc(PREF_NAME[pref])}のページを見る'
+        pref_box = (aki_links_html(pref) +
+                    f'<p class="pref-box"><a href="/{pref}/">{esc(PREF_NAME[pref])}のページを見る'
                     f'（施設の一覧・相談先）</a></p>')
     dates_html = f"公開日：{time_html(a['published'])}"
     if a["modified"] != a["published"]:
@@ -1455,6 +1497,8 @@ def build_prefs(articles, fac_data):
         matome = [a for a in articles if a["category"] == "都道府県のあずけ先" and article_pref(a) == slug]
         cities = [a for a in articles if a["category"] == "市ごとのあずけ先" and article_pref(a) == slug]
         jumps = [("#center", "相談先")]
+        if AKI_LINKS.get(slug):
+            jumps.append(("#aki-h", "空きや予約のしくみ"))
         if matome or cities:
             jumps.append(("#articles", "まとめの記事"))
         jumps.append(("#facilities", "施設の一覧"))
@@ -1485,6 +1529,7 @@ def build_prefs(articles, fac_data):
         else:
             parts.append(f'<p class="box center-box">{esc(name)}の医療的ケア児支援センターの情報は、ただいま整理しています。'
                          f'くわしくは「<a href="/blog/iryocare-center.html">医療的ケア児支援センター</a>」の記事もご覧ください。</p>')
+        parts.append(aki_links_html(slug))
         if info.get("resources"):
             lis = []
             for r in info["resources"]:
@@ -1528,7 +1573,8 @@ def build_prefs(articles, fac_data):
         lm = newest([f.get("checked") for f in facs_by_pref.get(slug, [])]
                     + [a["modified"] for a in matome + cities]
                     + [c.get("pageChecked"), c.get("sourceChecked")]
-                    + [r.get("checked") for r in info.get("resources") or []])
+                    + [r.get("checked") for r in info.get("resources") or []]
+                    + [x.get("checked") for x in AKI_LINKS.get(slug) or []])
         write_page(path, page(f"{name}の障害児のあずけ先・短期入所", desc, path,
                               '<div class="prose">' + "".join(parts) + "</div>", crumbs=crumbs), lastmod=lm)
 
@@ -2034,6 +2080,7 @@ def main():
     for a in articles:
         by_cat.setdefault(a["category"], []).append(a)
 
+    AKI_LINKS.update(load_aki_links())
     fac_data = load_facilities()
     if fac_data is None:
         print("お知らせ: data/azukesaki_facilities.json がないので、施設の一覧なしで作ります。")

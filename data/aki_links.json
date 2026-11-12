@@ -1,0 +1,42 @@
+[
+  {
+    "pref": "chiba",
+    "name": "千葉市：重症心身障害児者等受け入れ短期入所空き状況",
+    "url": "https://www.city.chiba.jp/hokenfukushi/koreishogai/shogaifukushi/tankinyusho.html",
+    "description": "千葉市が指定した、重い障害のある方を受け入れる短期入所の一覧です。空きは、施設のページを見るか、施設に電話でたずねます。",
+    "pageUpdated": "2026-03-09",
+    "checked": "2026-11-12"
+  },
+  {
+    "pref": "gifu",
+    "name": "希望が丘こども医療福祉センター：短期入所・日中一時支援サービス",
+    "url": "https://www.pref.gifu.lg.jp/page/6343.html",
+    "description": "岐阜県の施設のページです。お泊まりと日帰りの空き（2か月分）をPDFで出しています。はじめに、センターの医師の受診が必要です。",
+    "pageUpdated": "2026-11-11",
+    "checked": "2026-11-12"
+  },
+  {
+    "pref": "hyogo",
+    "name": "兵庫県：輪番制による医療型短期入所事業所の空床確保事業",
+    "url": "https://web.pref.hyogo.lg.jp/kf10/iryougatashort.html",
+    "description": "当番の病院が、地域ごとにベッドを1つあけておくしくみです。当番の病院と月が表になっています。予約は当番の病院に直接たずねます。",
+    "pageUpdated": "2026-07-02",
+    "checked": "2026-11-12"
+  },
+  {
+    "pref": "hyogo",
+    "name": "兵庫県：医療的ケア児を対象としたレスパイト入院の開始",
+    "url": "https://web.pref.hyogo.lg.jp/kf10/press/20260624.html",
+    "description": "県立こども病院で、人工呼吸器などのケアが必要な15歳未満のお子様が、短い入院をできるしくみです。かかりつけ医を通して、さきに受診します。",
+    "pageUpdated": "2026-06-24",
+    "checked": "2026-11-12"
+  },
+  {
+    "pref": "miyagi",
+    "name": "仙台市：医療型短期入所コーディネート事業",
+    "url": "https://www.city.sendai.jp/chiikisekatsushien/iryougatatankinyuusyoko-deline-to.html",
+    "description": "宮城県と仙台市の事業です。仙台エコー医療療育センターのコーディネーターが、医療型の短期入所さがしの相談にのり、施設との間をつなぎます。",
+    "pageUpdated": "2026-02-09",
+    "checked": "2026-11-12"
+  }
+]

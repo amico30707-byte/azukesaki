@@ -540,3 +540,14 @@ label.check input { width: 24px; height: 24px; margin: 0; accent-color: var(--gr
 .fac-mini .tag-alert { margin-left: 4px; }
 .area-head { scroll-margin-top: 100px; }
 .pref-group { scroll-margin-top: 100px; }
+
+/* 空きや予約のしくみ（公式） */
+.aki-box { margin: 20px 0; box-shadow: inset 5px 0 0 var(--apricot); }
+.aki-box h2, .aki-box h3 { margin: 0 0 10px; padding: 0; border: 0; font-size: 1.1rem; color: var(--green-dark); scroll-margin-top: 100px; }
+.aki-box h2::after, .aki-box h3::after { display: none; }
+.prose .aki-list { list-style: none; margin: 0 0 10px; padding: 0; }
+.prose .aki-list li { margin: 0; padding: 10px 0; border-bottom: 1px dashed var(--line); line-height: 1.8; }
+.prose .aki-list li:last-child { border-bottom: 0; }
+.aki-list a { overflow-wrap: anywhere; }
+.aki-meta { display: inline-block; line-height: 1.6; margin-top: 4px; }
+.aki-meta span { white-space: nowrap; }
