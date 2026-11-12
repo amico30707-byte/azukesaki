@@ -180,6 +180,10 @@ CITY_PREF = {
     "三原市": "hiroshima", "糸満市": "okinawa", "宮古島市": "okinawa", "石垣市": "okinawa",
     "下松市": "yamaguchi", "光市": "yamaguchi", "観音寺市": "kagawa", "坂出市": "kagawa",
     "笠岡市": "okayama",
+    "多治見市": "gifu", "可児市": "gifu", "高山市": "gifu", "小松市": "ishikawa",
+    "大村市": "nagasaki",
+    "ふじみ野市": "saitama", "富士見市": "saitama", "坂戸市": "saitama", "綾瀬市": "kanagawa",
+    "茂原市": "chiba",
 }
 
 TYPE_LABELS = {
