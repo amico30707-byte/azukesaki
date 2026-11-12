@@ -184,6 +184,10 @@ CITY_PREF = {
     "大村市": "nagasaki",
     "ふじみ野市": "saitama", "富士見市": "saitama", "坂戸市": "saitama", "綾瀬市": "kanagawa",
     "茂原市": "chiba",
+    "横手市": "akita", "伊万里市": "saga", "島原市": "nagasaki", "天草市": "kumamoto",
+    "萩市": "yamaguchi",
+    "真庭市": "okayama", "南国市": "kochi", "長門市": "yamaguchi", "柳井市": "yamaguchi",
+    "安来市": "shimane",
 }
 
 TYPE_LABELS = {
