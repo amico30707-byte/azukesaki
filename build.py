@@ -318,6 +318,7 @@ FOOTER = f"""<footer class="site-footer">
         <li><a href="/contact/">お問い合わせ</a></li>
         <li><a href="/for-facilities/">施設・事業所の方へ</a></li>
         <li><a href="/jobs/">求人</a></li>
+        <li><a href="/support-book-sheet/">サポートブック（記入用）</a></li>
         <li><a href="/koushin/">更新のきろく</a></li>
         <li><a href="/privacy/">プライバシー</a></li>
       </ul>
@@ -1260,6 +1261,10 @@ def build_article(a, by_slug, facilities=()):
             city_html = (f'<section class="city-facs" aria-labelledby="cf-h"><h2 id="cf-h">{esc(ac[1])}の施設</h2>'
                          f'<p>あずけさき手帖の施設の一覧から、{esc(ac[1])}にある施設をのせています（{len(cfacs)}か所）。'
                          f'{FACILITY_NOTE}。</p>' + fac_mini_list(cfacs) + "</section>")
+    sheet_html = ""
+    if a["slug"] == "support-book":
+        sheet_html = (f'<p class="box sheet-link">印刷して、そのまま書きこめる用紙もあります。'
+                      f'<a href="{SUPPORT_SHEET_PATH}">サポートブック（記入用）を見る・印刷する</a></p>')
     toc_html = ""
     if len(toc) >= 2:
         toc_html = ('<nav class="toc" aria-labelledby="toc-h"><p class="toc-title" id="toc-h">この記事でわかること</p><ul>'
@@ -1272,6 +1277,7 @@ def build_article(a, by_slug, facilities=()):
 </header>
 {toc_html}
 {body_html}
+{sheet_html}
 {city_html}
 {pref_box}
 </article>
@@ -1912,6 +1918,101 @@ def build_privacy():
                                  "/privacy/", body, crumbs=crumbs))
 
 
+SUPPORT_SHEET_DATE = "2026-11-12"  # 用紙の中身を変えたら、この日付も変える
+
+
+def build_support_sheet():
+    """印刷して手で書きこむ「サポートブック（記入用）」"""
+    def lines(n=1):
+        return '<span class="ln" aria-hidden="true"></span>' * n
+
+    def field(label, n=1, hint=""):
+        h = f'<span class="f-hint">{esc(hint)}</span>' if hint else ""
+        return f'<div class="f"><p class="f-label">{esc(label)}{h}</p>{lines(n)}</div>'
+
+    def checks(items):
+        return '<ul class="cbox-list">' + "".join(
+            f'<li><span class="cbox" aria-hidden="true"></span>{esc(t)}</li>' for t in items) + "</ul>"
+
+    def table(cols, rows, cls=""):
+        head = "".join(f"<th scope=\"col\">{esc(c)}</th>" for c in cols)
+        body = "".join("<tr>" + "".join("<td></td>" for _ in cols) + "</tr>" for _ in range(rows))
+        return f'<table class="sheet-table {cls}"><thead><tr>{head}</tr></thead><tbody>{body}</tbody></table>'
+
+    def sec(num, title, inner):
+        return (f'<section class="sheet-sec" aria-labelledby="s{num}"><h2 class="sheet-h" id="s{num}">'
+                f'<span class="sheet-no">{num}</span>{esc(title)}</h2>{inner}</section>')
+
+    secs = [
+        sec(1, "お子様のこと",
+            '<div class="f-row">' + field("名前", 1, "（ふりがな）") + field("よび名", 1, "（いつもよんでいる名前）") + "</div>"
+            '<div class="f-row">' + field("生年月日", 1, "　　年　　月　　日") + field("体重", 1, "　　kg（　　月　　日にはかった）") + "</div>"),
+        sec(2, "診断名・からだのこと",
+            field("診断名", 2) + field("アレルギー（食べもの・薬など）", 1) + field("身長・からだのこと（まひ・視覚・聴覚など）", 2)),
+        sec(3, "医療的ケア",
+            '<p class="f-label">しているケアに印をつけてください</p>'
+            + checks(["たんの吸引（口・鼻）", "たんの吸引（気管切開）", "経管栄養（鼻から）", "経管栄養（胃ろう・腸ろう）",
+                      "人工呼吸器", "酸素", "気管切開", "導尿", "そのほか（　　　　　　　　）"])
+            + field("くわしいやり方（回数・時間・量・設定）", 4)
+            + field("使う道具・持っていくもの", 2)
+            + field("気をつけること・こんなときは連絡してほしい", 3)),
+        sec(4, "薬と時間",
+            table(["薬の名前", "量", "時間", "のませ方・気をつけること"], 5, "t-med")),
+        sec(5, "食事・水分",
+            field("食事の形（ふつう・きざみ・ペースト・経管など）", 1)
+            + field("食べ方・手伝ってほしいこと", 2)
+            + field("水分（とろみ・量・回数）", 1)
+            + field("食べられないもの・好きなもの", 1)),
+        sec(6, "排せつ",
+            checks(["おむつ", "トイレ（手伝いあり）", "トイレ（ひとりで）", "導尿"])
+            + field("時間・合図・手伝ってほしいこと", 2)),
+        sec(7, "睡眠",
+            '<div class="f-row">' + field("寝る時間", 1) + field("起きる時間", 1) + "</div>"
+            + field("寝る前の習慣・眠りやすくなること", 2)
+            + field("夜中のようす（起きる・体の向きをかえるなど）", 1)),
+        sec(8, "てんかん発作のときの対応",
+            checks(["発作はない", "発作がある"])
+            + field("発作のようす・つづく時間", 2)
+            + field("発作のときにしてほしいこと", 2)
+            + field("頓用の薬（名前・使うめやす）", 1)
+            + field("救急車をよぶめやす・連絡のめやす", 1)),
+        sec(9, "好きなこと・苦手なこと",
+            field("好きなこと・落ち着くもの（音楽・おもちゃ・声かけなど）", 2)
+            + field("苦手なこと（音・場所・さわられ方など）", 2)),
+        sec(10, "意思表示のサイン",
+            '<p class="f-label">お子様が気持ちをつたえるときのサインと、その意味</p>'
+            + table(["サイン（顔・声・体のうごき）", "意味"], 5, "t-sign")),
+        sec(11, "緊急連絡先",
+            table(["名前", "お子様との関係", "電話", "つながりやすい時間"], 3, "t-contact")),
+        sec(12, "かかりつけ医",
+            '<div class="f-row">' + field("病院の名前", 1) + field("先生の名前", 1) + "</div>"
+            + '<div class="f-row">' + field("電話", 1) + field("そのほかの病院・訪問看護", 1) + "</div>"),
+        sec(13, "その他（施設につたえたいこと）", lines(5)),
+    ]
+    body = f"""<article class="prose sheet">
+<header class="sheet-head">
+<h1>サポートブック（記入用）</h1>
+<p class="sheet-lead">短期入所（ショートステイ）などの前に、お子様のことを施設につたえるための用紙です。印刷して、お父様・お母様が手で書きこんでください。</p>
+<div class="box sheet-guide no-print">
+<p>このページには、入力するところはありません。書いたことが保存されたり、どこかに送られたりすることはありません。</p>
+<p><button type="button" class="button" id="print-btn">このページを印刷する</button></p>
+<p class="small">A4の紙で、3〜4枚くらいになります。書ききれないときは、うらや別の紙に書いて、いっしょにわたしてください。医療的ケアや薬のことは、主治医や訪問看護師さんと決めているやり方を書いてください。</p>
+<p class="small">書き方のコツは「<a href="/blog/support-book.html">サポートブックの作り方・あずけ先に伝わる書き方</a>」をご覧ください。</p>
+</div>
+<p class="sheet-date">記入した日：　　　年　　月　　日</p>
+</header>
+{"".join(secs)}
+<p class="sheet-foot">お子様の大切な情報が入った用紙です。施設にわたすときは、どう保管するかもあわせて確かめておきましょう。<span class="print-only">（あずけさき手帖　サポートブック・記入用）</span></p>
+</article>"""
+    path = SUPPORT_SHEET_PATH
+    crumbs = [("トップ", "/"), ("あずけ先の種類と使い方", f"/category/{CAT_SLUG['あずけ先の種類と使い方']}/"),
+              ("サポートブック（記入用）", path)]
+    script = ('<script>document.getElementById("print-btn").addEventListener("click",function(){window.print();});</script>\n')
+    write_page(path, page("サポートブック（記入用）印刷して使える用紙",
+                          "短期入所などの前に、お子様のことを施設につたえる「サポートブック」の記入用紙です。医療的ケア・薬・食事・発作・意思表示のサインなどを、印刷して手で書きこめます。",
+                          path, body, crumbs=crumbs, scripts=script), lastmod=SUPPORT_SHEET_DATE)
+
+
 def build_404():
     body = """<div class="prose"><h1>ページが見つかりませんでした</h1>
 <p>お探しのページは、移動したか、なくなった可能性があります。</p>
@@ -2098,6 +2199,7 @@ def main():
     build_for_facilities()
     build_jobs(fac_data)
     build_privacy()
+    build_support_sheet()
     build_404()
     build_meta_files()
     build_llms(articles, by_cat, fac_data)

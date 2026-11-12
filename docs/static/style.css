@@ -551,3 +551,64 @@ label.check input { width: 24px; height: 24px; margin: 0; accent-color: var(--gr
 .aki-list a { overflow-wrap: anywhere; }
 .aki-meta { display: inline-block; line-height: 1.6; margin-top: 4px; }
 .aki-meta span { white-space: nowrap; }
+
+/* ---------------- サポートブック（記入用） ---------------- */
+.sheet-link { margin: 24px 0; }
+.sheet-link a { display: inline-block; min-height: 44px; line-height: 1.6; padding-top: 8px; }
+.sheet h1 { font-weight: 400; margin-bottom: 12px; }
+.sheet-lead { margin-bottom: 16px; }
+.sheet-guide { margin-bottom: 20px; box-shadow: inset 5px 0 0 var(--green); }
+.sheet-guide .button { font-weight: 400; }
+.sheet-date { text-align: right; margin: 0 0 8px; }
+.sheet-sec { margin: 0 0 22px; }
+.prose .sheet-h { font-family: var(--serif); font-weight: 400; font-size: 1.1rem; color: var(--green-dark);
+  margin: 0 0 8px; padding: 0 0 4px; border-bottom: 2px solid var(--green); display: flex; align-items: baseline; gap: 8px; }
+.prose .sheet-h::after { display: none; }
+.sheet-no { display: inline-block; min-width: 1.7em; text-align: center; font-family: var(--sans); font-size: 0.85rem;
+  color: #fff; background: var(--green); border-radius: 999px; padding: 0 6px; line-height: 1.7; }
+.f { margin: 0 0 6px; }
+.f-row { display: grid; grid-template-columns: 1fr; gap: 0 16px; }
+@media (min-width: 560px) { .f-row { grid-template-columns: 1fr 1fr; } }
+.prose .f-label { margin: 8px 0 0; font-size: 0.92rem; color: var(--muted); line-height: 1.5; }
+.f-hint { margin-left: 6px; font-size: 0.85rem; white-space: pre; }
+.ln { display: block; height: 2.1em; border-bottom: 1px solid var(--line-strong); }
+.prose .cbox-list { list-style: none; padding: 0; margin: 6px 0 4px; display: flex; flex-wrap: wrap; gap: 6px 18px; }
+.prose .cbox-list li { margin: 0; display: flex; align-items: center; gap: 6px; font-size: 0.95rem; }
+.cbox { display: inline-block; width: 1em; height: 1em; border: 1.5px solid var(--ink); border-radius: 2px; flex: none; background: #fff; }
+.sheet-table { width: 100%; border-collapse: collapse; margin: 6px 0 0; font-size: 0.88rem; table-layout: fixed; }
+.sheet-table { min-width: 0; line-height: 1.5; }
+.sheet-table th { white-space: normal; }
+.sheet .sheet-table tbody tr td { background: #fff; font-weight: 400; min-width: 0; padding: 0; }
+.sheet-table th { font-weight: 400; color: var(--muted); text-align: left; padding: 4px 6px; border: 1px solid var(--line-strong); background: var(--surface); }
+.sheet-table td { height: 2.4em; border: 1px solid var(--line-strong); background: #fff; }
+.t-med th:nth-child(1) { width: 30%; } .t-med th:nth-child(2) { width: 14%; } .t-med th:nth-child(3) { width: 16%; }
+.t-sign th:nth-child(1) { width: 55%; }
+.t-contact th:nth-child(3) { width: 30%; }
+.sheet-foot { font-size: 0.86rem; color: var(--muted); margin-top: 20px; }
+.print-only { display: none; }
+
+@media print {
+  @page { size: A4; margin: 12mm 14mm; }
+  html, body { background: #fff !important; color: #000; }
+  body { font-size: 10pt; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .skip-link, .site-header, .site-footer, .breadcrumb, .no-print, .cta-box, .related { display: none !important; }
+  main.wrap { max-width: none; padding: 0; margin: 0; }
+  .sheet h1 { font-size: 16pt; margin: 0 0 4px; }
+  .sheet-lead { font-size: 9.5pt; margin: 0 0 4px; line-height: 1.6; }
+  .sheet-date { font-size: 10pt; }
+  .sheet-sec { margin: 0 0 9px; break-inside: avoid; page-break-inside: avoid; }
+  .prose .sheet-h { font-size: 11.5pt; margin: 0 0 2px; border-bottom: 1.5pt solid #24564a; break-after: avoid; }
+  .sheet-no { font-size: 8.5pt; }
+  .f-row { grid-template-columns: 1fr 1fr; }
+  .prose .f-label { font-size: 8.5pt; color: #333; margin-top: 4px; }
+  .f-hint { font-size: 8.5pt; }
+  .ln { height: 8.5mm; border-bottom: 0.75pt solid #555; }
+  .cbox { border: 1pt solid #000; }
+  .prose .cbox-list li { font-size: 9.5pt; }
+  .sheet-table { font-size: 8.5pt; }
+  .sheet-table th { background: #f1f1f1; color: #222; border: 0.75pt solid #555; }
+  .sheet .sheet-table tbody tr td { height: 9mm; border: 0.75pt solid #555; background: #fff; }
+  .sheet-foot { font-size: 8pt; color: #333; margin-top: 8px; }
+  .print-only { display: inline; }
+  a { color: #000; text-decoration: none; }
+}
