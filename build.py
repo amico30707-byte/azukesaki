@@ -170,6 +170,10 @@ CITY_PREF = {
     "伊勢原市": "kanagawa",
     "安曇野市": "nagano", "佐久市": "nagano", "飯田市": "nagano", "伊那市": "nagano",
     "塩尻市": "nagano",
+    "逗子市": "kanagawa", "大和高田市": "nara", "四條畷市": "osaka", "天理市": "nara",
+    "香芝市": "nara",
+    "太宰府市": "fukuoka", "古賀市": "fukuoka", "小郡市": "fukuoka", "行橋市": "fukuoka",
+    "中間市": "fukuoka",
 }
 
 TYPE_LABELS = {
