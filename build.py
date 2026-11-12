@@ -174,6 +174,9 @@ CITY_PREF = {
     "香芝市": "nara",
     "太宰府市": "fukuoka", "古賀市": "fukuoka", "小郡市": "fukuoka", "行橋市": "fukuoka",
     "中間市": "fukuoka",
+    "防府市": "yamaguchi", "阿南市": "tokushima", "木更津市": "chiba", "松原市": "osaka",
+    "総社市": "okayama", "浜田市": "shimane", "倉吉市": "tottori", "三次市": "hiroshima",
+    "益田市": "shimane",
 }
 
 TYPE_LABELS = {
