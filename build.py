@@ -190,6 +190,10 @@ CITY_PREF = {
     "安来市": "shimane", "印西市": "chiba", "四街道市": "chiba", "君津市": "chiba",
     "袖ケ浦市": "chiba", "牛久市": "ibaraki",
     "和光市": "saitama", "志木市": "saitama", "飯能市": "saitama", "東松山市": "saitama",
+    "昭島市": "tokyo", "東大和市": "tokyo", "稲城市": "tokyo", "狛江市": "tokyo",
+    "武蔵村山市": "tokyo",
+    "神栖市": "ibaraki", "守谷市": "ibaraki", "龍ケ崎市": "ibaraki", "加須市": "saitama",
+    "行田市": "saitama",
 }
 
 TYPE_LABELS = {
