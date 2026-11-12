@@ -788,6 +788,9 @@ def is_medical(f):
 # データからその文が消えたら、しるしも自動で消える。データは変えない。
 # id: (しるしの文字, データの項目, その項目にふくまれている言葉)
 STATUS_BADGES = {
+    "hokkaido-sapporo-hokkaido-mc-pimd-shortstay": ("短期入所の受付を休止中", "alert", "受け付け一時休止"),
+    "kanagawa-yokohama-asahi-yokoryo-shortstay-after-school": ("新規受付を休止中", "alert", "はじめての方の受付"),
+    "kanagawa-yokohama-tsurumi-salvia-pimd-shortstay": ("新規相談を停止中", "alert", "当分の間、停止"),
     "aichi-tokai-nijiiro-medical-shortstay": ("新規受付を休止中", "alert", "新規登録（利用登録）を一時中断"),
     "hokkaido-kushiro-pass-home-out-day": ("新規受付を休止中", "alert", "新規登録の受付を見合わせ"),
     "kanagawa-nanairo-shortstay": ("新規受付を休止中", "alert", "新規利用の相談受付休止"),
