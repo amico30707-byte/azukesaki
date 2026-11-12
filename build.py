@@ -177,6 +177,9 @@ CITY_PREF = {
     "防府市": "yamaguchi", "阿南市": "tokushima", "木更津市": "chiba", "松原市": "osaka",
     "総社市": "okayama", "浜田市": "shimane", "倉吉市": "tottori", "三次市": "hiroshima",
     "益田市": "shimane",
+    "三原市": "hiroshima", "糸満市": "okinawa", "宮古島市": "okinawa", "石垣市": "okinawa",
+    "下松市": "yamaguchi", "光市": "yamaguchi", "観音寺市": "kagawa", "坂出市": "kagawa",
+    "笠岡市": "okayama",
 }
 
 TYPE_LABELS = {
@@ -202,6 +205,7 @@ SUPPORT_LABELS = {
 }
 SUPPORT_STATUS_LABELS = {
     "listed": "受け入れの記載あり（公式情報より）",
+    "partial": "一部の記載あり（くわしくは施設に確認）",
     "yes": "受け入れの記載あり",
     "ok": "受け入れの記載あり",
     "available": "受け入れの記載あり",
