@@ -203,6 +203,7 @@ CITY_PREF = {
     "本庄市": "saitama", "秩父市": "saitama", "鶴ヶ島市": "saitama", "那珂市": "ibaraki",
     "旭市": "chiba", "つくばみらい市": "ibaraki", "小美玉市": "ibaraki", "日高市": "saitama",
     "坂東市": "ibaraki", "稲敷市": "ibaraki", "鉾田市": "ibaraki",
+    "守山市": "shiga", "甲賀市": "shiga", "大和郡山市": "nara", "江南市": "aichi",
 }
 
 TYPE_LABELS = {
