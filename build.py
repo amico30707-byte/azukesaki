@@ -201,6 +201,7 @@ CITY_PREF = {
     "羽村市": "tokyo", "あきる野市": "tokyo", "福生市": "tokyo", "三浦市": "kanagawa",
     "笠間市": "ibaraki", "下妻市": "ibaraki",
     "本庄市": "saitama", "秩父市": "saitama", "鶴ヶ島市": "saitama", "那珂市": "ibaraki",
+    "旭市": "chiba", "つくばみらい市": "ibaraki", "小美玉市": "ibaraki", "日高市": "saitama",
 }
 
 TYPE_LABELS = {
