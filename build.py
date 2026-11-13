@@ -198,6 +198,8 @@ CITY_PREF = {
     "鹿嶋市": "ibaraki",
     "蕨市": "saitama", "桶川市": "saitama", "北本市": "saitama", "蓮田市": "saitama",
     "吉川市": "saitama",
+    "羽村市": "tokyo", "あきる野市": "tokyo", "福生市": "tokyo", "三浦市": "kanagawa",
+    "笠間市": "ibaraki", "下妻市": "ibaraki",
 }
 
 TYPE_LABELS = {
