@@ -1,0 +1,68 @@
+name: 公式ページの変化チェック
+
+on:
+  schedule:
+    # 月曜と木曜の朝6時ごろ（日本時間）。キャッシュが消えないよう週2回
+    - cron: "17 21 * * 0,3"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: watch-sources
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: PDFを読む道具を入れる
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils
+
+      - name: 前回の記録を取り出す
+        uses: actions/cache/restore@v4
+        with:
+          path: data/watch/state.json
+          key: watch-state-${{ github.run_id }}
+          restore-keys: watch-state-
+
+      - name: 公式ページを確かめる
+        run: python3 tools/watch_sources.py
+
+      - name: 今回の記録を保存する
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: data/watch/state.json
+          key: watch-state-${{ github.run_id }}
+
+      - name: まとめをリポジトリに残す
+        run: |
+          git config user.name "azukesaki-watch"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/watch/report.md data/watch/summary.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "公式ページの変化チェックのまとめ"
+          git pull --rebase -q || true
+          git push
+
+      - name: 変化があればIssueで知らせる
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python3 - <<'PY'
+          import json, subprocess
+          s = json.load(open("data/watch/summary.json"))
+          if s.get("first_run") or (s["changed"] == 0 and s["failed"] == 0):
+              print("知らせることはありません"); raise SystemExit
+          body = open("data/watch/report.md", encoding="utf-8").read()
+          if len(body) > 60000:
+              body = body[:60000] + "\n\n（長いので途中までです。全文は data/watch/report.md にあります）"
+          title = f"公式ページの変化 {s['date'][:10]}：変化{s['changed']}件・読めない{s['failed']}件"
+          subprocess.run(["gh", "issue", "create", "--title", title, "--body", body], check=True)
+          PY
