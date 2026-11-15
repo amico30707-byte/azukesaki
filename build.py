@@ -204,6 +204,7 @@ CITY_PREF = {
     "旭市": "chiba", "つくばみらい市": "ibaraki", "小美玉市": "ibaraki", "日高市": "saitama",
     "坂東市": "ibaraki", "稲敷市": "ibaraki", "鉾田市": "ibaraki",
     "守山市": "shiga", "甲賀市": "shiga", "大和郡山市": "nara", "江南市": "aichi",
+    "名取市": "miyagi", "岩沼市": "miyagi", "塩竈市": "miyagi", "新発田市": "niigata", "三条市": "niigata",
 }
 
 TYPE_LABELS = {
