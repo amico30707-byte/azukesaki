@@ -531,7 +531,7 @@
 <url><loc>https://azukesaki.jp/blog/city-shiogama.html</loc><lastmod>2026-11-15</lastmod></url>
 <url><loc>https://azukesaki.jp/blog/city-shibata.html</loc><lastmod>2026-11-15</lastmod></url>
 <url><loc>https://azukesaki.jp/blog/city-sanjo.html</loc><lastmod>2026-11-15</lastmod></url>
-<url><loc>https://azukesaki.jp/</loc><lastmod>2026-11-16</lastmod></url>
+<url><loc>https://azukesaki.jp/</loc><lastmod>2026-11-17</lastmod></url>
 <url><loc>https://azukesaki.jp/blog/</loc><lastmod>2026-11-16</lastmod></url>
 <url><loc>https://azukesaki.jp/category/hajimete/</loc><lastmod>2026-11-12</lastmod></url>
 <url><loc>https://azukesaki.jp/category/shurui/</loc><lastmod>2026-11-12</lastmod></url>
@@ -1490,6 +1490,7 @@
 <url><loc>https://azukesaki.jp/facility/mie/mie-ise-ozora-child-therapy.html</loc><lastmod>2026-10-26</lastmod></url>
 <url><loc>https://azukesaki.jp/facility/mie/mie-iga-cocoronoiro-child-therapy-day.html</loc><lastmod>2026-10-26</lastmod></url>
 <url><loc>https://azukesaki.jp/facility/mie/mie-verde.html</loc><lastmod>2026-10-08</lastmod></url>
+<url><loc>https://azukesaki.jp/facility/mie/mie-nabari-sakuraplus-pimd-child-therapy.html</loc><lastmod>2026-11-17</lastmod></url>
 <url><loc>https://azukesaki.jp/facility/mie/mie-yokkaichi-nonkids-pimd-child-therapy.html</loc><lastmod>2026-11-11</lastmod></url>
 <url><loc>https://azukesaki.jp/facility/mie/yokkaichi-city-home-care.html</loc><lastmod>2026-10-14</lastmod></url>
 <url><loc>https://azukesaki.jp/facility/mie/mie-yokkaichi-mobility.html</loc><lastmod>2026-10-13</lastmod></url>
@@ -1500,9 +1501,12 @@
 <url><loc>https://azukesaki.jp/facility/mie/mie-matsusaka-yuishin-medical-child-therapy.html</loc><lastmod>2026-11-11</lastmod></url>
 <url><loc>https://azukesaki.jp/facility/mie/mie-matsusaka-day-support-system.html</loc><lastmod>2026-10-07</lastmod></url>
 <url><loc>https://azukesaki.jp/facility/mie/mie-matsusaka-oyakoukou-pimd-child-therapy.html</loc><lastmod>2026-11-11</lastmod></url>
+<url><loc>https://azukesaki.jp/facility/mie/mie-kuwana-medical-home-respite.html</loc><lastmod>2026-11-17</lastmod></url>
 <url><loc>https://azukesaki.jp/facility/mie/mie-tsu-march-medical-child-therapy.html</loc><lastmod>2026-11-11</lastmod></url>
 <url><loc>https://azukesaki.jp/facility/mie/mie-tsu-cinqailes-pimd-child-therapy.html</loc><lastmod>2026-11-11</lastmod></url>
 <url><loc>https://azukesaki.jp/facility/mie/mie-childc-sawayaka.html</loc><lastmod>2026-10-15</lastmod></url>
+<url><loc>https://azukesaki.jp/facility/mie/mie-tsu-childc-pimd-shortstay.html</loc><lastmod>2026-11-17</lastmod></url>
+<url><loc>https://azukesaki.jp/facility/mie/mie-tsu-mie-hosp-pimd-child-therapy.html</loc><lastmod>2026-11-17</lastmod></url>
 <url><loc>https://azukesaki.jp/facility/mie/mie-hospital-shortstay.html</loc><lastmod>2026-10-25</lastmod></url>
 <url><loc>https://azukesaki.jp/facility/mie/mie-kumano-city-child-day-support.html</loc><lastmod>2026-10-08</lastmod></url>
 <url><loc>https://azukesaki.jp/facility/mie/mie-kumano-kupukupu-after-school.html</loc><lastmod>2026-10-26</lastmod></url>
@@ -1513,7 +1517,7 @@
 <url><loc>https://azukesaki.jp/facility/mie/mie-suzuka-nanahoshi-pimd-child-therapy.html</loc><lastmod>2026-11-11</lastmod></url>
 <url><loc>https://azukesaki.jp/facility/mie/mie-suzuka-shakyo-home-out.html</loc><lastmod>2026-10-18</lastmod></url>
 <url><loc>https://azukesaki.jp/facility/mie/mie-suzuka-shirasagi-child-day.html</loc><lastmod>2026-10-08</lastmod></url>
-<url><loc>https://azukesaki.jp/mie/</loc><lastmod>2026-11-11</lastmod></url>
+<url><loc>https://azukesaki.jp/mie/</loc><lastmod>2026-11-17</lastmod></url>
 <url><loc>https://azukesaki.jp/facility/shiga/otsu-city-home-care.html</loc><lastmod>2026-10-14</lastmod></url>
 <url><loc>https://azukesaki.jp/facility/shiga/otsu-city-out-day.html</loc><lastmod>2026-10-14</lastmod></url>
 <url><loc>https://azukesaki.jp/facility/shiga/shiga-otsu-doubutsunomori-quilt-medical-therapy.html</loc><lastmod>2026-11-12</lastmod></url>
@@ -2406,8 +2410,8 @@
 <url><loc>https://azukesaki.jp/facility/okinawa/naha-city-mobility.html</loc><lastmod>2026-10-15</lastmod></url>
 <url><loc>https://azukesaki.jp/facility/okinawa/okinawa-kin-ryukyu-hospital-shortstay.html</loc><lastmod>2026-10-29</lastmod></url>
 <url><loc>https://azukesaki.jp/okinawa/</loc><lastmod>2026-11-12</lastmod></url>
-<url><loc>https://azukesaki.jp/search/</loc><lastmod>2026-11-15</lastmod></url>
-<url><loc>https://azukesaki.jp/koushin/</loc><lastmod>2026-11-16</lastmod></url>
+<url><loc>https://azukesaki.jp/search/</loc><lastmod>2026-11-17</lastmod></url>
+<url><loc>https://azukesaki.jp/koushin/</loc><lastmod>2026-11-17</lastmod></url>
 <url><loc>https://azukesaki.jp/about/</loc><lastmod>2026-11-03</lastmod></url>
 <url><loc>https://azukesaki.jp/contact/</loc></url>
 <url><loc>https://azukesaki.jp/for-facilities/</loc></url>
