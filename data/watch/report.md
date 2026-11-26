@@ -1,230 +1,230 @@
-# 公式ページの変化チェック（2026-11-23 10:45）
+# 公式ページの変化チェック（2026-11-26 12:35）
 
 - 確認したページ：6927
-- 前回から変わったページ：308
-- 2回つづけて読めなかったページ：501
+- 前回から変わったページ：335
+- 2回つづけて読めなかったページ：508
 - 今回はじめて記録したページ：0
 
 ## 変わったページ
 
 公式ページを開いて、サイトの内容を直す必要があるか確かめてください。
 
-### https://aoitori-center.com/pages/52/
-- 施設：愛知県青い鳥医療療育センター どんぐり園（aichi-aoitori-donguri）
+### https://carecore-sensei.jp/information/%E3%80%8C%E9%9D%9E%E5%B8%B8%E7%94%A8%E7%99%BA%E9%9B%BB%E6%A9%9F%E3%80%8D%E3%82%92%E8%A8%AD%E7%BD%AE%E3%81%97%E3%81%A6%E3%81%84%E3%81%BE%E3%81%99/
+- 施設：かれこれ先生のおうち（医療型短期入所）（nagasaki-sasebo-carecore-medical-shortstay）
 
 変わった行の例：
-    ＋ 当センター では、院内感染防止対策委員会を設置、運営し、院内感染状況の把握、職員の感染防止等について進行管理を行い、確実な院内感染対策の実施と実践的な職員研修に計画的に取り組んでおります。( 院内感染対策の詳細はこちら ）
-    ＋ □ 診断書（A4×2ページ以上）
-    （なくなった行：2行）
-
-### https://bless-angelwings.com/
-- 施設：医療型短期入所 じょあん（kagoshima-city-joan-medical-shortstay）
-- 施設：重心児デイサービス エンゼル（kagoshima-city-angel-pimd-medical-therapy）
-
-変わった行の例：
-    ＋ ブレスのリーフレットをダウンロードする
-    ＋ ブレスのリーフレットをダウンロードする
-
-### https://brightersteps.localinfo.jp/
-- 施設：Brighter Steps 児童発達支援センター・放課後等デイサービス Switch（nagasaki-tsushima-brighter-steps-therapy）
-
-変わった行の例：
-    ＋ お知らせ
-    ＋ ホームページ移設のお知らせ
-    ＋ いつもブライターステップスのホームページをご覧いただき、ありがとうございます。
-    ＋ このたび、Ameba Owndのホームページサービス終了に伴い、ホームページを新しいサイトへ移設いたしました。
-    ＋ 【新ホームページはこちら】
-    ＋ https://brightersteps.jimdofree.com/
-    ＋ 引き続き、どうぞよろしくお願いいたします。 移設後のサイトはこちら
-
-### https://brightersteps.localinfo.jp/posts/58403183
-- 施設：Brighter Steps 児童発達支援センター・放課後等デイサービス Switch（nagasaki-tsushima-brighter-steps-therapy）
-
-変わった行の例：
-    ＋ お知らせ
-    ＋ ホームページ移設のお知らせ
-    ＋ いつもブライターステップスのホームページをご覧いただき、ありがとうございます。
-    ＋ このたび、Ameba Owndのホームページサービス終了に伴い、ホームページを新しいサイトへ移設いたしました。
-    ＋ 【新ホームページはこちら】
-    ＋ https://brightersteps.jimdofree.com/
-    ＋ 引き続き、どうぞよろしくお願いいたします。 移設後のサイトはこちら
+    ＋ 2026年12月 午後診療のお知らせ
 
 ### https://chubujiritu.info/jigyosyo/2180/
 - 施設：COCOKARAおがも（日中一時支援・放課後等デイサービス）（tottori-kurayoshi-cocokara-ogamo-day-therapy）
 - 記事428：倉吉市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ その他、倉吉市、北栄町、三朝町
+    ＋ 倉吉市、北栄町、三朝町、その他
+    （なくなった行：1行）
+
+### https://chubujiritu.info/jigyosyo/308/
+- 施設：ヘルパーステーションわのわ（tottori-kurayoshi-wanowa-home-out）
+- 記事428：倉吉市の短期入所・日中一時支援
+
+変わった行の例：
+    ＋ 車輛移送、居宅介護、通院等介助、通院等乗降介助、重度訪問、行動支援、同行援護、移動支援
     （なくなった行：1行）
 
 ### https://enokai.jp/pages/13/
 - 施設：可愛会障害者居宅介護事業所（kagoshima-satsumasendai-enokai-home-out）
 
 変わった行の例：
-    ＋ 9
-    ＋ 9
-    （なくなった行：1行）
+    ＋ 8
+    ＋ 2
+    （なくなった行：2行）
 
 ### https://faq.miyazaki-city-callcenter.jp/faq/detail.aspx?id=134
 - 記事132：宮崎市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ ごみ
+    ＋ ゴミ
     （なくなった行：1行）
 
-### https://ffk.jp/soma/nobiccoland-haramachi.html
-- 施設：のびっこらんど原町（fukushima-minamisoma-nobicco-haramachi-therapy）
+### https://fc-swc.org/seibu/
+- 施設：福岡市立西部療育センター 日中一時支援（fukuoka-seibu-day-support）
 
 変わった行の例：
-    ＋ チョコフォンデュ
-
-### https://fukuiicare.wixsite.com/icarecenter
-- 記事72：医療的ケア児支援センター一覧・47都道府県の相談窓口
-
-変わった行の例：
-    ＋ 【申込受付中】第3回シンポジウム「福井県医療的ケア児者を地域でどう支えるか」開催のお知らせ
-    （なくなった行：1行）
+    ＋ 日中一時支援冬休みのご利用について
+    ＋ ★第７回 保護者向け西部セミナー受付期間延長★
+    （なくなった行：2行）
 
 ### https://ginga-fukushi.or.jp/pages/31/
 - 施設：きらり（放課後等デイサービス）（yamanashi-kai-ginga-kirari-child-therapy）
 
 変わった行の例：
-    ＋ 4
-    ＋ 4
-    ＋ 5
-    （なくなった行：3行）
+    ＋ 6
+    （なくなった行：2行）
 
-### https://hokkaido-mc.hosp.go.jp/niv_center.html
-- 施設：国立病院機構 北海道医療センター 重症心身障害児（者）病棟 短期入所（hokkaido-sapporo-hokkaido-mc-pimd-shortstay）
+### https://hibio.co.jp/
+- 施設：児童発達支援センター Kids ＆ Fun day・Respite ひびお（fukuoka-dazaifu-hibio-therapy-day-shortstay）
 
 変わった行の例：
-    ＋ 療育通信★西4病棟ハロウィン
+    ＋ https://share.google/yI9VEr3S7R0HOOSP1 ↑ホームページのフォト
+    ＋ マルシェを開催します！ 今回は新商品・新作ゲー厶もあります。 バイク・自転車の方
+    ＋ 5.6歳児の発達についてです♪ この時期は協力、役割を学んでいく時期です！ 未就学児(児童発達支援
+    ＋ https://share.google/yI9VEr3S7R0HOOSP1 ↑ホームページのフォト
+    ＋ ハロウィン製作をしました。みんな上手に作ることができました🎃 児童発達支援センターひびお #リハビ
+    ＋ みんなでじゃこ天を食べました！ 魅力たくさんのじゃこ天、ひびおの自販機でも好評販売中です🐟️ 児童
+    ＋ 夕暮れマルシェ、雨天でも開催します！ 今回はおゆずりゆーす ゆずり葉 さんとコラボし
+    ＋ 夕暮れマルシェを開催します！ 今回はおゆずりゆーす ゆずり葉 さんとコラボして おも
+    （なくなった行：2行）
+
+### https://ibarakihigashi.hosp.go.jp/
+- 施設：国立病院機構 茨城東病院 重症心身障害病棟 短期入所（ibaraki-tokai-nho-pimd-shortstay）
+
+変わった行の例：
+    ＋ 地域医療連携室事務職員（非常勤）の募集のお知らせ
+    （なくなった行：1行）
 
 ### https://ise-shakyo.jp/
 - 施設：日中一時支援 くじらキッズ（mie-ise-kujira-kids-day）
 
 変わった行の例：
-    ＋ 伊勢市みなとふれあいセンター
-    ＋ 交流会
-    ＋ かみやしろカフェ
-    ＋ 12.03 木 -
-    ＋ 申込 不要
-    ＋ みなとふれあいセンター 1F
-    ＋ シニア, 誰でも
-    ＋ 100円（飲み物・お菓子付き）
-    （なくなった行：8行）
+    ＋ ふくしなんでも相談会を実施します
+    ＋ ふくしなんでも相談会
+    ＋ 11.30 月 -
+    ＋ イオン伊勢店 1階ドリップカフェコーナー
+    ＋ 誰でも
+    ＋ 無料
+    ＋ みなとふれあいセンター
+    ＋ みなとふれあいセンター 福祉用具常設展示コーナーのご案内
+    （なくなった行：4行）
 
 ### https://issya-hug.com/
 - 施設：インクルホームHUG小林（miyazaki-kobayashi-hug-child-therapy）
 
 変わった行の例：
-    ＋ Monday
-    ＋ Today: 98 /
-    ＋ Yesterday: 267 /
-    ＋ Total: 135151
+    ＋ Thursday
+    ＋ Today: 130 /
+    ＋ Yesterday: 394 /
+    ＋ Total: 136241
     （なくなった行：4行）
 
 ### https://issya-hug.com/free/inkuru
 - 施設：インクルホームHUG小林（miyazaki-kobayashi-hug-child-therapy）
 
 変わった行の例：
-    ＋ Monday
-    ＋ Today: 99 /
-    ＋ Yesterday: 267 /
-    ＋ Total: 135152
+    ＋ Thursday
+    ＋ Today: 131 /
+    ＋ Yesterday: 394 /
+    ＋ Total: 136242
     （なくなった行：4行）
-
-### https://jigyodan-yg.jp/hananoura/
-- 施設：福祉型障害児入所施設 はなのうら 短期入所（yamaguchi-hofu-hananoura-child-shortstay）
-
-変わった行の例：
-    ＋ ★トリックオアトリート！★ NEW
-    ＋ ★華の浦秋の大運動会★
-    （なくなった行：2行）
-
-### https://k-kango.jp/care-child/
-- 記事72：医療的ケア児支援センター一覧・47都道府県の相談窓口
-
-変わった行の例：
-    ＋ 💞福利厚生👥
-    ＋ （鹿児島県看護協会会員向け）
-
-### https://kamakko.info/teate-josei/shogai/
-- 記事365：鎌ケ谷市の短期入所・日中一時支援
-
-変わった行の例：
-    ＋ 電話番号：047-445-1305
-    ＋ このページの目次
-    （なくなった行：1行）
 
 ### https://kazoku.pref.fukuoka.lg.jp/ikeasc/
 - 記事72：医療的ケア児支援センター一覧・47都道府県の相談窓口
 
 変わった行の例：
-    ＋ 訪問看護ステーションいぶきの風 新宮
-    ＋ 新宮町
-    ＋ こどもデイサービスYOOU飯塚
-    ＋ 飯塚市
-    ＋ 児童発達支援
-    ＋ アップルハート訪問看護ステーション久留米
-    ＋ 久留米市
-    ＋ スウィングキッズ
-    （なくなった行：8行）
+    ＋ りはなす訪問看護ステーション
+    ＋ 糸田町
+    ＋ ありすの家こどもデイサービス小倉北
+    ＋ 北九州市
+    ＋ 桜が丘クリニック 医療型特定短期入所 さくらんぼ
+    ＋ 北九州市
+    ＋ 短期入所
+    ＋ 八幡医師会訪問看護ステーション
+    （なくなった行：9行）
 
-### https://mamaheart-iwaki.com/introduction/
-- 施設：多機能型重心児者デイサービス どりーむず（fukushima-iwaki-dreams-pimd-therapy）
-- 施設：多機能型重心児者デイサービス かむ（fukushima-iwaki-kamu-pimd-therapy）
+### https://kikuchi-shakyo.or.jp/disability-welfare/
+- 施設：訪問介護ステーションきくち（kumamoto-kikuchi-shakyo-home-out）
 
 変わった行の例：
-    （なくなった行：2行）
+    ＋ ひきこもりの人の家族のつどい「とまりぎ」
+    （なくなった行：1行）
+
+### https://kodomo-yumeki.jp/
+- 施設：こどもリハビリデイサービス ゆめ希 山形店（yamagata-yamagata-yumeki-medical-therapy）
+- 施設：こどもリハビリデイサービス ゆめ希 天童店（yamagata-tendo-yumeki-medical-therapy）
+
+変わった行の例：
+    ＋ CDQ認証施設
+    ＋ 当施設が「CDQ認証施設」に認定されました
+    ＋ このたび当施設は、一般社団法人 人間力認定協会が運営する「療育施設クオリティ認証（CDQ認証）」において、「CDQ認証施設」に選出されました。
+    ＋ 「CDQ認証施設」とは、一定の基準を満たしたうえで、詳細な情報提供やアンケートへの協力を通じて、支援内容や体制について複数の観点から整理され、施設ごとの特徴や強みが具体的に公開されている施設のことです。
+    ＋ CDQ認証施設
+    ＋ 天童店
+    ＋ CDQ認証施設
+    ＋ 山形店
+
+### https://kumamoto-children.net/
+- 記事72：医療的ケア児支援センター一覧・47都道府県の相談窓口
+- 記事460：天草市の短期入所・日中一時支援
+
+変わった行の例：
+    ＋ 1週間の主な実績（ 〜 ）、熊本県立荒尾支援学校にて研修
+    ＋ （月）、南海トラフ地震を想定した広域避難訓練「ぐるっと防災ドライブ」を開催しました。
+    ＋ はながしま診療所（医療型短期入所）...
+    （なくなった行：3行）
+
+### https://matsumoto.hosp.go.jp/sinryoka/intervention/
+- 施設：国立病院機構 まつもと医療センター 医療型短期入所・通所「すてっぷ」（nagano-matsumoto-medical-center-shortstay-step）
+
+変わった行の例：
+    ＋ 療育指導科・療育指導室とは
+    ＋ １．重症心身障害病棟対象業務
+    ＋ 誕生会：誕生者を対象に行っています。
+    ＋ お楽しみ会：病棟プレイルームや療育訓練棟に皆で集まり、音楽ボランティアさんの演奏を聴いたり様々な企画、催し物を楽しみます。
+    ＋ 戸外活動
+    ＋ 日光浴や散歩、ドライブなど季節感や気分転換の機会提供へ拡大を図っています。
+    ＋ 季節の行事
+    ＋ ご家族・ボランティアをはじめとする院内外の方々と交流を図りながら、楽しいひとときを過ごします。
+    （なくなった行：54行）
+
+### https://mcc-hokkaido.net/
+- 記事72：医療的ケア児支援センター一覧・47都道府県の相談窓口
+- 記事93：札幌市の短期入所・日中一時支援
+- 記事244：帯広市の短期入所・日中一時支援
+- 記事261：苫小牧市の短期入所・日中一時支援
+- 記事291：釧路市の短期入所・日中一時支援
+- 記事295：北見市の短期入所・日中一時支援
+- 記事310：小樽市の短期入所・日中一時支援
+- 記事311：江別市の短期入所・日中一時支援
+- ほか2か所
+
+変わった行の例：
+    ＋ 【研修案内】令和8（2026）年度 札幌市医療的ケア児等支援者養成研修
+    （なくなった行：1行）
+
+### https://mirai-yosouzu.com/
+- 施設：重症児・者デイサービス ずうーっと（kochi-city-zutto-pimd-medical-after-school）
+- 施設：多機能型プラットホーム・かもべ（みらい予想図）（kochi-city-mirai-kamobe-pimd-day）
+
+変わった行の例：
+    ＋ 🎨 世界にひとつだけ！オリジナルかばんづ…
+    （なくなった行：1行）
+
+### https://mirai-yosouzu.com/guide/zutto/
+- 施設：重症児・者デイサービス ずうーっと（kochi-city-zutto-pimd-medical-after-school）
+
+変わった行の例：
+    ＋ 🎨 世界にひとつだけ！オリジナルかばんづ…
+    （なくなった行：1行）
 
 ### https://miyagichilfa.org/
 - 記事72：医療的ケア児支援センター一覧・47都道府県の相談窓口
 
 変わった行の例：
-    ＋ Page likes: 379
-    ＋ 2 days ago
-    ＋ 先日実施しました、東北大学災害科学国際研究所での研修の様子が、研究所のホームページに掲載されました！ 仙台地域防災リーダーの皆さんと考える医療的ケア児者の方々の防災について報告されています。ご一読ください！
-    ＋ irides.tohoku.ac.jp
-    ＋ irides.tohoku.ac.jp
-    ＋ 2 days ago
-    ＋ 今年3回目の北海道・東北ブロック医療的ケア児支援センターぼりぼり深掘り会に参加しました。 今回のアテンドは北海道センターさんです！ テーマは医療的ケア児者の移動・移送問題について。 根深く、しかも大切なテーマです。 お互いに、同じ制度だけれ
-    ＋ 2 days ago
-    （なくなった行：8行）
-
-### https://miyakojima.or.jp/kodomo/
-- 施設：こども発達サポートステーション それいゆ（osaka-miyakojima-soleil-child-therapy）
+    ＋ Page likes: 383
+    ＋ 5 days ago
+    ＋ 5 days ago
+    ＋ 5 days ago
+    ＋ 5 days ago
+    ＋ 1 week ago
+    （なくなった行：3行）
 
 ### https://miyazaki.hosp.go.jp/
 - 施設：国立病院機構 宮崎病院 通所施設「太陽」・一時支援（miyazaki-nho-hospital-day-stay）
 
-変わった行の例：
-    ＋ 熊本地震災害医療班派遣
-    ＋ にかかる表彰について
-    ＋ 【ご家族の皆様へ】面会について
-    （なくなった行：5行）
-
-### https://nagano-swc.com/shinano/
-- 施設：長野県信濃学園（nagano-matsumoto-shinano-gakuen-short-day）
+### https://nozomi-toyama.com/
+- 施設：キッズハウス のぞみ 上市（toyama-kamiichi-nozomi-child-therapy）
 
 変わった行の例：
-    ＋ R8.11 のびろ祭
-    （なくなった行：2行）
-
-### https://nizinoie-sabae.com/
-- 施設：有限会社 虹の家（放課後等デイサービス・短期入所・日中一時支援）（fukui-sabae-nijinoie-after-school-shortstay-day）
-
-変わった行の例：
-    ＋ 🏮 🌻夏祭り🏮
-    ＋ 🏮 🌻夏祭り🏮
-    （なくなった行：1行）
-
-### https://npo-beaver.com/
-- 施設：こども支援ポム 草加まつなみき園（特定非営利活動法人ビーバー）（saitama-soka-pomme-matsunamiki-pimd-medical-therapy）
-
-変わった行の例：
-    ＋ こども性暴力防止法について ～子どもたちの安全と尊厳を守るために～
-    （なくなった行：1行）
+    ＋ 上市
 
 ### https://okicare.net/
 - 記事72：医療的ケア児支援センター一覧・47都道府県の相談窓口
@@ -234,14 +234,7 @@
 - 記事441：石垣市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 『医療的ケア児（者）の受け入れを行っている短期入所事業所リスト』を更新しました
-    （なくなった行：1行）
-
-### https://okjiritsushien.com/
-- 施設：岡山市 移動支援・日中一時支援（okayama-city-out-day）
-
-変わった行の例：
-    ＋ 岡山市の障害者福祉事業所を 985 件掲載しています。
+    ＋ 主催講演アンケートについて
     （なくなった行：1行）
 
 ### https://oozu-ikuseien.or.jp/pages/24/
@@ -253,201 +246,192 @@
 - 記事407：四條畷市の短期入所・日中一時支援
 - 記事424：松原市の短期入所・日中一時支援
 
-変わった行の例：
-    ＋ 度第2回医療的ケア児支援にかかる連携会議にお申し込みいただいた方へのお知らせ 【NEW】
-    ＋ AYA インクルーシブ 音楽祭 IN大阪
-    （なくなった行：3行）
-
-### https://ousyu-hidamari.or.jp/pages/7/
-- 施設：ひだまり水沢☆きらり（iwate-oshu-kirari-medical-therapy）
-- 施設：ひだまり北上☆きらり（iwate-kitakami-hidamari-kirari-pimd-therapy）
-- 施設：ひだまり北上中央（iwate-kitakami-hidamari-chuo-child-day-therapy）
-- 施設：ひだまり北上にこっと（iwate-kitakami-hidamari-nikotto-child-day-therapy）
-- 施設：ひだまり水沢駅東（iwate-oshu-hidamari-mizusawa-ekihigashi-child-day-therapy）
-- 施設：ひだまり江刺岩谷堂（iwate-oshu-hidamari-esashi-iwayado-child-day-therapy）
-- 記事286：奥州市の短期入所・日中一時支援
-
-変わった行の例：
-    ＋ 1階：児童課、2階：就労課
-    ＋ 11（児童課・就労課 番号共通）
-    ＋ 12（児童課・就労課 番号共通）
-    ＋ 就労継続支援Ｂ型事業
-    （なくなった行：3行）
-
 ### https://parc.medi-care.co.jp/will/
 - 施設：PARCウィル東大阪（osaka-higashiosaka-parc-will-medical-therapy）
 
 変わった行の例：
-    ＋ ひがしおおさか
-    ＋ シュワシュワ☆フルーツポンチクッキング♪
-    （なくなった行：1行）
+    ＋ 年末年始の休業のお知らせ
+    ＋ 年末年始の休業のお知らせ
+    ＋ おにぎりクッキングに挑戦！お買い物からおにぎり作りまで楽しみました♪
+    （なくなった行：4行）
 
 ### https://parc.medi-care.co.jp/will/parcrepo/
 - 施設：PARCルポふしみ（parc）
 - 施設：PARCルポかたの（短期入所）（osaka-katano-parc-repo-child-shortstay）
 
 変わった行の例：
-    ＋ ひがしおおさか
-    ＋ シュワシュワ☆フルーツポンチクッキング♪
-    （なくなった行：1行）
+    ＋ 年末年始の休業のお知らせ
+    ＋ 年末年始の休業のお知らせ
+    ＋ おにぎりクッキングに挑戦！お買い物からおにぎり作りまで楽しみました♪
+    （なくなった行：4行）
 
 ### https://polim-labo.jp/
 - 施設：多機能型事業所 うたたね。（gunma-kiryu-utatane-pimd-medical-therapy）
 
 変わった行の例：
-    ＋ Monday
-    ＋ Today: 40
-    ＋ Yesterday: 130
-    ＋ Total: 24026
+    ＋ Thursday
+    ＋ Today: 44
+    ＋ Yesterday: 160
+    ＋ Total: 24475
     （なくなった行：4行）
 
 ### https://r.goope.jp/riranokaori/
 - 施設：多機能型重症児デイサービス リラの香り（gifu-gifu-riranokaori-medical-therapy-day）
 
 変わった行の例：
-    ＋ Today : 3
-    ＋ Yesterday : 32
-    ＋ Total : 32142
+    ＋ Today : 17
+    ＋ Yesterday : 16
+    ＋ Total : 32263
     （なくなった行：3行）
 
-### https://rinoa-202091.com/service/
-- 施設：BASE RINOA（nagasaki-city-base-rinoa-medical-therapy）
+### https://ryouiku-futabakai.or.jp/ryogoen/
+- 施設：両毛整肢療護園 医療型短期入所・日中一時支援（gunma-kiryu-ryomo-medical-child-short-day）
 
 変わった行の例：
-    ＋ 2026年10月の様子
-    （なくなった行：1行）
+    ＋ Patched PHP for CentOS 7 by GetPageSpeed - free for personal and evaluation use. Commercial use requires a subscription
 
-### https://ryokkakai.net/midori/
-- 施設：緑ヶ丘療育園 短期入所（hokkaido-sapporo-midorigaoka-pimd-shortstay）
+### https://ryouiku-futabakai.or.jp/ryogoen/tanki
+- 施設：両毛整肢療護園 医療型短期入所・日中一時支援（gunma-kiryu-ryomo-medical-child-short-day）
+- 記事384：桐生市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 学習発表会
-    （なくなった行：1行）
+    ＋ Patched PHP for CentOS 7 by GetPageSpeed - free for personal and evaluation use. Commercial use requires a subscription
 
 ### https://sachi-kochi.jp/pages/47/
 - 施設：重症心身障害児通園事業所 デイサービスセンター幸のつどい（布師田事業所）（kochi-city-sachi-nunoshida-pimd-after-school）
 
 変わった行の例：
-    ＋ 7
-    ＋ 7
+    ＋ 4
+    ＋ 0
+    ＋ 0
+    ＋ 2
     （なくなった行：2行）
 
 ### https://sachi-kochi.jp/pages/70/
 - 施設：デイサービスセンター幸のつどい 春野事業所（kochi-city-sachi-haruno-pimd-after-school）
 
 変わった行の例：
-    ＋ 7
-    ＋ 7
+    ＋ 4
+    ＋ 0
+    ＋ 0
+    ＋ 2
     （なくなった行：2行）
-
-### https://sasamotokai.net/sasanohakai/subaru-kofu/subaru-takinou-dayservice
-- 施設：すばる多機能型重症児デイサービスセンター甲府（yamanashi-kofu-subaru-medical-therapy）
-
-変わった行の例：
-    ＋ - じょうえい心臓クリニック
 
 ### https://seiyo-syakyo.jp/pages/2/
 - 施設：西予市社会福祉協議会 宇和支所（ehime-seiyo-shakyo-uwa-child-home-accompany）
 
 変わった行の例：
-    （なくなった行：1行）
+    ＋ 6
+    ＋ 4
+    ＋ 6
+    （なくなった行：3行）
 
 ### https://seiyo-syakyo.jp/pages/28/
 - 施設：西予市社会福祉協議会 宇和支所（ehime-seiyo-shakyo-uwa-child-home-accompany）
 
 変わった行の例：
-    ＋ (505KB)
-    ＋ (507KB)
-    ＋ (391KB)
-    （なくなった行：4行）
+    ＋ 6
+    ＋ 4
+    ＋ 6
+    （なくなった行：3行）
 
 ### https://seiyo-syakyo.jp/pages/7/
 - 施設：西予市社会福祉協議会 宇和支所（ehime-seiyo-shakyo-uwa-child-home-accompany）
 
 変わった行の例：
-    （なくなった行：1行）
+    ＋ 6
+    ＋ 4
+    ＋ 6
+    （なくなった行：3行）
 
-### https://shikoku-mc.hosp.go.jp/
-- 施設：重心在宅支援通園センター おひさま（kagawa-zentsuji-ohisama-therapy）
+### https://shintokai.jp/sawarabi/pages/5/
+- 施設：居宅介護事業所 AQUA（gunma-takasaki-aqua-home）
 
 変わった行の例：
-    ＋ 《看護学生のみなさん》病院見学会のお知らせ〈12/18(金)・01/30(土)開催〉
-    ＋ 新着情報 《看護学生のみなさん》病院見学会のお知らせ〈12/18(金)・01/30(土)開催〉
-    （なくなった行：2行）
+    ＋ 電話番号： 027-361-6155
+    （なくなった行：1行）
+
+### https://solways.or.jp/
+- 施設：重症児デイサービス ソルキッズ（hokkaido-sapporo-chuo-solkids-medical-therapy）
+- 施設：重症児デイサービス ラナキッズ（hokkaido-sapporo-kita-ranakids-medical-therapy）
+- 施設：重心児デイサービス リノキッズ（hokkaido-sapporo-minami-linokids-medical-therapy）
+- 施設：障がい児保育園モアナ（多機能型重症児者デイサービス モアナ）（hokkaido-sapporo-kita-moana-medical-therapy）
+- 施設：重症児デイサービス あいキッズ（hokkaido-ishikari-aikids-medical-therapy）
+
+変わった行の例：
+    ＋ ウルトラ・ユニバーサル野球大会結果のお知らせ
 
 ### https://t-aid.jp/facility/archives/89
 - 施設：ばんそうS＆S 児童部 日中一時支援・短期入所（tokushima-minami-bansou-child-day-shortstay）
 
 変わった行の例：
-    ＋ /blog/blog_comments/captcha/31957787
-    （なくなった行：1行）
-
-### https://t-fukushikai.or.jp/plusup.html
-- 施設：こども発達支援ルームぷらすup（金山）（fukui-tsuruga-plusup-child-therapy-day）
-
-変わった行の例：
-    ＋ 【沢ルーム】
-    ＋ 〒914-0146 福井県敦賀市金山57号16-1
-    ＋ 【ぷらすup 沢ルーム】
-    ＋ 〒914-0143 福井県敦賀市沢73-28
-    （なくなった行：4行）
-
-### https://t-fukushikai.or.jp/plusup_day.html
-- 施設：こども発達支援ルームぷらすup（金山）（fukui-tsuruga-plusup-child-therapy-day）
-
-変わった行の例：
-    ＋ 長期休暇時 午前10時～午後3時
+    ＋ /blog/blog_comments/captcha/99802439
     （なくなった行：1行）
 
 ### https://thm-kidslab.com/news/1586/2026/04/20/
 - 施設：Team Happiness メディカルケア Kids Lab. 金沢支援室（三口町）（ishikawa-kanazawa-team-happiness-kidslab-medical-therapy）
 
 変わった行の例：
-    ＋ 第1回はぴねすくらぶのお知らせ
-    ＋ 来月より新支援室オープン！
-    （なくなった行：3行）
+    ＋ 震災から一ヶ月
+    ＋ 新たにこまつ支援室がオープン！
+    ＋ ホームページを公開しました。
+    （なくなった行：2行）
 
-### https://toiro-okayama.pro/
-- 施設：日中一時支援事業所 といろ（okayama-toiro-child-day）
-
-変わった行の例：
-    ＋ 岡山の日中一時支援事業所 といろ
-    ＋ 内容をスキップ
-    ＋ トップへ戻る
-
-### https://toiro-okayama.pro/%E6%97%A5%E4%B8%AD%E4%B8%80%E6%99%82%E6%94%AF%E6%8F%B4%E4%BA%8B%E6%A5%AD%E6%89%80%E3%81%A8%E3%81%84%E3%82%8D%E3%80%80%E4%BB%A4%E5%92%8C%EF%BC%98%E5%B9%B4%E5%BA%A6%E3%80%80%E6%96%B0%E8%A6%8F%E5%88%A9/
-- 施設：日中一時支援事業所 といろ（okayama-toiro-child-day）
+### https://tsudumi.jp/
+- 施設：鼓ヶ浦つばさ園（児童発達支援センター・放課後等デイサービス）（yamaguchi-shunan-tsubasaen-pimd-therapy）
 
 変わった行の例：
-    （なくなった行：1行）
-
-### https://toiro-okayama.pro/%E7%9B%B8%E8%AB%87%E6%94%AF%E6%8F%B4%E4%BA%8B%E6%A5%AD%E6%89%80%E3%81%A8%E3%81%84%E3%82%8D%E3%80%80%E6%96%B0%E8%A6%8F%E3%81%AE%E5%8F%97%E3%81%91%E5%85%A5%E3%82%8C%E3%81%AE%E4%BC%91%E6%AD%A2/
-- 施設：日中一時支援事業所 といろ（okayama-toiro-child-day）
-
-変わった行の例：
-    （なくなった行：1行）
-
-### https://tomoekai-miyoshi.jp/news/important/20260619-660/
-- 施設：子鹿医療療育センター 医療型短期入所（hiroshima-miyoshi-kojika-medical-shortstay）
-
-変わった行の例：
-    ＋ クリスマス会
-    ＋ クリスマス会
+    ＋ 調理員(パート職員)の募集について
 
 ### https://tutuji.or.jp/pages/10/
 - 施設：児童発達支援事業 こすもす（つつじが崎学園）（yamanashi-kofu-tsutsujigasaki-cosmos-pimd-therapy）
 
 変わった行の例：
-    ＋ 4
-    ＋ 7
+    ＋ 5
+    ＋ 1
+    ＋ 9
+    （なくなった行：1行）
+
+### https://twf.or.jp/center/
+- 記事72：医療的ケア児支援センター一覧・47都道府県の相談窓口
+- 記事284：橿原市の短期入所・日中一時支援
+- 記事317：生駒市の短期入所・日中一時支援
+- 記事406：大和高田市の短期入所・日中一時支援
+- 記事408：天理市の短期入所・日中一時支援
+- 記事409：香芝市の短期入所・日中一時支援
+
+変わった行の例：
+    ＋ 在宅の重症心身障害児者、医療的ケア児等とそのご家族が、身近な地域において心身の状況に応じた適切な保健、福祉その他の各関連分野の支援を受けられるよう、コーディネーターを配置し、広域的・専門的な相談支援や関係機関と連携・調整等を行い、支援体制の
     （なくなった行：2行）
 
 ### https://u-mitte.jp/714-2
 - 施設：重症児者デイサービス プエオウイング（放課後等デイサービス）（hokkaido-obihiro-pueowing-medical-afterschool）
 
 変わった行の例：
-    ＋ ♨️手浴・足浴でぽかぽか、まったり
+    ＋ 🍓 みんなでクッキング！おいしいフルーチェができました
     （なくなった行：1行）
+
+### https://vs-group.jp/sozokuzei/family-trust/
+- 記事18：親なきあとの準備は何から？今からできること
+
+変わった行の例：
+    ＋ NISAの使い勝手がもっと良くなる？【 度税制改正大綱はどうなる】
+    ＋ 相続税の早見表とは？家族構成別に税額の目安がわかる表の見方と注意点を解説
+    （なくなった行：2行）
+
+### https://www.3raito.com/news/
+- 施設：一般社団法人らいと 日中一時支援（fukui-raito-day）
+
+変わった行の例：
+    ＋ お互いに学び合いながら
+    ＋ 「秋のくだもの」のちぎり絵をしました。
+    ＋ 果物を思い浮かべながら
+    ＋ ・ちぎる
+    ＋ ・のりを台紙にぬる
+    ＋ ・色紙をおいていく
+    ＋ 単純ですが、心が落ちついていきます。
+    ＋ 周りにはパンチで型を抜いた
+    （なくなった行：26行）
 
 ### https://www.akitaken-kouseikyoukai.jp/pages/10/
 - 施設：雄高園 日中一時支援（akita-city-yukoen-child-day）
@@ -456,15 +440,14 @@
 - 施設：福祉型障害児入所施設 若竹学園 短期入所・日中一時支援（akita-city-wakatake-child-shortstay-day）
 
 変わった行の例：
-    ＋ ぱんだ通信R8年 9月号（デイサービスたけのこ）
-    ＋ ぱんだ通信9月号
-    ＋ ( ・1290KB)
-    ＋ ぱんだ通信R8年 9月号（デイサービス若竹）
-    ＋ ぱんだ通信9月号
-    ＋ ( ・913KB)
-    ＋ ぱんだ通信R8年 7月号（デイサービスばんぶう）
-    ＋ ぱんだ通信7月号
-    （なくなった行：2行）
+    ＋ ぱんだ通信R8年 11月号（デイサービス若竹）
+    ＋ ぱんだ通信11月号
+    ＋ ( ・695KB)
+    ＋ NEW
+    ＋ ぱんだ通信R8年 11月号（デイサービスたけのこ）
+    ＋ ぱんだ通信11月号
+    ＋ ( ・840KB)
+    ＋ NEW
 
 ### https://www.akitaken-kouseikyoukai.jp/pages/75/
 - 施設：児童デイサービス若竹 放課後等デイサービス（akita-city-wakatake-child-day-service-therapy）
@@ -474,160 +457,104 @@
 - 施設：ありすの家こどもデイサービス博多（fukuoka-hakata-alice-medical-child-therapy）
 
 変わった行の例：
-    ＋ 早良 芋ほり体験🍠💜
-    （なくなった行：1行）
-
-### https://www.biwakogakuen.or.jp/kusatsucenter/
-- 施設：びわこ学園医療福祉センター草津（shiga-biwako-kusatsu-shortstay）
-
-変わった行の例：
-    ＋ (木） 3月26月（金） バスツアー【春】開催 高校生以上
-    ＋ (木） 3月26月（金） バスツアー【春】開催 高校生以上
-    ＋ （写真）講演講師 金城隆展（きんじょうたかのぶ）氏
+    ＋ 博多 ⭐️勤労感謝の日⭐️
+    ＋ 早良 お散歩日和🍁🍂
     （なくなった行：2行）
 
-### https://www.biwakogakuen.or.jp/publics/index/209
-- 施設：びわこ学園医療福祉センター草津（shiga-biwako-kusatsu-shortstay）
-
-変わった行の例：
-    ＋ (木） 3月26月（金） バスツアー【春】開催 高校生以上
-    ＋ (木） 3月26月（金） バスツアー【春】開催 高校生以上
-    ＋ （写真）講演講師 金城隆展（きんじょうたかのぶ）氏
-    （なくなった行：2行）
-
-### https://www.biwakogakuen.or.jp/publics/index/487/
-- 施設：びわこ学園医療福祉センター草津（shiga-biwako-kusatsu-shortstay）
-
-変わった行の例：
-    ＋ (木） 3月26月（金） バスツアー【春】開催 高校生以上
-    ＋ (木） 3月26月（金） バスツアー【春】開催 高校生以上
-    ＋ （写真）講演講師 金城隆展（きんじょうたかのぶ）氏
-    （なくなった行：2行）
-
-### https://www.biwakogakuen.or.jp/publics/index/533/
+### https://www.chiba-reha.jp/nursing/ikeajicenter/
 - 記事72：医療的ケア児支援センター一覧・47都道府県の相談窓口
-- 記事273：長浜市の短期入所・日中一時支援
-- 記事278：彦根市の短期入所・日中一時支援
-- 記事389：東近江市の短期入所・日中一時支援
+- 記事239：八千代市の短期入所・日中一時支援
+- 記事288：野田市の短期入所・日中一時支援
+- 記事339：我孫子市の短期入所・日中一時支援
+- 記事359：市原市の短期入所・日中一時支援
+- 記事365：鎌ケ谷市の短期入所・日中一時支援
+- 記事423：木更津市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ (木） 3月26月（金） バスツアー【春】開催 高校生以上
-    ＋ (木） 3月26月（金） バスツアー【春】開催 高校生以上
-    ＋ （写真）講演講師 金城隆展（きんじょうたかのぶ）氏
-    （なくなった行：2行）
+    （なくなった行：25行）
 
-### https://www.biwakogakuen.or.jp/relays/download/313/2527/1151/36043/?file=%2Ffiles%2Flibs%2F36043%2F%2F20260423101346563.pdf
-- 施設：びわこ学園医療福祉センター草津（shiga-biwako-kusatsu-shortstay）
+### https://www.city.abashiri.hokkaido.jp/soshiki/12/2001.html
+- 施設：網走市社会福祉協議会 訪問介護事業所（hokkaido-abashiri-shakyo-home）
 
 変わった行の例：
-    ＋ (木） 3月26月（金） バスツアー【春】開催 高校生以上
-    ＋ (木） 3月26月（金） バスツアー【春】開催 高校生以上
-    ＋ （写真）講演講師 金城隆展（きんじょうたかのぶ）氏
-    （なくなった行：2行）
-
-### https://www.biwakogakuen.or.jp/relays/download/378/1006/200/32356/?file=%2Ffiles%2Flibs%2F32356%2F202510011815108284.pdf
-- 施設：びわこ学園医療福祉センター草津（shiga-biwako-kusatsu-shortstay）
-
-変わった行の例：
-    ＋ (木） 3月26月（金） バスツアー【春】開催 高校生以上
-    ＋ (木） 3月26月（金） バスツアー【春】開催 高校生以上
-    ＋ （写真）講演講師 金城隆展（きんじょうたかのぶ）氏
-    （なくなった行：2行）
+    （なくなった行：1行）
 
 ### https://www.city.abiko.chiba.jp/jigyousha/shogaifukushi/2026nittyu.html
 - 記事339：我孫子市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 我孫子市障害者グループホーム等運営費補助金
+    （なくなった行：1行）
 
 ### https://www.city.abiko.chiba.jp/jigyousha/shogaifukushi/guidehelper.html
 - 記事339：我孫子市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 事業者等との包括連携協定
+    （なくなった行：1行）
 
 ### https://www.city.abiko.chiba.jp/kenko/shogaishafukushi/josei_service/service/seikatusien.html
 - 記事339：我孫子市の短期入所・日中一時支援
 
 変わった行の例：
-    （なくなった行：1行）
+    ＋ 都市計画関連の申請・届出
 
 ### https://www.city.abiko.chiba.jp/kenko/shogaishafukushi/josei_service/service/syougaihukusisa-bisu.html
 - 記事339：我孫子市の短期入所・日中一時支援
 
 変わった行の例：
-    （なくなった行：3行）
-
-### https://www.city.abiko.chiba.jp/kenko/shogaishafukushi/josei_service/shogai_teate/fukushiteate.html
-- 記事339：我孫子市の短期入所・日中一時支援
-
-変わった行の例：
-    （なくなった行：1行）
+    ＋ 布佐地区AED設置場所
 
 ### https://www.city.abiko.chiba.jp/kosodate/children/hattatsushien/soudan_riyou.html
 - 記事339：我孫子市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 手賀沼のうなきちさんがマスコットキャラクターに昇格しました
+    ＋ 首都圏向け新ラジオCM「妻想いな夫」編で魅力を発信します！
+    ＋ 新木行政サービスセンター会議室の利用案内
 
 ### https://www.city.abiko.chiba.jp/kosodate/children/hattatsushien/ukaa.html
 - 記事339：我孫子市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 胃がん検診
-
-### https://www.city.ageo.lg.jp/page/302415.html
-- 記事240：上尾市の短期入所・日中一時支援
-
-変わった行の例：
-    ＋ 施設に入所中の人（グループホーム等の一部施設を除く）
-    ＋ リーフレット等
-    ＋ 特別障害者手当等リーフレット（埼玉県） [PDFファイル／2.05MB]
-    ＋ 障害児福祉手当および特別障害者手当の障害程度認定基準について（厚生労働省）
-    （なくなった行：3行）
+    ＋ 寿保育園
 
 ### https://www.city.asahikawa.hokkaido.jp/dept/40000000/40150000/pagelist.html
 - 記事146：旭川市の短期入所・日中一時支援
-
-変わった行の例：
-    ＋ こども手話講座を開催します
 
 ### https://www.city.asaka.lg.jp/soshiki/50/index-2.html
 - 記事360：朝霞市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 更新 第21回はあとぴあふれあい祭りを開催します
-    ＋ 更新 第21回はあとぴあふれあい祭りを開催します
-    ＋ 第21回はあとぴあふれあい祭りを開催します
-
-### https://www.city.chitose.lg.jp/c30/1002672/1002677/1004997.html
-- 施設：千歳市 お子様の居宅介護・短期入所（hokkaido-chitose-child-home-stay）
-- 記事382：千歳市の短期入所・日中一時支援
-
-変わった行の例：
-    ＋ 障害福祉サービス事業所一覧( ) （PDF 146.8 KB）
-    ＋ 障害児通所支援事業所一覧( ) （PDF 103.7 KB）
+    ＋ 更新 度埼玉県要約筆記者試験
+    ＋ 更新 度埼玉県要約筆記者試験
+    ＋ 度埼玉県要約筆記者試験
     （なくなった行：2行）
 
-### https://www.city.chofu.lg.jp/060050/p035236.html
+### https://www.city.atsugi.kanagawa.jp/soshiki/shogaifukushika/index.html
+- 記事226：厚木市の短期入所・日中一時支援
+
+変わった行の例：
+    ＋ 障がい者福祉計画（第8期）（案）に対するパブリックコメントの実施について
+
+### https://www.city.ayabe.lg.jp/0000001592.html
+- 記事387：綾部市の短期入所・日中一時支援
+
+変わった行の例：
+    （なくなった行：1行）
+
+### https://www.city.chofu.lg.jp/010040/p003232.html
 - 記事225：調布市の短期入所・日中一時支援
-
-変わった行の例：
-    ＋ 2月分の空き情報(PDF:92KB)
-    ＋ 午前8時30分から9時までに、障害福祉課へお電話でご連絡ください。
-    （なくなった行：2行）
 
 ### https://www.city.fuchu.tokyo.jp/kenko/shogai/shogainoarukata/jyushinrespite.html
 - 記事224：東京都府中市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 度実施 府中市職員採用資格 試験の予定について
-    （なくなった行：3行）
+    ＋ 住民基本台帳による人口
+    （なくなった行：1行）
 
 ### https://www.city.fuchu.tokyo.jp/kenko/shogai/shogainoarukata/shienhi.html
 - 記事224：東京都府中市の短期入所・日中一時支援
 
 変わった行の例：
+    ＋ 居宅介護支援事業者に係る各種手続及び様式等について
     （なくなった行：1行）
 
 ### https://www.city.fuchu.tokyo.jp/kenko/shogai/teate/shinshin.html
@@ -636,179 +563,245 @@
 ### https://www.city.fuchu.tokyo.jp/kosodate/shussan/hoikujo/ikea.html
 - 記事224：東京都府中市の短期入所・日中一時支援
 
+変わった行の例：
+    （なくなった行：1行）
+
 ### https://www.city.fuchu.tokyo.jp/kosodate/shussan/teate_josei/shogaiteate.html
 - 記事224：東京都府中市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 東京都心身障害者医療費助成
-    （なくなった行：1行）
+    ＋ 幼児教育・保育の無償化について
+    ＋ 就学援助費
+    ＋ 新生児聴覚検査のお知らせ
+    （なくなった行：3行）
 
 ### https://www.city.fuchu.tokyo.jp/shisetu/fukushi/fukushi/syogai.html
 - 記事224：東京都府中市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 教育センター
-    ＋ 学校給食センター
-    ＋ 府中市ごみ総合サポートセンター開設
+    ＋ 粗大ごみの出し方
+    ＋ イベントカレンダー
+    ＋ 障害者手帳や障害者手当、障害者医療費助成を受給していますが、府中市外へ転出することになりました。府中市で手続きすることはありますか。
     （なくなった行：3行）
 
 ### https://www.city.fuchu.tokyo.jp/shisetu/fukushi/habataki.html
 - 記事224：東京都府中市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 教育センター
-    ＋ 粗大ごみの出し方
+    ＋ 府中市立教育センターのご案内
+    ＋ 春の江戸絵画まつり 長沢蘆雪
     （なくなった行：2行）
 
 ### https://www.city.fujimi.saitama.jp/kenko_fukushi_iryo/05syougaisya/teate/2010-0511-2132-136.html
 - 記事453：富士見市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 障がい児・者生活サポート事業
-    ＋ 障害者自立支援審査支払等システムによる審査結果の共有について
-    （なくなった行：2行）
-
-### https://www.city.fukui.lg.jp/fukusi/sfukusi/service/p020932.html
-- 施設：福井市 居宅介護（ホームヘルプ）（fukui-city-home-care）
-- 施設：福井市社会福祉協議会 ホームヘルプサービスセンター（旧 福井市ふれあい公社）（fukui-city-fureai-home-helper-child）
-
-変わった行の例：
-    ＋ 障害福祉サービス事業所・・・・・・ 20261101_指定事業所一覧（障害福祉サービス）（エクセル形式 xlsx 433キロバイト）
-    ＋ 障害児通所支援サービス事業所・・・ 20261101_指定事業所一覧（障害児通所支援サービス）（エクセル形式 xlsx 411キロバイト）
-    ＋ 相談支援・自立生活援助事業所・・・ 20261101_指定事業所一覧（相談支援・自立生活援助）（エクセル形式 xlsx 407キロバイト）
-    ＋ 基準該当サービス事業所・・・・・・ 20261101_指定事業所一覧（基準該当サービス）（エクセル形式 xlsx 403キロバイト）
-    （なくなった行：4行）
-
-### https://www.city.fukuoka.lg.jp/fukushi/shisetsushien/health/001_4.html
-- 施設：福岡市 居宅介護・移動支援（fukuoka-city-home-out）
-
-変わった行の例：
-    ＋ 就学児サポート調査・給付決定時調査_調査票（新規調査用).xlsx（エクセル：20KB）
-    ＋ 就学児サポート調査・給付決定時調査_調査票（更新時調査用).xlsx（エクセル：21KB）
-    ＋ 就学児サポート調査票記入の際の注意事項（保護者用）.pdf（PDF：544KB）
+    ＋ 児童扶養手当について
+    ＋ 高齢者補聴器購入費補助事業
+    ＋ 自立支援医療（精神通院）
+    （なくなった行：3行）
 
 ### https://www.city.fukuyama.hiroshima.jp/soshiki/shogaifukushi/
 - 記事126：福山市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ こども性暴力防止法について（義務対象事業者向け） ( 更新)
-    ＋ 障がいのある方の介護保険サービスと障がい福祉サービスの利用（介護併給）について ( 更新)
-    ＋ 障がい児通所支援利用者負担軽減事業（食費補助）について ( 更新)
-    ＋ こども性暴力防止法について（義務対象事業者向け） ( 更新)
-    ＋ 障がいのある方の介護保険サービスと障がい福祉サービスの利用（介護併給）について
-    ＋ こども性暴力防止法について（義務対象事業者向け）
-    ＋ 障がい児通所支援利用者負担軽減事業（食費補助）について
-    （なくなった行：1行）
+    ＋ 利用日数に係る特例の適用を受ける日中活動サービス等に係る届出について ( 更新)
+    ＋ 障がい者訪問入浴サービス事業について ( 更新)
+    ＋ 【障がい福祉課】福山市「食」の自立支援事業（配食サービス）について ( 更新)
+    ＋ 利用日数に係る特例の適用を受ける日中活動サービス等に係る届出について ( 更新)
+    ＋ 利用日数に係る特例の適用を受ける日中活動サービス等に係る届出について
+    ＋ 障がい者訪問入浴サービス事業について
+    ＋ 【障がい福祉課】福山市「食」の自立支援事業（配食サービス）について
+    （なくなった行：2行）
 
-### https://www.city.hachioji.tokyo.jp/kurashi/welfare/001/p031368.html
-- 記事115：八王子市の短期入所・日中一時支援
-
-変わった行の例：
-    ＋ 第3回八王子市ひきこもり家族向け講座「社会との繋がりを築く～発達特性や精神疾患などを背景とした不登校・ひきこもり支援～」開催のお知らせ
-    （なくなった行：1行）
-
-### https://www.city.hamada.shimane.jp/www/section/1774498581191/index.html
-- 記事427：浜田市の短期入所・日中一時支援
+### https://www.city.hagi.lg.jp/site/syukuhaku/
+- 記事461：萩市の短期入所・日中一時支援
 
 変わった行の例：
+    ＋ 【営業時間】7時00分～19時30分（職員勤務時間）
+    ＋ 13時00分～19時00分
+    ＋ ​理念「地域の中で自分らしく楽しく暮らす」家庭的な雰囲気のグループホームです。年間通して、様々な外出活動(余暇活動）をしています。まずは見学や体験をお勧めしています。
     （なくなった行：1行）
+
+### https://www.city.hakusan.lg.jp/_res/projects/default_project/_page_/001/002/007/idousiengaidobook.pdf
+- 施設：白山市 移動支援事業（ishikawa-hakusan-mobility）
+
+変わった行の例：
+    ＋ BINARY:f4a8558e0eddee02435d68cef0eac79e2ac17a1372f2e547bd4baeeb801c5d0d
+    （なくなった行：376行）
 
 ### https://www.city.hamura.tokyo.jp/0000000822.html
 - 施設：東京小児療育病院 短期入所（tokyo-musashimurayama-tokyo-child-medical-shortstay）
 
 変わった行の例：
-    ＋ 児童・生徒数（ 現在）
-    ＋ 障害児通所支援
-    （なくなった行：2行）
+    （なくなった行：3行）
 
 ### https://www.city.hamura.tokyo.jp/0000014661.html
 - 施設：羽村市 居宅介護・移動支援・日中一時支援（tokyo-hamura-child-home-out-day-system）
 - 記事509：羽村市の短期入所・日中一時支援
 
 変わった行の例：
-    （なくなった行：1行）
+    （なくなった行：4行）
+
+### https://www.city.hamura.tokyo.jp/0000015157.html
+- 記事509：羽村市の短期入所・日中一時支援
+
+変わった行の例：
+    （なくなった行：4行）
 
 ### https://www.city.hamura.tokyo.jp/0000019945.html
 - 記事509：羽村市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 羽村市の特別支援学級・特別支援教室「はばたき教室」
-    ＋ 障害の理解を深めるための講演会を行います
-    ＋ 養育家庭（里親）体験発表会
+    （なくなった行：3行）
 
-### https://www.city.hasuda.saitama.jp/shogai/kenko/koresha/shogai/shogai.html
-- 記事507：蓮田市の短期入所・日中一時支援
-
-変わった行の例：
-    ＋ ミライロID（障害者手帳アプリ）
-
-### https://www.city.hasuda.saitama.jp/shogai/kenko/shogai/fukushiguide/fukushiguide.html
-- 記事507：蓮田市の短期入所・日中一時支援
+### https://www.city.hanyu.lg.jp/docs/2024071700025/
+- 記事491：加須市の短期入所・日中一時支援
+- 記事492：行田市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ ミライロID（障害者手帳アプリ）
-
-### https://www.city.hasuda.saitama.jp/shogai/kenko/shogai/syougai/chiikiseikatsushienkyoten.html
-- 記事507：蓮田市の短期入所・日中一時支援
-
-変わった行の例：
-    ＋ ミライロID（障害者手帳アプリ）
+    ＋ 結婚
+    ＋ 離婚
 
 ### https://www.city.higashiosaka.lg.jp/0000002047.html
 - 施設：東大阪市立障害児者支援センター レピラ（osaka-higashiosaka-lepira-shortstay-day）
 
-### https://www.city.higashiosaka.lg.jp/kosodate/0000007466.html
-- 記事119：東大阪市の短期入所・日中一時支援
+### https://www.city.hofu.yamaguchi.jp/soshiki/59/
+- 記事421：防府市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 児童発達支援・放課後等デイサービス事業所一覧表( 現在)別ウィンドウで開きます (エクセル形式、29.08KB)
-    ＋ 事業所マップ( 現在)別ウィンドウで開きます (PDF形式、939.98KB)
-    ＋ 相談支援事業所一覧表 ( 現在) 別ウィンドウで開きます (エクセル形式、26.53KB)
-    （なくなった行：3行）
+    （なくなった行：1行）
 
-### https://www.city.ichikawa.lg.jp/soshiki/chi03/
+### https://www.city.ichikawa.lg.jp/page/6712.html
+- 施設：ふる里学舎こどもの丘（chiba-ichikawa-kodomonooka-day）
+
+変わった行の例：
+    ＋ 掲載されている内容の詳細については、直接、事業所にお問合せください。 ​
+    ＋ 日中一時支援事業所一覧 [PDFファイル／140KB]
+    （なくなった行：2行）
+
+### https://www.city.ichikawa.lg.jp/wel05/1111000006.html
 - 記事219：市川市の短期入所・日中一時支援
 
-### https://www.city.ishinomaki.lg.jp/cont/10402000/3059/3059.html
-- 施設：居宅介護事業所 ヘルプグループ“KAI”（miyagi-ishinomaki-kai-home-out）
-- 記事259：石巻市の短期入所・日中一時支援
+変わった行の例：
+    ＋ 一括データ [PDFファイル／4.81MB]
+    ＋ その他、日常生活のサービスなど [PDFファイル／564KB]
+    （なくなった行：2行）
+
+### https://www.city.ichikawa.lg.jp/wel05/1111000096.html
+- 記事219：市川市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 石巻市開成1-51
-    ＋ コミュニティサロン月間予定表（ ）（PDF:635 KB）
-    ＋ 障害福祉サービスの利用
+    ＋ 掲載されている内容の詳細については、直接、事業所にお問合せください。 ​
+    ＋ 日中一時支援事業所一覧 [PDFファイル／140KB]
     （なくなった行：2行）
+
+### https://www.city.iga.lg.jp/igakids/0000002973.html
+- 施設：ココロノイロ 放課後等デイサービス・日中一時支援（mie-iga-cocoronoiro-child-therapy-day）
+
+変わった行の例：
+    ＋ 度伊賀市会計年度任用職員（こども発達相談員）の募集について
+
+### https://www.city.isa.kagoshima.jp/health/kosodate/tanpopo/
+- 施設：伊佐市子ども発達支援センター たんぽぽ（kagoshima-isa-tanpopo-child-development）
+
+変わった行の例：
+    ＋ 電話 66 FAX 11
+    （なくなった行：1行）
+
+### https://www.city.isahaya.nagasaki.jp/soshiki/16/
+- 記事266：諫早市の短期入所・日中一時支援
+
+変わった行の例：
+    ＋ 更新 R7年度 こども支援相談会
+    ＋ R7年度 こども支援相談会
+    ＋ R7年度 こども支援相談会
+    （なくなった行：2行）
+
+### https://www.city.iwaki.lg.jp/www/section/1441963509412/index.html
+- 記事148：いわき市の短期入所・日中一時支援
+
+変わった行の例：
+    ＋ 「いわき市手話言語の普及及びコミュニケーション手段の利用の促進に関する条例」を制定しました
+
+### https://www.city.joetsu.niigata.jp/life/2/18/114/
+- 記事238：上越市の短期入所・日中一時支援
+
+変わった行の例：
+    ＋ 更新 ～9日は障害者週間です （ 福祉課 ）
+    ＋ 雪情報
+    （なくなった行：4行）
+
+### https://www.city.joetsu.niigata.jp/soshiki/fukusi/lifeguide-262.html
+- 施設：SMiDデイサービスSora（niigata-joetsu-smid-sora-medical-therapy-day）
+- 記事238：上越市の短期入所・日中一時支援
+
+変わった行の例：
+    ＋ 雪情報
+    （なくなった行：1行）
+
+### https://www.city.joetsu.niigata.jp/soshiki/fukusi/lifeguide-277.html
+- 記事238：上越市の短期入所・日中一時支援
+
+変わった行の例：
+    ＋ 雪情報
+    （なくなった行：1行）
+
+### https://www.city.joetsu.niigata.jp/soshiki/sukoyaka/sukoyaka.html
+- 記事238：上越市の短期入所・日中一時支援
+
+変わった行の例：
+    ＋ 雪情報
+    （なくなった行：1行）
 
 ### https://www.city.joyo.kyoto.jp/0000001898.html
 - 記事375：城陽市の短期入所・日中一時支援
+
+変わった行の例：
+    （なくなった行：1行）
 
 ### https://www.city.joyo.kyoto.jp/0000001899.html
 - 記事375：城陽市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ この記事を見ている人はこんな記事も見ています
+    （なくなった行：1行）
 
 ### https://www.city.joyo.kyoto.jp/0000009336.html
 - 記事375：城陽市の短期入所・日中一時支援
 
 変わった行の例：
-    （なくなった行：3行）
+    （なくなった行：2行）
 
 ### https://www.city.joyo.kyoto.jp/0000009489.html
 - 記事375：城陽市の短期入所・日中一時支援
 
 変わった行の例：
+    ＋ 障害福祉サービス受給者証等の再交付手続き オンライン申請（ぴったりサービス）について
+
+### https://www.city.kagoshima.lg.jp/kenkofukushi/fukushi/syofuku/kenko/fukushi/shogai/zaitaku/index.html
+- 施設：鹿児島市 居宅介護・移動支援・日中一時支援（kagoshima-city-home-out-day）
+- 記事114：鹿児島市の短期入所・日中一時支援
+
+変わった行の例：
+    ＋ 業者リスト一覧（理髪・美容）（PDF：127KB）
+    ＋ 鹿児島市地域活動支援センター事業の委託に関するお知らせ
     （なくなった行：1行）
+
+### https://www.city.kagoshima.lg.jp/kenkofukushi/fukushi/syofuku/kenko/fukushi/shogai/zaitaku/zaitakusien.html
+- 記事114：鹿児島市の短期入所・日中一時支援
+
+変わった行の例：
+    ＋ 鹿児島市地域活動支援センター事業の委託に関するお知らせ
 
 ### https://www.city.kakegawa.shizuoka.jp/gyosei/docs/10092.html
 - 施設：掛川市 お子様の日中一時支援（shizuoka-kakegawa-child-day-support）
 - 記事312：掛川市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 在宅サービス
-    ＋ 助成・手当等
-    ＋ 障害福祉サービス
-    ＋ 介護保険サービスを受けるには(要介護認定)
+    ＋ 移動支援
+    ＋ 介護
+    ＋ 介護
+    ＋ 申請書ダウンロード
     （なくなった行：4行）
 
 ### https://www.city.kakegawa.shizuoka.jp/gyosei/docs/7668.html
@@ -816,127 +809,238 @@
 - 記事312：掛川市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 審議結果
-    ＋ 審議結果
-    ＋ 審議結果 令和元年
-    ＋ 審議結果
-    ＋ 審議結果
-    （なくなった行：4行）
+    ＋ 日常生活用具費助成
+    ＋ 市の統計
+    ＋ 掛川市の住民登録人口
+    （なくなった行：2行）
 
 ### https://www.city.kakegawa.shizuoka.jp/gyosei/docs/9043.html
 - 記事312：掛川市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 障害のある人向けの手当、助成制度、割り引きサービスを教えてください。
-    （なくなった行：2行）
+    （なくなった行：1行）
+
+### https://www.city.kamagaya.chiba.jp/download_menu/download_fukushi/shogai.html
+- 記事365：鎌ケ谷市の短期入所・日中一時支援
+
+変わった行の例：
+    ＋ 雨水浸透桝 雨水流出抑制施設の管理 （道路河川整備課）
+    ＋ 市民公益活動 コミュニティセンター（市民活動推進課）
+    （なくなった行：3行）
 
 ### https://www.city.kamagaya.chiba.jp/kenko-fukushi/shougaishafukushi/fukushi_service/service1.html
 - 施設：訪問介護たまゆら（chiba-kamagaya-tamayura-home）
 
 変わった行の例：
-    ＋ 給食サービス
-    （なくなった行：1行）
+    ＋ 合併浄化槽補助申請・し尿処理（くみ取り） （クリーン推進課）
+    ＋ 建築確認等関係書式 （建築住宅課）
+    （なくなった行：2行）
 
-### https://www.city.kamiamakusa.kumamoto.jp/q/aview/429/1064.html
-- 施設：上天草市社協 ほっとサポート（日中一時支援）（kumamoto-kamiamakusa-shakyo-hot-support）
-
-変わった行の例：
-    ＋ 難聴児補聴器購入費助成事業について
-    （なくなった行：1行）
-
-### https://www.city.kashiwa.lg.jp/shogaifukushi/kaigo/shougaishien/nichijoshien/service.html
-- 施設：豊四季光風園（日中一時支援）（chiba-kashiwa-toyoshiki-kofuen-day）
-- 施設：柏市 移動支援（chiba-kashiwa-child-mobility-support-system）
-- 施設：介助ステーション・グッドライフ（移動支援）（chiba-kashiwa-goodlife-child-mobility）
-- 施設：サポートステーションKUU（移動支援）（chiba-kashiwa-kuu-child-mobility）
-- 記事136：柏市の短期入所・日中一時支援
+### https://www.city.karatsu.lg.jp/soshiki/48/
+- 記事215：唐津市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 更新日 令和8(2026)年
-    ＋ 最新の事業所一覧は こちら
-    （なくなった行：17行）
+    ＋ 更新 あんしんネットワーク《地域生活支援拠点等事業》
+    ＋ 新着情報の一覧
+    ＋ 更新 あんしんネットワーク《地域生活支援拠点等事業》
+    ＋ あんしんネットワーク《地域生活支援拠点等事業》
+    （なくなった行：1行）
 
 ### https://www.city.kasugai.lg.jp/kenko/syogai/index.html
 - 記事229：春日井市の短期入所・日中一時支援
 
 変わった行の例：
-    （なくなった行：2行）
+    ＋ 春育(発達が気になるお子さんの応援ガイドブック)を作成しました
 
-### https://www.city.kawagoe.saitama.jp/kenko/fukushi/1006736/1006770.html
-- 記事169：川越市の短期入所・日中一時支援
-
-変わった行の例：
-    ＋ 移動支援事業所一覧 （PDF 422.2KB）
-    ＋ 移動支援事業所一覧 （Excel 15.2KB）
-    （なくなった行：2行）
-
-### https://www.city.kawasaki.jp/350/page/0000100551.html
-- 施設：川崎市 移動支援事業（kawasaki-city-mobility）
-
-変わった行の例：
-    （なくなった行：1行）
+### https://www.city.kimitsu.lg.jp/soshiki/21/
+- 記事475：君津市の短期入所・日中一時支援
 
 ### https://www.city.kishiwada.lg.jp/soshiki/105/
 - 記事210：岸和田市の短期入所・日中一時支援
 
-変わった行の例：
-    ＋ 掲載 「大阪精神医療センター 100周年記念公開講座～テーマ：発達障害～」のご案内
-    ＋ 掲載 【支援者向け】「 度発達障がい診断前アセスメント力強化研修」のご案内
-    ＋ 掲載 「大阪精神医療センター 100周年記念公開講座～テーマ：発達障害～」のご案内
-    ＋ 掲載 【支援者向け】「 度発達障がい診断前アセスメント力強化研修」のご案内
-    ＋ 「大阪精神医療センター 100周年記念公開講座～テーマ：発達障害～」のご案内
-    ＋ 【支援者向け】「 度発達障がい診断前アセスメント力強化研修」のご案内
-    （なくなった行：4行）
-
-### https://www.city.kobe.lg.jp/a95295/service_introduction/idoushien.html
-- 施設：神戸市 移動支援・日中一時支援（hyogo-kobe-out-day）
+### https://www.city.kitakyushu.lg.jp/contents/17600112.html
+- 施設：あすなろ学園 日中一時支援・短期入所（fukuoka-kitakyushu-asunaro-child-day-shortstay）
 
 変わった行の例：
+    ＋ キタキュー地域クラブNAVI
+    ＋ 旦過市場いちばん館
+    ＋ コクラBEAT
     （なくなった行：2行）
 
-### https://www.city.kobe.lg.jp/a95295/service_introduction/koudouengo.html
-- 記事12：強度行動障害でショートステイを使うには？受け入れのコツ
+### https://www.city.kitakyushu.lg.jp/contents/17600182.html
+- 記事110：北九州市の短期入所・日中一時支援
 
 変わった行の例：
+    ＋ キタキュー地域クラブNAVI
+    ＋ 旦過市場いちばん館
+    ＋ コクラBEAT
     （なくなった行：2行）
 
-### https://www.city.kobe.lg.jp/a95295/service_introduction/kyotakuhoumongatajidouhattatsushien.html
-- 記事369：重症心身障害児の児童発達支援・放課後等デイサービス（重心型）とは？ちがい・さがし方
-- 記事370：外に出にくい子の家で受けられるサービス
-- 記事374：障害児の春休み・ゴールデンウィークのあずけ先
+### https://www.city.kitakyushu.lg.jp/contents/17600446.html
+- 記事431：医療的ケア児の在宅レスパイト、市ごとのちがい
+- 記事110：北九州市の短期入所・日中一時支援
 
 変わった行の例：
+    ＋ キタキュー地域クラブNAVI
+    ＋ 旦過市場いちばん館
+    ＋ コクラBEAT
     （なくなった行：2行）
 
-### https://www.city.kobe.lg.jp/a95295/service_introduction/nittyuitizisienn.html
-- 施設：神戸市 移動支援・日中一時支援（hyogo-kobe-out-day）
-- 記事107：神戸市の短期入所・日中一時支援
+### https://www.city.kitakyushu.lg.jp/contents/29800083.html
+- 記事110：北九州市の短期入所・日中一時支援
 
 変わった行の例：
+    ＋ キタキュー地域クラブNAVI
+    ＋ 旦過市場いちばん館
+    ＋ コクラBEAT
     （なくなった行：2行）
 
-### https://www.city.kurashiki.okayama.jp/kosodate/childcare/1004497/1004515/index.html
-- 施設：児童発達支援事業所きらり中庄・ひかり（okayama-kurashiki-kirari-hikari-therapy）
+### https://www.city.kitakyushu.lg.jp/contents/29800084.html
+- 記事110：北九州市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 受給者証の申請手続きについて（児童対象あなたのまちの相談窓口） （PDF 7.2MB）
+    ＋ キタキュー地域クラブNAVI
+    ＋ 旦過市場いちばん館
+    ＋ コクラBEAT
+    （なくなった行：2行）
+
+### https://www.city.kitakyushu.lg.jp/contents/29800146.html
+- 記事110：北九州市の短期入所・日中一時支援
+
+変わった行の例：
+    ＋ キタキュー地域クラブNAVI
+    ＋ 旦過市場いちばん館
+    ＋ コクラBEAT
+    （なくなった行：2行）
+
+### https://www.city.kitakyushu.lg.jp/contents/29800170.html
+- 施設：あすなろ学園 日中一時支援・短期入所（fukuoka-kitakyushu-asunaro-child-day-shortstay）
+
+変わった行の例：
+    ＋ キタキュー地域クラブNAVI
+    ＋ 旦過市場いちばん館
+    ＋ コクラBEAT
+    （なくなった行：2行）
+
+### https://www.city.kitakyushu.lg.jp/contents/29800196.html
+- 記事135：受給者証の更新はいつ？期限切れを防ぐじゅんび
+
+変わった行の例：
+    ＋ キタキュー地域クラブNAVI
+    ＋ 旦過市場いちばん館
+    ＋ コクラBEAT
+    （なくなった行：2行）
+
+### https://www.city.kitakyushu.lg.jp/contents/298_00009.html
+- 施設：あすなろ学園 日中一時支援・短期入所（fukuoka-kitakyushu-asunaro-child-day-shortstay）
+
+変わった行の例：
+    ＋ キタキュー地域クラブNAVI
+    ＋ 旦過市場いちばん館
+    ＋ コクラBEAT
+    （なくなった行：2行）
+
+### https://www.city.kitakyushu.lg.jp/ho-huku/17600187.html
+- 記事10：相談支援事業所とは？障害児の探し方と選び方
+
+変わった行の例：
+    ＋ キタキュー地域クラブNAVI
+    ＋ 旦過市場いちばん館
+    ＋ コクラBEAT
+    （なくなった行：2行）
+
+### https://www.city.kitakyushu.lg.jp/ho-huku/29800084.html
+- 記事69：日中一時支援と放課後等デイサービスの違い
+
+変わった行の例：
+    ＋ キタキュー地域クラブNAVI
+    ＋ 旦過市場いちばん館
+    ＋ コクラBEAT
+    （なくなった行：2行）
+
+### https://www.city.kitamoto.lg.jp/soshiki/fukushi/shogai/gyomu/g1/11555.html
+- 記事506：北本市の短期入所・日中一時支援
+
+変わった行の例：
+    ＋ 電話 080-3292-7366
+    ＋ 電話 080-3291-7966
+    ＋ ファクス番号 048-577-5948
+    （なくなった行：3行）
+
+### https://www.city.kobe.lg.jp/a95295/ikea/family_respite_businesses.html
+- 施設：神戸市 医療的ケア児者の家族のためのレスパイト支援事業（hyogo-kobe-ikea-family-respite）
+
+変わった行の例：
+    ＋ 神戸市：神戸市医療的ケア児者の家族のためのレスパイト支援事業
+    ＋ ホーム > 事業者の方へ > 各業種へのご案内 > 障害福祉事業 > 神戸市医療的ケア児者の家族のためのレスパイト支援事業
+    ＋ 神戸市医療的ケア児者の家族のためのレスパイト支援事業
+    ＋ 登録事業所（訪問看護ステーション）一覧
+    ＋ 2026年度登録事業所一覧（PDF：178KB）
+    ＋ 神戸市医療的ケア児者の家族のためのレスパイト支援事業
+    （なくなった行：3行）
+
+### https://www.city.koganei.lg.jp/kenkofukuhsi/shogaishafukushi/teateshougai/teate_itiran.html
+- 記事367：小金井市の短期入所・日中一時支援
+
+変わった行の例：
+    ＋ 難病者福祉手当を支給します
+
+### https://www.city.koganei.lg.jp/smph/kenkofukuhsi/shogaishafukushi/teateshougai/sinsyou.html
+- 記事367：小金井市の短期入所・日中一時支援
+
+変わった行の例：
+    ＋ 難病者福祉手当を支給します
+
+### https://www.city.kumagaya.lg.jp/kenkouhukushi/syougaisya/soudan/kikansoudanshien.html
+- 記事255：熊谷市の短期入所・日中一時支援
+
+変わった行の例：
+    ＋ 更新日
+    ＋ 印刷
+    ＋ 障害のあるかたがたの身近な相談窓口として、 より熊谷市役所熊谷市役所本庁舎内の障害福祉課前に設置されました。
+    ＋ 熊谷市宮町二丁目47番1 熊谷市役所本庁舎1階障害福祉課前
+    ＋ ファクス：048-524-8790（障害福祉課内）
+    ＋ 熊谷市障害者機関相談支援センター（「くまさぽ」） （外部リンク）
+    ＋ より良いウェブサイトにするために、ページのご感想をお聞かせください。
+    ＋ このページに関する お問い合わせ
+    （なくなった行：26行）
+
+### https://www.city.kurashiki.okayama.jp/fukushi/shogai/1013727/1010931.html
+- 施設：コンシェルジェ帯江 日中一時支援（okayama-kurashiki-concierge-obie-day）
+- 施設：倉敷ホームヘルプステーション（移動支援）（okayama-kurashiki-welfare-homehelp-mobility）
+- 記事122：倉敷市の短期入所・日中一時支援
+
+変わった行の例：
+    ＋ 地域生活支援事業所一覧 （PDF 456.1KB）
     （なくなった行：1行）
 
-### https://www.city.kurume.fukuoka.jp/1070kenkou/2010fukushi/3030shougaishazaitaku/2012-0927-1548-91.html
-- 施設：ヘルパーステーション千歳（fukuoka-kurume-chitose-home-out）
-- 施設：多機能型障害児施設 ころころ（fukuoka-kurume-korokoro-medical-child-therapy）
+### https://www.city.kurume.fukuoka.jp/1070kenkou/2040hokeneisei/3082syounimansei/2024-0216-1622-335.html
+- 記事435：レスパイト入院・病院でのあずかりができる県・市のしくみ一覧
+- 記事174：久留米市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 14 時 56 分
+    ＋ 17 時 39 分
     （なくなった行：1行）
+
+### https://www.city.kusatsu.shiga.jp/fukushikenko/shogaisha/oshirase/fukushicenter.html
+- 記事218：草津市の短期入所・日中一時支援
+
+変わった行の例：
+    ＋ このページを見ている人は
+    ＋ こんなページも見ています
+    ＋ DV相談・男女共同参画相談
 
 ### https://www.city.kusatsu.shiga.jp/fukushikenko/shogaisha/seido/ichijishien.html
 - 施設：PONY KIDS（ポニーキッズ） 日中一時支援（shiga-ritto-ponykids-day）
 - 記事417：日中一時支援の料金はいくら？市ごとのちがいと上限のしくみ
 - 記事218：草津市の短期入所・日中一時支援
 
+### https://www.city.kusatsu.shiga.jp/fukushikenko/shogaisha/seido/idoshien.html
+- 記事218：草津市の短期入所・日中一時支援
+
 変わった行の例：
-    （なくなった行：1行）
+    ＋ このページを見ている人は
+    ＋ こんなページも見ています
 
 ### https://www.city.kusatsu.shiga.jp/fukushikenko/shogaisha/seido/tebiki.html
 - 記事218：草津市の短期入所・日中一時支援
@@ -949,15 +1053,14 @@
 - 記事189：町田市の移動支援・短期入所
 
 変わった行の例：
-    ＋ 訪問看護ステーション
-    ＋ 居宅介護（ホームヘルプ）
+    ＋ 短期入所（ショートステイ）
     （なくなった行：2行）
 
 ### https://www.city.machida.tokyo.jp/iryo/syougai_hukushi/nitijoseikatsushien/service.html
 - 記事189：町田市の移動支援・短期入所
 
 変わった行の例：
-    ＋ 米作り農業体験事業
+    ＋ 日中の活動・短期入所【生活介護・自立訓練・就労選択支援・就労移行支援・就労定着支援・就労継続支援・短期入所（ショートステイ）・音楽活動支援】
     （なくなった行：1行）
 
 ### https://www.city.machida.tokyo.jp/iryo/syougai_hukushi/nitijoseikatsushien/shisetsu/shortstay.html
@@ -965,8 +1068,6 @@
 - 記事189：町田市の移動支援・短期入所
 
 変わった行の例：
-    ＋ 精神障がい者(児）のための相談
-    ＋ 障がい者の就職支援
     （なくなった行：2行）
 
 ### https://www.city.machida.tokyo.jp/iryo/syougai_hukushi/nitijoseikatsushien/syougaijituusyosienn.html
@@ -974,16 +1075,18 @@
 - 記事189：町田市の移動支援・短期入所
 
 変わった行の例：
-    ＋ 米作り農業体験事業
-    ＋ 農業委員会事務局 農地法第4条・第5条農地転用届出について
+    ＋ 産業・観光
+    ＋ 経営組織別町丁別産業中分類別従業者規模別全事業所数及び従業者数
     （なくなった行：2行）
 
 ### https://www.city.machida.tokyo.jp/iryo/syougai_hukushi/shisetsu/shogai_center.html
 - 記事189：町田市の移動支援・短期入所
 
 変わった行の例：
-    ＋ サン町田旭体育館
-    （なくなった行：2行）
+    ＋ 障害福祉サービス（障害者総合支援法）
+    ＋ 障がいをお持ちの方の都営交通の無料パス・運賃割引
+    ＋ 有料道路通行料金の割引（身体障害者手帳、愛の手帳所持者）
+    （なくなった行：1行）
 
 ### https://www.city.machida.tokyo.jp/iryo/syougai_hukushi/shisetsu/tusyo.html
 - 記事189：町田市の移動支援・短期入所
@@ -992,56 +1095,64 @@
 - 記事189：町田市の移動支援・短期入所
 
 変わった行の例：
-    ＋ 重度心身障害者手当（都制度）
-    ＋ 心身障害者福祉手当（都制度）
-    ＋ 障害児福祉手当（国制度）
+    ＋ 地域の公園をきれいにしませんか（公益的活動団体）
+    ＋ 障がい者移動支援（ガイドヘルパー）
+    ＋ 共同生活援助（グループホーム）
     （なくなった行：3行）
+
+### https://www.city.maizuru.kyoto.jp/kenkou/0000000029.html
+- 記事280：舞鶴市の短期入所・日中一時支援
+
+変わった行の例：
+    （なくなった行：2行）
+
+### https://www.city.maizuru.kyoto.jp/soshiki/11-5-0-0-0_1.html
+- 記事280：舞鶴市の短期入所・日中一時支援
+
+変わった行の例：
+    （なくなった行：2行）
 
 ### https://www.city.matsudo.chiba.jp/kenko_fukushi/shougaifukushi/kakushuteate/teate/sinsinsyougaiji.html
 - 記事200：松戸市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 重度心身障害者医療費の助成
-    ＋ 心身障害者一時介護料の助成
-    ＋ 身体障害者補助犬
-    ＋ 医療的ケアを必要とする人への支援サービス
-    （なくなった行：2行）
+    ＋ 補装具の交付・修理
+    ＋ 難聴児補聴器購入費助成金
+    （なくなった行：4行）
 
 ### https://www.city.matsudo.chiba.jp/kenko_fukushi/shougaifukushi/kakushuteate/teate/syougaiji.html
 - 記事200：松戸市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 子ども医療費助成制度（0歳から高校3年生相当年齢まで）
-    ＋ 心身障害者一時介護料の助成
+    ＋ 補装具の交付・修理
+    ＋ 難聴児補聴器購入費助成金
     （なくなった行：3行）
 
 ### https://www.city.matsudo.chiba.jp/kenko_fukushi/shougaifukushi/kakushuteate/zaitaku/itijikaigoryou.html
 - 記事200：松戸市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ Lan, tell us about your cultural experiences! January 2023 Issue
-    ＋ 乳がん検診
-    ＋ 身体障害者補助犬
-    ＋ 地域生活支援事業のサービスについて
-    （なくなった行：5行）
+    ＋ 松戸市立総合医療センター
+    ＋ ノロウイルス食中毒警報の発令について（ 度）
+    ＋ 松戸市地域公共交通活性化協議会
+    （なくなった行：4行）
 
 ### https://www.city.matsudo.chiba.jp/kenko_fukushi/shougaifukushi/oshirase/ikeaservice.html
 - 記事200：松戸市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 松戸市内障害福祉サービス事業所・障害児通所支援事業所一覧（ 時点）
-    ＋ 「サービス等利用計画」の作成について
-    （なくなった行：3行）
+    ＋ 健康医療都市まつどとは
+    ＋ 住宅リフォームの相談窓口
+    （なくなった行：2行）
 
 ### https://www.city.matsudo.chiba.jp/kenko_fukushi/shougaifukushi/oshirase/kyotengoannai.html
 - 記事200：松戸市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 相談窓口
-    ＋ 保育施設の定員に対する空き状況一覧及び入所状況について
-    ＋ 戦中・戦後の食事を再現したレシピ
-    ＋ 21世紀の森と広場
-    ＋ 名簿
+    ＋ 度放課後児童クラブ（新年度利用）のご案内
+    ＋ ごみ出しカレンダー
+    ＋ Intercultural Cohesion 多文化共生
+    ＋ 地域生活支援事業のサービスについて
     （なくなった行：5行）
 
 ### https://www.city.matsudo.chiba.jp/kenko_fukushi/shougaifukushi/shougaiservice/tiikiseikatushienn.html
@@ -1049,116 +1160,59 @@
 - 記事200：松戸市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 松戸市立図書館
-    ＋ 各局・診療科案内
-    ＋ ペットボトル回収協力店等一覧
-    ＋ 粗大ごみ
-    （なくなった行：5行）
+    ＋ たばこをやめると得られるメリット
+    ＋ ノロウイルス食中毒警報の発令について（ 度）
+    ＋ 生活保護費の不正受給対策への取り組みについて
+    ＋ 家庭ごみの分別早見表「は行(「は」から「ほ」)」
+    ＋ 松戸市民会館
+    （なくなった行：4行）
 
 ### https://www.city.matsudo.chiba.jp/shisei/organization/hukusityoujubu/syougaifukusi.html
 - 記事200：松戸市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ トイレのユニバーサルデザインについて
-    ＋ 家庭ごみの分別早見表
-    ＋ 県内10市で共同運用ちば北西部消防指令センター！！
-    （なくなった行：3行）
-
-### https://www.city.matsumoto.nagano.jp/site/benricho/111592.html
-- 記事166：松本市の短期入所・日中一時支援
-
-変わった行の例：
-    ＋ 障がい者総合相談支援センター - 松本市公式サイト
-    （なくなった行：1行）
-
-### https://www.city.matsumoto.nagano.jp/site/benricho/1877.html
-- 記事166：松本市の短期入所・日中一時支援
-
-変わった行の例：
-    ＋ 障がい者福祉制度のあらまし - 松本市公式サイト
-    （なくなった行：1行）
-
-### https://www.city.matsumoto.nagano.jp/site/kosodate/131630.html
-- 記事166：松本市の短期入所・日中一時支援
-
-変わった行の例：
-    ＋ 松本市インクルーシブセンター - 松本市公式サイト
-    ＋ 松本市インクルーシブセンターちらし [PDFファイル／9.58MB]
-    ＋ 今年度の研修会は、終了しました。
-    ＋ 来年度の予定につきましては、詳細が決まり次第掲載いたします。
-    （なくなった行：48行）
-
-### https://www.city.matsumoto.nagano.jp/site/kosodate/1876.html
-- 記事166：松本市の短期入所・日中一時支援
-
-変わった行の例：
-    ＋ 障害児福祉手当 - 松本市公式サイト
-    （なくなった行：1行）
-
-### https://www.city.matsumoto.nagano.jp/site/kosodate/2436.html
-- 記事166：松本市の短期入所・日中一時支援
-
-変わった行の例：
-    ＋ 障害・疾病等をお持ちのお子さんの保育 - 松本市公式サイト
-    （なくなった行：1行）
+    ＋ 21世紀の森と広場
+    ＋ ノロウイルス食中毒警報の発令について（ 度）
+    ＋ サービスの内容
+    ＋ 保育施設（保育所・小規模保育施設・認定こども園）の利用案内
+    ＋ 保育課
+    （なくなった行：5行）
 
 ### https://www.city.matsumoto.nagano.jp/soshiki/226/
 - 記事166：松本市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ こども福祉課 - 松本市公式サイト
-    （なくなった行：1行）
+    ＋ 更新 松本市ひとり親家庭福祉会「クリスマス会リース作り」
+    ＋ 更新 松本市ひとり親家庭福祉会「クリスマス会リース作り」
+    ＋ 松本市ひとり親家庭福祉会「クリスマス会リース作り」
 
 ### https://www.city.matsumoto.nagano.jp/soshiki/61/
 - 記事166：松本市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 障がい福祉課 - 松本市公式サイト
-    （なくなった行：1行）
+    （なくなった行：4行）
 
-### https://www.city.matsumoto.nagano.jp/soshiki/61/144014.html
-- 記事166：松本市の短期入所・日中一時支援
-
-変わった行の例：
-    ＋ 心身障害者福祉手当について - 松本市公式サイト
-    （なくなった行：1行）
-
-### https://www.city.matsumoto.nagano.jp/soshiki/61/170966.html
-- 記事166：松本市の短期入所・日中一時支援
+### https://www.city.matsusaka.mie.jp/soshiki/28/
+- 記事257：松阪市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 指定障害福祉サービス等事業所一覧 - 松本市公式サイト
-    （なくなった行：1行）
+    ＋ 更新 三重県聴覚障がい児補聴器購入費用助成事業
+    （なくなった行：2行）
 
-### https://www.city.matsumoto.nagano.jp/soshiki/61/176981.html
-- 記事166：松本市の短期入所・日中一時支援
-
-変わった行の例：
-    ＋ 心身障害児（者）タイムケア事業 - 松本市公式サイト
-    （なくなった行：1行）
-
-### https://www.city.matsumoto.nagano.jp/soshiki/61/194124.html
-- 施設：長野県信濃学園（nagano-matsumoto-shinano-gakuen-short-day）
-- 記事166：松本市の短期入所・日中一時支援
+### https://www.city.matsuyama.ehime.jp/kurashi/download/fukushi/shogai/service/tiiki_shinsei.html
+- 記事120：松山市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 地域生活支援事業者等の登録・請求の手続きについて - 松本市公式サイト
-    （なくなった行：1行）
-
-### https://www.city.matsumoto.nagano.jp/soshiki/70/
-- 記事166：松本市の短期入所・日中一時支援
-
-変わった行の例：
-    ＋ 西部福祉課 - 松本市公式サイト
-    （なくなった行：1行）
+    ＋ このページを見ている人はこんなページも見ています
+    ＋ (公財)大阪観光局主催「温泉ツーリズム推進協議会」を設立し、松山市長はじめブロック長全員で記者会見を行います
 
 ### https://www.city.matsuyama.ehime.jp/kurashi/fukushi/shogai/jigyousitei/oshirase/jigyousyoichiran.html
 - 施設：松山市 移動支援・日中一時支援（ehime-matsuyama-mobility-day）
 
 変わった行の例：
-    ＋ 引越し・住まい
-    ＋ 転居届（松山市内で引越しをするとき）
-    ＋ 度（2022年度） 駅まちづくりセミナーの開催
+    ＋ SBI証券 presents TGC MATSUYAMA 2026 by TOKYO GIRLS COLLECTIONの経済波及効果をお知らせします
+    ＋ （特別管理）産業廃棄物処理業者の許可情報
+    ＋ 松山市特定ホテル建築規制条例について
     （なくなった行：3行）
 
 ### https://www.city.matsuyama.ehime.jp/kurashi/fukushi/shogai/service/sa-bisunosyurui.html
@@ -1166,10 +1220,7 @@
 - 施設：在宅ケアセンターひなたぼっこ 日中一時支援（ehime-matsuyama-hinatabokko-day）
 
 変わった行の例：
-    ＋ システムメンテナンスのお知らせ
-    ＋ 度 第2回松山市入札監視委員会を開催しました
-    ＋ 本日の 夕暮れ時の交通安全啓発活動を雨天のため中止します
-    （なくなった行：2行）
+    （なくなった行：4行）
 
 ### https://www.city.matsuyama.ehime.jp/kurashi/fukushi/shogai/service/tiiki_hutan.html
 - 施設：松山市 移動支援・日中一時支援（ehime-matsuyama-mobility-day）
@@ -1177,260 +1228,285 @@
 - 記事120：松山市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ このページを見ている人はこんなページも見ています
-    ＋ 居住地等変更届出書
-    ＋ つなぐ駅まちプロジェクト
+    （なくなった行：3行）
+
+### https://www.city.mima.lg.jp/gyosei/docs/23632.html
+- 施設：美馬市 お子様の移動支援・日中一時支援（tokushima-mima-child-out-day）
+
+変わった行の例：
+    ＋ 日常生活用具給付事業
+    ＋ 補装具費の支給
+    ＋ 福祉・介護
+    （なくなった行：1行）
 
 ### https://www.city.mima.lg.jp/gyosei/docs/23636.html
 - 施設：美馬市社協脇町ホームヘルパーステーション（tokushima-mima-shakyo-wakimachi-child-home）
 
-変わった行の例：
-    ＋ 重度心身障害者等医療費助成制度
-    ＋ その他様式
-    （なくなった行：4行）
-
-### https://www.city.minato.tokyo.jp/kodomokatei/babysitter.html
-- 記事419：障害のあるお子様も使える？一時預かり・ファミリーサポート・ベビーシッター補助
+### https://www.city.minato.tokyo.jp/soshiki/shogaisha.html
 - 記事202：港区の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 港区ベビーシッター利用支援（一時預かり利用支援）事業 FAQ（PDF：334KB）
-    ＋ New 港区の定めるマッチング型ベビーシッター事業者において、 利用分から満1歳以上の兄弟姉妹2名までについて、一定の要件を満たす場合はベビーシッター1名で保育できるようになりました。(配置基準の特例）なお、小学生を含む場合の取扱いに変更は
-    ＋ 東京都の定めるベビーシッター事業者において、 利用分から、満1歳以上の兄弟姉妹2名までについて、一定の要件を満たす場合はベビーシッター1名で保育できるようになりました。(配置基準の特例）なお、小学生を含む場合の取扱いに変更はありません。要件
-    ＋ 東京都の定めるベビーシッター事業者のうち、本特例に対応している事業者
-    ＋ ※予約前に FAQ の項番14を必ずご確認ください。
-    ＋ 12月 利用分から、 株式会社ネクストビート（ＫＩＤＳＮＡシッター）（外部サイトへリンク） を対象事業者とします。
-    ＋ ※予約前に FAQ の項番15を必ずご確認ください。
-    ＋ ※株式会社エクシオジャパン（キッズパーク）は対象外です。
-    （なくなった行：7行）
-
-### https://www.city.minoh.lg.jp/syougaifukushi/r8koubo.html
-- 記事308：箕面市の短期入所・日中一時支援
-
-変わった行の例：
-    ＋ 度箕面市情報セキュリティ監査業務委託にかかる一般競争入札の実施について
+    ＋ 高次脳機能障害の人が受けられるサービス
+    （なくなった行：1行）
 
 ### https://www.city.mitaka.lg.jp/c_service/034/034768.html
 - 記事235：三鷹市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 補聴器の利用で聞こえづらさを改善しませんか
-    ＋ 高齢者駅前なんでもカフェ
-    ＋ 講座「海馬 ”記憶の司令塔” を活性化! 」参加者募集（10月）
-    ＋ 家族介護者サポート講座「毎日のケアに役立つ実技を学ぶ」
-    ＋ SOMPO暮らしの保健室（12月）
-    ＋ やまなか健康教室（11月）
-    （なくなった行：6行）
+    ＋ 調布基地跡地福祉施設の利用者募集（生活介護）
+    ＋ 連雀おひとりさまのおしゃべり会＆個別相談会（12月）
+    ＋ 東多世代交流センター手作りの会「お正月のリース」
+    ＋ 認知症とともに生きる人の口腔ケアと「食べる・飲み込む」
+    ＋ シニアのまるごと相談サロン（12月）
+    （なくなった行：5行）
 
 ### https://www.city.mitaka.lg.jp/c_service/064/064337.html
 - 記事235：三鷹市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 東京都シルバーパスの新規購入（2026年10月）
-    ＋ 楽しく「ながら運動体験会」 参加グループ募集のお知らせ
-    ＋ シニアのまるごと相談サロン（12月）
-    ＋ 三鷹いきいきプラス無料パソコン初級講座
-    （なくなった行：4行）
+    ＋ 健康コラム 肺がんと喫煙について
+    ＋ 補聴器の利用で聞こえづらさを改善しませんか
+    ＋ こころの健康相談 12月
+    ＋ 連雀おひとりさまのおしゃべり会＆個別相談会（12月）
+    ＋ SOMPO暮らしの保健室（12月）
+    ＋ 福祉有償運送運転者及びセダン等運転者講習会（みたかハンディキャブ）
+    （なくなった行：6行）
 
 ### https://www.city.mitaka.lg.jp/c_service/064/064338.html
 - 記事235：三鷹市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 補聴器の利用で聞こえづらさを改善しませんか
-    ＋ 連雀おひとりさまのおしゃべり会＆個別相談会（12月）
-    ＋ こもれび ほっと・サークル「ハンドベル・トーンチャイム」
-    ＋ シニアのまるごと相談サロン（12月）
-    ＋ 福祉有償運送運転者及びセダン等運転者講習会（みたかハンディキャブ）
-    ＋ 三鷹市福祉Laboどんぐり山 調理実習（11月、やわらか食）
-    （なくなった行：6行）
+    ＋ もしもの時のために。避難行動要支援者名簿への登録にご同意をお願いします
+    ＋ 講座「海馬 ”記憶の司令塔” を活性化! 」参加者募集（10月）
+    ＋ 認知症とともに生きる人の口腔ケアと「食べる・飲み込む」
+    ＋ SOMPO暮らしの保健室（12月）
+    ＋ 家族介護者サポート講座「毎日のケアに役立つ実技を学ぶ」
+    （なくなった行：5行）
 
 ### https://www.city.mitaka.lg.jp/c_service/064/064339.html
 - 記事235：三鷹市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 東京都シルバーパスの新規購入（2026年10月）
-    ＋ 三鷹市高次脳機能障がい相談会
-    ＋ 東多世代交流センター手作りの会「お正月のリース」
-    ＋ 三鷹市発達障がい相談会
-    ＋ やまなか健康教室（11月）
-    （なくなった行：5行）
+    ＋ 入院中の紙おむつ代助成金の交付申請について
+    ＋ ホームヘルパーのための精神障がい者支援基礎講座
+    ＋ 開催決定！！みたか星風マート in 三鷹市役所
+    ＋ 講座「海馬 ”記憶の司令塔” を活性化! 」参加者募集（10月）
+    （なくなった行：4行）
 
 ### https://www.city.mitaka.lg.jp/c_service/064/064427.html
 - 記事235：三鷹市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 補聴器の利用で聞こえづらさを改善しませんか
-    ＋ 地域ケアネットワーク主催のサロンに参加しませんか（11月・12月初旬）
-    ＋ こころの健康相談 12月
-    ＋ 福祉有償運送運転者及びセダン等運転者講習会（みたかハンディキャブ）
-    ＋ 高齢者駅前なんでもカフェ
-    （なくなった行：5行）
+    ＋ 健康コラム 肺がんと喫煙について
+    ＋ 入院中の紙おむつ代助成金の交付申請について
+    ＋ 三鷹市高次脳機能障がい相談会
+    ＋ ホームヘルパーのための精神障がい者支援基礎講座
+    ＋ 開催決定！！みたか星風マート in 三鷹市役所
+    ＋ 楽しく「ながら運動体験会」 参加グループ募集のお知らせ
+    （なくなった行：6行）
 
 ### https://www.city.mitaka.lg.jp/c_service/095/095788.html
 - 記事235：三鷹市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 度「伝統文化親子教室事業（広域支援コース）」募集
-    ＋ 度「伝統文化親子教室事業（地域連携コース）」募集
-    ＋ 【受付期間延長】プレイリーダー講習会 参加者募集！
-    ＋ むらさき子どもひろば 小学生対象のイベント（ ）
-    ＋ おやこひろば事業「おやこでよってチョコっとあっぷるーむ（12月）」
-    ＋ おやこひろば事業「おやこでよってチョコっとあっぷるーむ（11月）」
-    （なくなった行：6行）
+    ＋ のびのびひろば 年末年始の一時保育の申し込み期間が早まります
+    ＋ 度 三鷹市立小・中学校給食用食材納入業者募集
+    ＋ 度「伝統文化親子教室事業（教室実施コース）」募集
+    ＋ 西多世代交流センター「実践！家庭でできるおいしいカレーの作り方講座」
+    ＋ 西多世代交流センター父親講座「子育てで輝くパパへ！楽しく学ぶ＆遊ぶ時間」
+    ＋ 就園前の子ども向け「いちにちどうぶつむら」開催します
+    ＋ 読書犬となかよくなろう「わん！だふる読書体験スペシャル」
+    ＋ すくすくひろば 4カ月までの赤ちゃんあつまれ（12月）
+    （なくなった行：8行）
 
 ### https://www.city.mitaka.lg.jp/c_service/095/095789.html
 - 記事235：三鷹市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 度「伝統文化親子教室事業（地域連携コース）」募集
-    ＋ 三鷹市就学前子ども給付金の申請について
-    ＋ 就園前の子ども向け「いちにちどうぶつむら」開催します
-    ＋ 保育園であそびましょ 【12月の予定】
-    ＋ おやこひろば事業「おやこでよってチョコっとあっぷるーむ（11月）」
-    ＋ ワークショップ「たのしい英語の学びかた 英語多読のススメ！」
-    （なくなった行：6行）
+    ＋ から東京都杉並児童相談所の名称が変わります
+    ＋ 就学時健康診断通知書を発送しました
+    ＋ 度「伝統文化親子教室事業（広域支援コース）」募集
+    ＋ 親子ひろばひよこ育児講座ベビーマッサージ
+    ＋ むらさき子どもひろば 小学生対象のイベント（ ）
+    ＋ すくすくひろば ウェルカムパパ講座
+    ＋ すくすくひろば ママと親子リズム体操 12月
+    ＋ 親子ひろばひよこ育児講座「音を感じながら親子であそぼう」
+    （なくなった行：8行）
 
 ### https://www.city.mitaka.lg.jp/c_service/095/095791.html
 - 記事235：三鷹市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ のびのびひろば 年末年始の一時保育の申し込み期間が早まります
-    ＋ むらさき子どもひろば 乳幼児対象のイベント（ ）
-    ＋ すくすくひろば 4カ月までの赤ちゃんあつまれ（12月）
-    ＋ 開催 アジア・アフリカ語学院留学生のおはなし会
-    ＋ 【受付期間延長】プレイリーダー講習会 参加者募集！
-    ＋ 親子ひろばひよこ育児講座「音を感じながら親子であそぼう」
-    （なくなった行：6行）
+    ＋ 度「伝統文化親子教室事業（教室実施コース）」募集
+    ＋ 第12回教育委員会定例会の開催（予定）
+    ＋ から東京都杉並児童相談所の名称が変わります
+    ＋ すくすくひろば ママと親子リズム体操 12月
+    ＋ 就園前の子ども向け「いちにちどうぶつむら」開催します
+    ＋ すくすくひろば 年齢別あそびましょ 11月
+    ＋ おやこひろば事業「おやこでよってチョコっとあっぷるーむ（11月）」
+    ＋ 親子ひろばひよこ育児講座「ふれあい親子体操」
+    （なくなった行：8行）
 
 ### https://www.city.mitaka.lg.jp/c_service/095/095850.html
 - 記事235：三鷹市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 11月は「児童虐待防止推進月間」、10月11月は「里親推進月間」です。
-    ＋ 第12回教育委員会定例会の開催（予定）
-    ＋ から東京都杉並児童相談所の名称が変わります
-    ＋ ファミリー・サポート・センター援助会員を募集します
-    ＋ すくすくひろば 年齢別あそびましょ 11月
-    ＋ すくすくひろば ウェルカムパパ講座
-    ＋ ワークショップ「たのしい英語の学びかた 英語多読のススメ！」
-    （なくなった行：7行）
+    ＋ のびのびひろば 年末年始の一時保育の申し込み期間が早まります
+    ＋ 度「伝統文化親子教室事業（地域連携コース）」募集
+    ＋ 度「伝統文化親子教室事業（教室実施コース）」募集
+    ＋ 読書犬となかよくなろう「わん！だふる読書体験スペシャル」
+    ＋ 度東西多世代交流センタードッジボール大会
+    ＋ すくすくひろば 4カ月までの赤ちゃんあつまれ（12月）
+    ＋ 開催 アジア・アフリカ語学院留学生のおはなし会
+    ＋ みたかスクール・コミュニティ講座
+    （なくなった行：8行）
 
 ### https://www.city.mitaka.lg.jp/c_service/095/095957.html
 - 記事235：三鷹市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 度「伝統文化親子教室事業（地域連携コース）」募集
-    ＋ 第12回教育委員会定例会の開催（予定）
-    ＋ のびのびひろば 年末年始の一時保育の申し込み期間が早まります
-    ＋ 就園前の子ども向け「いちにちどうぶつむら」開催します
-    ＋ 保育園であそびましょ 【11月の予定】
-    ＋ すくすくひろば 4カ月までの赤ちゃんあつまれ（12月）
-    ＋ 読書犬となかよくなろう「わん！だふる読書体験スペシャル」
-    （なくなった行：7行）
+    ＋ 度 三鷹市立小・中学校給食用食材納入業者募集
+    ＋ 度「伝統文化親子教室事業（広域支援コース）」募集
+    ＋ すくすくひろば 年齢別あそびましょ 11月
+    ＋ 親子ひろばひよこ育児講座「音を感じながら親子であそぼう」
+    ＋ ファミリー・サポート・センター援助会員を募集します
+    ＋ すくすくひろば 年齢別あそびましょ 12月
+    （なくなった行：6行）
 
 ### https://www.city.mitaka.lg.jp/c_service/095/095960.html
 - 記事235：三鷹市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ のびのびひろば 年末年始の一時保育の申し込み期間が早まります
-    ＋ 度 三鷹市立小・中学校給食用食材納入業者募集
-    ＋ 三鷹市就学前子ども給付金の申請について
-    ＋ すくすくひろば ママと親子リズム体操 12月
-    ＋ ファミリー・サポート・センター援助会員を募集します
-    ＋ 保育園であそびましょ 【11月の予定】
-    ＋ 読書犬となかよくなろう「わん！だふる読書体験スペシャル」
-    ＋ 保育園であそびましょ 【12月の予定】
+    ＋ 度「伝統文化親子教室事業（地域連携コース）」募集
+    ＋ から東京都杉並児童相談所の名称が変わります
+    ＋ 11月は「児童虐待防止推進月間」、10月11月は「里親推進月間」です。
+    ＋ 度「伝統文化親子教室事業（教室実施コース）」募集
+    ＋ 西多世代交流センター父親講座「子育てで輝くパパへ！楽しく学ぶ＆遊ぶ時間」
+    ＋ すくすくひろば ベビーヨガ（新川中原コミュニティ・センター）
+    ＋ すくすくひろば 年齢別あそびましょ 11月
+    ＋ 【受付期間延長】プレイリーダー講習会 参加者募集！
     （なくなった行：8行）
 
 ### https://www.city.mito.lg.jp/soshiki/42/
 - 記事178：水戸市の短期入所・日中一時支援
 
 変わった行の例：
-    （なくなった行：2行）
+    ＋ 更新 【受講者募集】 度 こころの健康講座
+    ＋ 更新 【受講者募集】 度 こころの健康講座
+    ＋ 更新 要約筆記入門講座
+    ＋ 【受講者募集】 度 こころの健康講座
 
-### https://www.city.miura.kanagawa.jp/iryo_kenko_fukushi/shogaisha/13239.html
+### https://www.city.miura.kanagawa.jp/iryo_kenko_fukushi/shogaisha/10095.html
 - 記事512：三浦市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 質問及び回答について（ 掲載）
-    ＋ 三浦市障害者基幹相談支援センター設置運営業務に関する募集要項及び同業務委託仕様書等に関する質問がありましたので、下記のとおり回答を掲載します。
-    ＋ 質問と回答 (PDFファイル: 292.8KB)
+    ＋ 申請書、医師意見書の様式は福祉課の窓口でもお渡ししています。
+    ＋ 医師意見書の様式は神奈川県のHPよりダウンロードすることも可能です。
+    ＋ なお、申請書をダウンロードし郵送で申請される場合、市役所から控えを送付しますので、必ず返信用封筒に切手を貼り、必要な書類等と一緒にお送りください。
+    ＋ 【申請に必要な書類】
+    ＋ 1 申請書
+    ＋ 2 診断書（受給者証に必要と記載のある場合、もしくは有効期限が切れてから1か月以上たってしまっている場合）
+    ＋ 3 受給者証の写し
+    ＋ 4 健康保険の加入状況が分かるもの（受診者と同じ健康保険に加入している家族全員分）
 
-### https://www.city.miyazaki.miyazaki.jp/health/disabilities_welfare/care_services/272423.html
-- 施設：宮崎市 居宅介護（ホームヘルプ）（miyazaki-city-home-care）
+### https://www.city.miyazaki.miyazaki.jp/search_departments/fukushi/10syogai/index.html
+- 施設：宮崎市 医療的ケア児在宅レスパイト事業（miyazaki-city-medical-home-respite）
 
 変わった行の例：
-    ＋ 現在、宮崎市が指定している下記の施設と事業所の一覧は、 指定事業所一覧( 現在) (XLSX 1.87MB) または 指定事業所一覧( 現在) (PDF 647KB) をご覧ください。
-    ＋ 指定事業所一覧( 現在) (PDF 647KB)
+    ＋ ～ は「障がい者週間」です
+    ＋ 障がい福祉サービス等事業所一覧
     （なくなった行：2行）
 
-### https://www.city.murakami.lg.jp/site/shogai-hukushi/tiikiseikatusien.html
-- 施設：村上市 移動支援・日中一時支援（niigata-murakami-child-out-day）
+### https://www.city.morioka.iwate.jp/kenko_fukushi/shogai/jigyosho/1057435.html
+- 施設：盛岡市 移動支援・日中一時支援（iwate-morioka-out-day）
 
 変わった行の例：
-    ＋ 高齢者・障がい者向け住宅整備補助事業
-    ＋ 軽・中等度難聴者補聴器購入費助成事業
-    （なくなった行：3行）
+    ＋ 盛岡市移動支援事業実施事業者一覧（ 現在） （PDF 174.8 KB）
+    （なくなった行：1行）
+
+### https://www.city.muko.kyoto.jp/soshiki/17/
+- 記事378：向日市の短期入所・日中一時支援
+
+変わった行の例：
+    （なくなった行：2行）
+
+### https://www.city.musashimurayama.lg.jp/kurashi/shougai/kyufu/index.html
+- 記事487：武蔵村山市の短期入所・日中一時支援
+
+変わった行の例：
+    ＋ 障害者計画等の素案に対するパブリックコメント（意見公募）を実施します
+
+### https://www.city.nagahama.lg.jp/0000001971.html
+- 施設：長浜市 移動支援・日中一時支援（shiga-nagahama-out-day）
+- 施設：湖北地域障害者生活支援センター あ～と 日中一時支援・移動支援（shiga-nagahama-art-day-out）
+- 施設：湖北まこも 短期入所・日中一時支援（shiga-nagahama-kohoku-makomo-shortstay）
+- 記事273：長浜市の短期入所・日中一時支援
+
+変わった行の例：
+    ＋ 高齢者・しょうがい者世帯 屋根の雪下ろし費用補助事業の申請受付
+    （なくなった行：1行）
 
 ### https://www.city.nakama.lg.jp/soshiki/16/
 - 記事414：中間市の短期入所・日中一時支援
 
 変わった行の例：
-    （なくなった行：2行）
-
-### https://www.city.nankoku.lg.jp/life/life_search.php?hdnSKBN=B&hdnKeyword=%E5%8C%BB%E7%99%82%E3%83%BB%E5%81%A5%E5%BA%B7%E3%83%BB%E7%A6%8F%E7%A5%89%EF%BC%9A%E5%BF%83%E8%BA%AB%E3%81%AE%E9%9A%9C%E5%AE%B3&hdnJPN=%E6%97%A5%E6%9C%AC%E8%AA%9E
-- 記事463：南国市の短期入所・日中一時支援
-
-変わった行の例：
     （なくなった行：1行）
 
-### https://www.city.nara.lg.jp/site/jigyousho/7977.html
-- 施設：奈良市 移動支援・日中一時支援（nara-city-out-day）
+### https://www.city.naruto.lg.jp/soshiki/kenkofukushibu/shakaifukushika/more.html
+- 記事214：鳴門市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 奈良市指定移動支援事業所一覧 [PDFファイル／698KB]
-    ＋ 奈良市指定日中一時支援事業所一覧 [PDFファイル／370KB]
-    ＋ 奈良市指定日中一時支援事業所一覧 [Excelファイル／70KB]
-    （なくなった行：3行）
+    ＋ 「依存症学習会」開催のご案内
+    （なくなった行：1行）
 
 ### https://www.city.nerima.tokyo.jp/hokenfukushi/shogai/kazokumoouen.html
 - 記事157：練馬区の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 緊急メンテナンスに伴う一部サービスの停止について（ 午後4時点）
-    ＋ 「障害者福祉のしおり」をご活用ください
-    （なくなった行：3行）
+    ＋ 緊急メンテナンスに伴う一部サービスの停止について（ 午前10時 時点）
+    ＋ 心身障害者福祉手当等の所得制限額の変更等について
+    ＋ 中村橋福祉ケアセンター
+    ＋ 練馬区重症心身障害児（者）等在宅レスパイトおよび当該家族の就労等支援事業
+    （なくなった行：2行）
 
 ### https://www.city.nerima.tokyo.jp/hokenfukushi/shogai/nichijo/kaigo/zyuusyouresupaito.html
 - 記事157：練馬区の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 緊急メンテナンスに伴う一部サービスの停止について（ 午後4時点）
-    ＋ 給食施設の方へ（健康増進法関連）
-    （なくなった行：3行）
+    ＋ 緊急メンテナンスに伴う一部サービスの停止について（ 午前10時 時点）
+    ＋ 保育施設給食用食材の放射性物質検査の結果について（ 実施分）
+    （なくなった行：1行）
 
 ### https://www.city.nerima.tokyo.jp/hokenfukushi/shogai/nichijo/seikatsushien/idoushien.html
 - 記事157：練馬区の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 緊急メンテナンスに伴う一部サービスの停止について（ 午後4時点）
-    （なくなった行：6行）
+    ＋ 緊急メンテナンスに伴う一部サービスの停止について（ 午前10時 時点）
+    ＋ 障害者の居場所づくり促進事業
+    ＋ 年齢別でさがす（1歳児から3歳児）
+    （なくなった行：1行）
 
 ### https://www.city.nerima.tokyo.jp/hokenfukushi/shogai/oshirase/syotokuseigenngaku.html
 - 記事66：特別児童扶養手当と障害児福祉手当の違い・もらえる条件
 
 変わった行の例：
-    ＋ 手話通訳者登録試験
-    ＋ 緊急メンテナンスに伴う一部サービスの停止について（ 午後4時点）
-    （なくなった行：5行）
+    ＋ 障害理解に関するパネル展（ から6日まで）
+    ＋ 緊急メンテナンスに伴う一部サービスの停止について（ 午前10時 時点）
+    ＋ 練馬区指導検査担当課チャンネル
+    （なくなった行：1行）
 
 ### https://www.city.nerima.tokyo.jp/hokenfukushi/shogai/shisetsu/kodomohattatu/ikeazisoudannmadogut.html
 - 記事157：練馬区の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 緊急メンテナンスに伴う一部サービスの停止について（ 午後4時点）
-    ＋ 子ども家庭支援センター
-    （なくなった行：5行）
+    ＋ 緊急メンテナンスに伴う一部サービスの停止について（ 午前10時 時点）
+    ＋ 転居届 （練馬区内で引越ししたとき）
+    ＋ 【 】生理用品を無料で配布します～コロナ禍で経済的にお困りの方を支援～
+    ＋ 福祉人材の確保・育成・定着支援
+    ＋ 弁護士会法律相談センター
+    ＋ 消費生活相談
+    ＋ 高齢・介護のことで相談先に迷ったら・・・
+    （なくなった行：2行）
 
 ### https://www.city.nerima.tokyo.jp/hokenfukushi/shogai/shisetsu/kodomohattatu/itiziazukari-nanairo.html
 - 施設：練馬区立こども発達支援センター（ひかり・なないろ）（tokyo-nerima-child-development-nanairo）
@@ -1438,132 +1514,146 @@
 - 記事157：練馬区の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 緊急メンテナンスに伴う一部サービスの停止について（ 午後4時点）
-    ＋ コンビニ等でのマイナンバーカードの電子証明書の暗証番号初期化・再設定（ロックの解除）
-    ＋ 子育てスタート応援券
-    ＋ 育児支援ヘルパー
+    ＋ 緊急メンテナンスに伴う一部サービスの停止について（ 午前10時 時点）
+    ＋ 心身障害者福祉手当（区制度）
+    ＋ 教育相談室
     （なくなった行：3行）
 
 ### https://www.city.nerima.tokyo.jp/hokenfukushi/shogai/shisetsu/kodomohattatu/kodomohattatu.html
 - 施設：練馬区立こども発達支援センター（ひかり・なないろ）（tokyo-nerima-child-development-nanairo）
 
 変わった行の例：
-    ＋ 緊急メンテナンスに伴う一部サービスの停止について（ 午後4時点）
-    ＋ 北保健相談所
-    （なくなった行：5行）
+    ＋ 緊急メンテナンスに伴う一部サービスの停止について（ 午前10時 時点）
+    ＋ 類似ページ
+    ＋ 東京都練馬児童相談所（都立）
+    ＋ 子ども家庭支援センター
+    ＋ 消費生活相談
+    （なくなった行：2行）
 
 ### https://www.city.nerima.tokyo.jp/hokenfukushi/shogai/shisetsu/kodomohattatu/tsusyo.html
 - 施設：練馬区立こども発達支援センター（ひかり・なないろ）（tokyo-nerima-child-development-nanairo）
 
 変わった行の例：
-    ＋ 緊急メンテナンスに伴う一部サービスの停止について（ 午後4時点）
-    （なくなった行：2行）
+    ＋ 緊急メンテナンスに伴う一部サービスの停止について（ 午前10時 時点）
+    ＋ 妊娠中の歯と口の健康
+    ＋ 障害児通所支援サービスの利用と支払い
+    （なくなった行：1行）
 
 ### https://www.city.nerima.tokyo.jp/hokenfukushi/shogai/shogaoshortstay1.html
 - 施設：練馬光が丘病院 短期入所（医療的ケアが必要な重症心身障害児）（tokyo-nerima-hikarigaoka-medical-shortstay）
 - 記事157：練馬区の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 緊急メンテナンスに伴う一部サービスの停止について（ 午後4時点）
-    ＋ チャレンジオフィス
-    ＋ 休職中の方の障害福祉サービスの利用について
-    ＋ チャレンジオフィス職場体験実習
+    ＋ 緊急メンテナンスに伴う一部サービスの停止について（ 午前10時 時点）
+    ＋ 指定管理者制度を適用している施設一覧
+    ＋ 南田中第二保育園
+    ＋ 石神井台保育園
     （なくなった行：4行）
 
 ### https://www.city.nerima.tokyo.jp/hokenfukushi/shogai/teate/shinshin_fukushi.html
 - 記事157：練馬区の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 緊急メンテナンスに伴う一部サービスの停止について（ 午後4時点）
+    ＋ 緊急メンテナンスに伴う一部サービスの停止について（ 午前10時 時点）
     （なくなった行：1行）
 
-### https://www.city.nishitokyo.lg.jp/kenko_hukusi/syogaisyasien/shienho/idousiennintuite.html
-- 記事234：西東京市の短期入所・日中一時支援
+### https://www.city.neyagawa.osaka.jp/organization_list/fukushi/shogaifukushi/index.html
+- 記事177：寝屋川市の短期入所・日中一時支援
 
 変わった行の例：
-    （なくなった行：2行）
+    ＋ 新着情報
+    ＋ NEW!
+    ＋ 現在、新着情報はございません。
+    （なくなった行：9行）
 
 ### https://www.city.nishitokyo.lg.jp/kenko_hukusi/syogaisyasien/shisetukinkyu.html
 - 記事234：西東京市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 胃がん検診（胃内視鏡検査）
-    ＋ 福祉
+    ＋ 生活保護制度についてのよくある質問
+    ＋ 健康・福祉のよくある質問
     （なくなった行：2行）
 
 ### https://www.city.nishitokyo.lg.jp/kenko_hukusi/syogaisyasien/sodan/sodanmadoguchi.html
 - 記事234：西東京市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 生活の援助など
-    （なくなった行：2行）
+    ＋ 障害福祉課
+    ＋ 度障害者週間イベント
+    （なくなった行：1行）
 
 ### https://www.city.nishitokyo.lg.jp/kenko_hukusi/syogaisyasien/teate_nenkin/shogaijiteate.html
 - 記事234：西東京市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 胃がん検診（胃内視鏡検査）
-    ＋ 福祉
-    ＋ 児童育成手当の所得制限限度額の引上げについて（ 分から）
-    （なくなった行：2行）
+    ＋ 20歳未満の方で、身体又は精神に重度の障害があり、日常生活において常に介護を必要とする状態にある方
+    ＋ 子宮頸がん検診
+    ＋ 健康
+    （なくなった行：5行）
 
 ### https://www.city.nishitokyo.lg.jp/kenko_hukusi/syogaisyasien/teate_nenkin/sinsyoteate.html
 - 記事234：西東京市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 胃がん検診（胃内視鏡検査）
-    ＋ 福祉
-    ＋ 児童育成手当の所得制限限度額の引上げについて（ 分から）
-    （なくなった行：2行）
+    ＋ 生活保護制度についてのよくある質問
+    ＋ 健康・福祉のよくある質問
+    （なくなった行：3行）
 
 ### https://www.city.nishitokyo.lg.jp/kosodate/teate_zyosei/jidouikuseisyougai.html
 - 記事234：西東京市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 1歳頃の食事・栄養について
-    ＋ 一時保育について
-    （なくなった行：2行）
-
-### https://www.city.nobeoka.miyazaki.jp/soshiki/31/
-- 記事333：延岡市の短期入所・日中一時支援
-
-変わった行の例：
-    ＋ わかあゆ支援学校跡地を障がい児・者の総合支援拠点として利活用する基本的考え方（案）への意見募集の結果について
-    （なくなった行：2行）
+    ＋ 妊婦健康診査受診票
+    ＋ 卒乳について
+    ＋ 出産
+    ＋ 難病者福祉手当（市の制度）
+    （なくなった行：4行）
 
 ### https://www.city.odawara.kanagawa.jp/field/edu-ch/kosodate/nursery/nursery/process/p38382.html
 - 記事228：小田原市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 度地区公民館いきいきフェスタ開催!
-    ＋ 第42回一夜城まつり【 】
-    ＋ 健やかな食のまち小田原「ローカルフードマルシェ」を開催します!【 ・22日(日)】
-    ＋ 第3回 北條氏ゆかりの戦国武将サミット【 ・22日(日)】
-    （なくなった行：4行）
+    ＋ 度「女性に対する暴力をなくす運動」啓発事業
+    ＋ 中央図書館「海藻おしば教室 ～素敵なカードをつくろう!～ 」
+    ＋ 度「青少年と育成者のつどい」を開催します!【 】
+    ＋ 中央図書館「ネイティブ体験 英語であそぼう」
+    ＋ カラーテープアート2026(おだわら・コドモ・アート)
+    （なくなった行：5行）
 
 ### https://www.city.odawara.kanagawa.jp/field/welfare/handic-s/
+- 記事228：小田原市の短期入所・日中一時支援
+
+### https://www.city.odawara.kanagawa.jp/field/welfare/handic-s/other_support/p33374.html
+- 記事228：小田原市の短期入所・日中一時支援
+
+変わった行の例：
+    ＋ 小田原市知的障害者サークル活動
+    （なくなった行：1行）
+
+### https://www.city.odawara.kanagawa.jp/msec/42/
 - 記事228：小田原市の短期入所・日中一時支援
 
 ### https://www.city.ogaki.lg.jp/0000071025.html
 - 記事230：大垣市の短期入所・日中一時支援
 
 変わった行の例：
-    （なくなった行：1行）
-
-### https://www.city.oita.oita.jp/o089/kenko/fukushi/1300181516067.html
-- 記事123：大分市の短期入所・日中一時支援
+    ＋ 度 保育園・認定こども園（保育認定）・小規模保育事業所の第2次申し込みの受入可能人数をお知らせします（第2次募集は終了しました）
+    ＋ 度 公立幼稚園・公立認定こども園（教育認定）の第2次申し込みの受入可能人数をお知らせします（第2次募集は終了しました）
+    ＋ 家庭的保育事業等指導監査の結果について
+    （なくなった行：2行）
 
 ### https://www.city.okayama.jp/jigyosha/0000007566.html
 - 施設：岡山市 居宅介護（ホームヘルプ）（okayama-city-home-care）
 
 変わった行の例：
-    （なくなった行：1行）
+    （なくなった行：3行）
 
 ### https://www.city.okayama.jp/kosodate/0000045626.html
 - 施設：あそび王国 野田本部事業所（okayama-asobiokoku-noda-therapy-day）
 - 施設：児童デイサービス ももっこ（okayama-momokko-child-development）
 
 変わった行の例：
+    ＋ 障害／障害児（通所・入所）支援
     （なくなった行：1行）
 
 ### https://www.city.okayama.jp/kurashi/0000007678.html
@@ -1572,115 +1662,119 @@
 - 施設：多機能型事業所 りんどう（okayama-rindo-day-therapy）
 
 変わった行の例：
-    ＋ 障害者への就労支援
-    ＋ こころの健康づくり
-    （なくなった行：1行）
+    （なくなった行：3行）
 
 ### https://www.city.okayama.jp/kurashi/0000007751.html
 - 施設：岡山市 居宅介護（ホームヘルプ）（okayama-city-home-care）
 
 変わった行の例：
-    ＋ 事業者指定（障害者・障害児）
-    （なくなった行：1行）
-
-### https://www.city.okayama.jp/kurashi/0000007907.html
-- 施設：岡山市 移動支援・日中一時支援（okayama-city-out-day）
-- 施設：パステル（田中・御南・庭瀬） 日中一時支援・放課後等デイサービス（okayama-pastel-day-therapy）
-- 施設：日中一時支援事業所 といろ（okayama-toiro-child-day）
-- 施設：ちゃれんじ（okayama-challenge-child-day-therapy）
-
-変わった行の例：
-    （なくなった行：3行）
+    （なくなった行：4行）
 
 ### https://www.city.okayama.jp/kurashi/0000010495.html
 - 記事108：岡山市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ この記事を見ている人はこんな記事も見ています
-    ＋ 保育施設等一覧（延長保育・休日保育・一時預かり）について
+    （なくなった行：2行）
 
-### https://www.city.ome.tokyo.jp/soshiki/31/
-- 施設：青梅市 日中一時支援事業（tokyo-ome-day-support-system）
-- 記事379：青梅市の短期入所・日中一時支援
+### https://www.city.omitama.lg.jp/0038/info-0000001874-0.html
+- 記事527：小美玉市の短期入所・日中一時支援
 
 変わった行の例：
-    （なくなった行：2行）
+    （なくなった行：1行）
+
+### https://www.city.omitama.lg.jp/0038/info-0000002262-0.html
+- 記事527：小美玉市の短期入所・日中一時支援
+
+変わった行の例：
+    （なくなった行：1行）
+
+### https://www.city.omitama.lg.jp/0038/info-0000002263-0.html
+- 記事527：小美玉市の短期入所・日中一時支援
+
+変わった行の例：
+    （なくなった行：1行）
+
+### https://www.city.omitama.lg.jp/0038/info-0000009102-0.html
+- 記事527：小美玉市の短期入所・日中一時支援
+
+変わった行の例：
+    （なくなった行：1行）
+
+### https://www.city.ota.tokyo.jp/seikatsu/fukushi/shougai/seikatsushien/kaigo_dayservice/kaigo/zaitaku_resupaito/zaitaku_resupaito.html
+- 記事158：大田区の短期入所・日中一時支援
+
+変わった行の例：
+    ＋ 【 更新】大田区福祉人材育成・交流センター年間予定表
+    （なくなった行：1行）
+
+### https://www.city.ota.tokyo.jp/seikatsu/fukushi/shougai/seikatsushien/otetsudai/otetsudai/kamiomutsu.html
+- 記事90：障害児のおむつ代の助成・日常生活用具と医療費控除
+
+変わった行の例：
+    ＋ 【 更新】大田区福祉人材育成・交流センター年間予定表
+    （なくなった行：1行）
 
 ### https://www.city.ryugasaki.ibaraki.jp/fukushi/syogaisya-hukusi/sa-bisu/2013080603328.html
 - 記事490：龍ケ崎市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 私立幼稚園・認定こども園一覧
-    ＋ プレママ教室・プレパパ教室
-    （なくなった行：3行）
+    （なくなった行：2行）
 
 ### https://www.city.ryugasaki.ibaraki.jp/fukushi/syogaisya-hukusi/sa-bisu/2013080603335.html
 - 施設：児童発達支援・放課後デイサービス あすなろ（龍ケ崎）（ibaraki-ryugasaki-asunaro-medical-child-therapy）
 - 記事490：龍ケ崎市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 在宅心身障がい児福祉手当
-    ＋ イベントカレンダー
-    ＋ 重度心身障がい者医療福祉費支給制度（マル福）の対象者を拡大します
-    （なくなった行：1行）
+    ＋ 障害者ITサポートセンターをご利用ください
+    （なくなった行：3行）
 
 ### https://www.city.ryugasaki.ibaraki.jp/fukushi/syogaisya-hukusi/sa-bisu/2015012800041.html
 - 施設：あすか（居宅介護・行動援護・同行援護・移動支援）（ibaraki-ryugasaki-asuka-child-home-out）
 - 記事490：龍ケ崎市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 社会福祉法人龍ケ崎市社会福祉協議会
-    （なくなった行：3行）
+    ＋ 障害者ITサポートセンターをご利用ください
+    （なくなった行：1行）
 
 ### https://www.city.ryugasaki.ibaraki.jp/fukushi/syogaisya-hukusi/soudanmadoguchi/2015021000128.html
 - 記事490：龍ケ崎市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 社会福祉法人龍ケ崎市社会福祉協議会
-    ＋ 高齢者外出支援利用料助成事業
-    ＋ 龍ケ崎市総合福祉センター
+    ＋ 療育手帳を取得するには、どうしたらよいのですか？
+    ＋ 身体障害者手帳を取得するには、どうしたらよいのですか？
     （なくなった行：3行）
 
 ### https://www.city.ryugasaki.ibaraki.jp/fukushi/syogaisya-hukusi/teate/2013080603434.html
 - 記事490：龍ケ崎市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ NHK放送受信料の減免、バス料金・JR運賃・航空運賃の割引
-    ＋ 有料道路料金の障がい者割引制度
-    ＋ 重度心身障がい者医療福祉費支給制度（マル福）の対象者を拡大します
     （なくなった行：3行）
 
 ### https://www.city.sabae.fukui.jp/kenko_fukushi/shogaishafukushi/shogaisha_shienseido/idoshienjigyo.html
 - 施設：鯖江市 移動支援事業（fukui-sabae-mobility）
 
 変わった行の例：
-    ＋ 地場産園芸ハウス設置支援事業
-    ＋ 介護予防支援・介護予防ケアマネジメント関係様式について（事業者向け）
-    ＋ 介護予防・日常生活支援総合事業の報酬単位とサービスコード表について（ から）
-    （なくなった行：3行）
+    ＋ 介護予防・日常生活支援総合事業 事業者説明会（ 度）
+    （なくなった行：2行）
 
-### https://www.city.sagamihara.kanagawa.jp/_res/projects/default_project/_project_/00_common/fukusi/fukusiservice_ichiran.pdf
-- 施設：訪問介護 パタカラ（kanagawa-sagamihara-patakara-home）
+### https://www.city.sagamihara.kanagawa.jp/kosodate/fukushi/1026641/shogai/shisetsu/index.html
+- 施設：移動支援事業所 あん’s vivo（kanagawa-sagamihara-ans-vivo-child-out）
 
 変わった行の例：
-    ＋ 38 就労継続支援（Ａ型）
-    ＋ 医療法人社団仁和会 さが 042-707-0622
-    ＋ 医療法人社団 仁和会 み仁和会訪問介護ステー 中央区相模原４丁目１１番５号 身 知 精 児
-    ＋ ション 042-707-8815
-    ＋ 中央区星が丘１丁目３番１２号ス 042-713-4764
-    ＋ ａｐｉｏ株式会社 ａｐｉｏ訪問介護 身 知 精
-    ＋ ターヒルズⅢ１０１
-    ＋ 042-713-4765
-    （なくなった行：8行）
+    ＋ Excel版事業所一覧（総合支援法） （Excel 292.2 KB）
+    （なくなった行：1行）
+
+### https://www.city.sakado.lg.jp/soshiki/34/
+- 記事454：坂戸市の短期入所・日中一時支援
 
 ### https://www.city.sakai.lg.jp/kenko/fukushikaigo/shogaifukushi/hosougu/shikyuu/70793220240712111022689.html
 - 記事91：補装具で子どもの車いす・バギーを作るには？費用と流れ
 
 変わった行の例：
-    ＋ 障害福祉サービス利用の手続き
-    ＋ 補装具の支給
-    ＋ 指定自立支援医療（精神通院）医療機関一覧
-    ＋ 情報がみつからないときは
+    ＋ 堺市における日中一時支援事業について
+    ＋ 児童福祉施設
+    ＋ 日中一時支援事業（日帰りショートステイ）
+    ＋ その他 介護・介助
     （なくなった行：4行）
 
 ### https://www.city.sakai.lg.jp/kenko/fukushikaigo/shogaifukushi/jigyousya/chiikiseikatsu/ichijishien.html
@@ -1688,40 +1782,38 @@
 - 記事133：障害児の冬休み・年末年始のあずけ先とじゅんび
 
 変わった行の例：
-    ＋ 堺市における移動支援事業について
-    ＋ 地域生活支援事業の請求事務
+    ＋ その他 介護・介助
+    ＋ 重症心身障害者（児）支援センター
     （なくなった行：2行）
 
 ### https://www.city.sakai.lg.jp/kenko/fukushikaigo/shogaifukushi/shiori/shiori/childfukushishisetsu.html
 - 施設：医療福祉センター すくよか（医療型短期入所）（osaka-tondabayashi-sukuyoka-medical-shortstay）
 
 変わった行の例：
-    ＋ 障害福祉事務における情報連携対象事務等について
-    ＋ 障害福祉サービス等に関する処分に不服があるときは
-    ＋ 高額障害福祉サービス等給付費の支給について（高齢障害者の介護保険サービス利用者負担軽減）
-    ＋ (1)違反施設に対する行政処分等の情報
-    ＋ 自治会活動保険 よくある質問
+    ＋ 日中一時支援事業（日帰りショートステイ）
+    ＋ 緊急時の受け入れ（地域生活支援拠点等の機能を担う短期入所事業所）
+    ＋ その他 介護・介助
+    ＋ 重症心身障害者（児）支援センター
+    ＋ 移動支援事業
     （なくなった行：5行）
 
 ### https://www.city.sakai.lg.jp/kenko/fukushikaigo/shogaifukushi/shiori/shiori/nicchuuichiji.html
 - 施設：堺市 お子様の日中一時支援（日帰りショートステイ）（osaka-sakai-child-day-support）
 
 変わった行の例：
-    ＋ 「堺市障害者日中一時支援費給付要綱」を全部改正し、 から「堺市障害者日中一時支援事業実施要綱」を施行します。
-    ＋ 地域生活支援事業の事業者登録
-    ＋ 新型インフルエンザ対策特別措置法に基づく特定接種の登録について
-    ＋ 移動支援事業
-    （なくなった行：4行）
+    ＋ 小児慢性特定疾病児童日常生活用具給付事業
+    ＋ その他 介護・介助
+    ＋ 重症心身障害者（児）支援センター
+    （なくなった行：3行）
 
 ### https://www.city.sakai.lg.jp/kenko/fukushikaigo/shogaifukushi/shiori/shiori/shougaijinyuuyoku.html
 - 施設：堺市 重症障害者医療的ケア支援事業（看護師の派遣）（osaka-sakai-medical-care-nurse-home-respite）
 
 変わった行の例：
-    ＋ 度保育施設の利用申込（新規・転園）状況の公表について
-    ＋ 個別の配慮等を必要とするお子さんや疾患等を有するお子さんの申込について
-    ＋ はじめての保活ガイドブック
-    ＋ 育児休業の延長について
-    ＋ 保育内容の確認について
+    ＋ 重症心身障害者（児）支援センター
+    ＋ 移動支援事業
+    ＋ 小児慢性特定疾病児童日常生活用具給付事業
+    ＋ マイナンバーの記入が必要な手続きについて（子どもにかかわる手続きのみ）
     （なくなった行：5行）
 
 ### https://www.city.sakai.lg.jp/kenko/fukushikaigo/shogaifukushi/shiori/shiori/verdesaaki.html
@@ -1729,54 +1821,56 @@
 - 記事395：羽曳野市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 戸籍等請求書
-    ＋ その他
-    ＋ 堺市立健康福祉プラザ
-    ＋ バリアフリー情報
-    ＋ 鶏の生食によるカンピロバクター食中毒に注意しましょう
+    ＋ 移動支援事業
+    ＋ 緊急時の受け入れ（地域生活支援拠点等の機能を担う短期入所事業所）
+    ＋ 小児慢性特定疾病児童日常生活用具給付事業
+    ＋ マイナンバーの記入が必要な手続きについて（子どもにかかわる手続きのみ）
+    ＋ 医療的ケア児等コーディネーター所属施設一覧
     （なくなった行：5行）
 
 ### https://www.city.sakai.lg.jp/kenko/fukushikaigo/shogaifukushi/sougou_shienhou/etc/kinkyu_ukeire.html
 - 記事106：堺市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 予防接種の実施依頼書発行願
-    ＋ 医療費助成
-    ＋ 中区
-    ＋ 事業系ごみ（一般廃棄物）を排出する事業者の方へ
+    ＋ 日中一時支援事業（日帰りショートステイ）
+    ＋ 小児慢性特定疾病児童日常生活用具給付事業
+    ＋ マイナンバーの記入が必要な手続きについて（子どもにかかわる手続きのみ）
+    ＋ 自己評価シート一覧（北区）
     （なくなった行：4行）
 
 ### https://www.city.sakai.lg.jp/kenko/fukushikaigo/shogaifukushi/sougou_shienhou/shien_jigyou/idousienzigyo.html
 - 記事106：堺市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 地域生活支援事業の事業者登録
-    ＋ 新型インフルエンザ対策特別措置法に基づく特定接種の登録について
-    ＋ 東陶器こども園
-    （なくなった行：3行）
+    ＋ 自己評価シート一覧（中区）
+    ＋ 「堺市障害者日中一時支援費給付要綱」を全部改正し、 から「堺市障害者日中一時支援事業実施要綱」を施行します。
+    ＋ 小児慢性特定疾病児童日常生活用具給付事業
+    ＋ マイナンバーの記入が必要な手続きについて（子どもにかかわる手続きのみ）
+    ＋ 医療的ケア児等コーディネーター所属施設一覧
+    （なくなった行：5行）
 
 ### https://www.city.sakai.lg.jp/kenko/kenko/nanbyonado/syouni/nichijyouseikatsuyougu.html
 - 記事470：日常生活用具とは？障害のあるお子様のための給付
 - 記事472：重症心身障害のお子様のおふろ
 
 変わった行の例：
-    ＋ 大規模災害の被災者に係る公費負担医療の取扱いについて
-    ＋ 交通遺児手当
-    ＋ 堺市養育費に関するADR利用給付金
-    ＋ 第1学校給食センターの事業概要
-    ＋ 堺市建築系工事総合評価落札方式ガイドライン
+    ＋ 自己評価シート一覧（北区）
+    ＋ マイナンバーの記入が必要な手続きについて（子どもにかかわる手続きのみ）
+    ＋ 医療的ケア児等コーディネーター所属施設一覧
+    ＋ 自己評価シート一覧（中区）
+    ＋ 堺市障害者日中一時支援事業実施要綱
     （なくなった行：5行）
 
 ### https://www.city.sakai.lg.jp/kosodate/hughug/kosodatekankyo/sonota/sonota_tatuzuki/kosodateshien-mynumber.html
 - 施設：堺市 お子様の日中一時支援（日帰りショートステイ）（osaka-sakai-child-day-support）
 
 変わった行の例：
-    ＋ このページも読まれています
-    ＋ 子育て応援講座（ほっとカフェ）
-    ＋ よくある質問
-    ＋ 窓口案内
-    ＋ 団体登録申請
-    ＋ 団体登録変更届
+    ＋ 自己評価シート一覧（北区）
+    ＋ 堺市障害者日中一時支援事業実施要綱
+    ＋ 小児慢性特定疾病児童日常生活用具給付事業
+    ＋ 医療的ケア児等コーディネーター所属施設一覧
+    ＋ 自己評価シート一覧（中区）
+    （なくなった行：5行）
 
 ### https://www.city.sakai.lg.jp/kosodate/hughug/shogai/care_shien/72352020231019155018822.html
 - 記事106：堺市の短期入所・日中一時支援
@@ -1786,33 +1880,29 @@
 - 施設：放課後等デイサービス ぐらんぱ 百舌鳥陵南（osaka-sakai-granpa-mozuryounan-medical-therapy）
 
 変わった行の例：
-    ＋ 法定外公共物課
-    ＋ 大阪信用金庫から堺市世界文化遺産登録基金へ寄付金が贈呈されました
-    ＋ 健康・福祉
-    ＋ 子育て・教育
-    ＋ 庁議議事要旨 令和元年 情報が見つからないときは
-    （なくなった行：6行）
+    ＋ 自己評価シート一覧（中区）
+    ＋ 堺市障害者日中一時支援事業実施要綱
+    ＋ 堺市重症障害者医療的ケア支援事業実施要綱
+    ＋ 情報が見つからないときは
+    （なくなった行：5行）
 
 ### https://www.city.sakai.lg.jp/kosodate/hughug/shogai/jigyoshashitei/jikohyoukanakaku.html
 - 施設：児童発達支援・放課後等デイサービス すまいる（osaka-sakai-smile-pimd-medical-therapy）
 
 変わった行の例：
-    ＋ このページも読まれています
-    ＋ 自己評価シート一覧（西区）
-    ＋ 自己評価シート一覧（堺区）
-    ＋ 支援プログラム（東区）
-    ＋ 支援プログラム（北区）
-    ＋ 支援プログラム（美原区）
+    ＋ 堺市障害者日中一時支援事業実施要綱
+    ＋ 堺市重症障害者医療的ケア支援事業実施要綱
+    （なくなった行：5行）
 
 ### https://www.city.sakai.lg.jp/shisei/sonota/jyorei/youkou/kousei/110850-11-1.html
 - 施設：堺市 お子様の日中一時支援（日帰りショートステイ）（osaka-sakai-child-day-support）
 - 記事106：堺市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 源氏物語図
-    ＋ 星曼荼羅図
-    ＋ 堺市障害者生活介護事業所機能強化事業補助金交付要綱
-    ＋ 堺市送迎バス等安全装置導入支援事業補助金交付要綱
+    ＋ 成年後見制度利用支援事業
+    ＋ 小児慢性特定疾病児童日常生活用具給付事業
+    ＋ 大阪府医療的ケア児支援センター
+    ＋ 自己評価シート一覧（北区）
     （なくなった行：4行）
 
 ### https://www.city.sakai.lg.jp/shisei/sonota/jyorei/youkou/kousei/11830-9-1.html
@@ -1820,10 +1910,10 @@
 - 記事106：堺市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ カメムシ
-    ＋ トヨタカローラ南海株式会社 金岡店
-    ＋ 堺日置荘西町郵便局
-    ＋ 堺市総合福祉会館管理運営補助金交付要綱
+    ＋ 高齢者優待施設等一覧
+    ＋ 応急手当に関する質疑応答集
+    ＋ 堺市障害者日中一時支援事業実施要綱
+    ＋ 電車・バスのメリット
     （なくなった行：4行）
 
 ### https://www.city.sakata.lg.jp/kenko/syogaifukushi/chiikishienjigyou.html
@@ -1831,205 +1921,286 @@
 - 記事324：酒田市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 誰もが暮らしやすい地域づくり講演会を開催します
-    ＋ 障がい福祉サービスを利用したいのですが、どうすればいいですか？
-    （なくなった行：1行）
+    ＋ 身体障害者手帳の申請はどうすればいいですか？
+    ＋ 目が不自由なのですが、広報紙の内容を知る方法はありますか？
+    （なくなった行：2行）
 
 ### https://www.city.sakata.lg.jp/kenko/syogaifukushi/hohoeminomachi.html
 - 記事324：酒田市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 誰もが暮らしやすい地域づくり講演会を開催します
-    ＋ 障がい福祉サービスを利用したいのですが、どうすればいいですか？
-    （なくなった行：1行）
+    ＋ 身体障害者手帳の申請はどうすればいいですか？
+    ＋ 目が不自由なのですが、広報紙の内容を知る方法はありますか？
+    （なくなった行：2行）
 
 ### https://www.city.sakata.lg.jp/kenko/syogaifukushi/syougaifukusiservice.html
 - 記事324：酒田市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 誰もが暮らしやすい地域づくり講演会を開催します
-    ＋ 障がい福祉サービスを利用したいのですが、どうすればいいですか？
-    （なくなった行：1行）
+    ＋ 身体障害者手帳の申請はどうすればいいですか？
+    ＋ 目が不自由なのですが、広報紙の内容を知る方法はありますか？
+    （なくなった行：2行）
 
 ### https://www.city.sakata.lg.jp/kenko/syogaifukushi/syougaijihottofukush.html
 - 施設：酒田市 障がい児ほっとふくし券（yamagata-sakata-child-hot-welfare-coupon）
 - 記事324：酒田市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 誰もが暮らしやすい地域づくり講演会を開催します
-    ＋ 障がい福祉サービスを利用したいのですが、どうすればいいですか？
-    （なくなった行：1行）
+    ＋ 身体障害者手帳の申請はどうすればいいですか？
+    ＋ 目が不自由なのですが、広報紙の内容を知る方法はありますか？
+    （なくなった行：2行）
+
+### https://www.city.sapporo.jp/shogaifukushi/iryotekikeajishien.html
+- 施設：重症児デイサービス Hana（hokkaido-sapporo-shiroishi-hana-medical-therapy）
+- 記事93：札幌市の短期入所・日中一時支援
+
+変わった行の例：
+    ＋ 目次
+    ＋ 事業所等への助言等 …事業所等からのご相談に応じて、医療的ケア児等の受入れについての情報提供や助言、技術的な指導などを行います。ご本人や保護者からのご相談も受け付けます。
+    ＋ 新規事業の運営指導 …新たに医療的ケア児等の受入れ体制を整備しようとする事業所や法人などからのご相談に応じて、運営についての助言や指導なども行います。
+    ＋ 受入れ状況の確認 …医療的ケア児等の受入れを開始した事業所等について、受入れ状況を確認（フォローアップ）し、継続的な受入れに当たっての助言等を行います。
+    ＋ 指示書（ワード：35KB）
+    ＋ 指示書（記入例）（ワード：50KB）
+    ＋ 【詳細（制度について）】 事業者向け説明資料（全認可施設向け）
+    ＋ 【詳細（補助要綱）】 補助金について
+    （なくなった行：140行）
+
+### https://www.city.sapporo.jp/shogaifukushi/jiritsushien/1-12_nittyuitiji.html
+- 施設：札幌市 移動支援・日中一時支援（hokkaido-sapporo-out-day）
+- 記事93：札幌市の短期入所・日中一時支援
+
+変わった行の例：
+    ＋ 目次
+    ＋ より良いウェブサイトにするためにみなさまのご意見をお聞かせください
+    （なくなった行：82行）
+
+### https://www.city.sapporo.jp/shogaifukushi/jiritsushien/1-3_idosien.html
+- 施設：札幌市 移動支援・日中一時支援（hokkaido-sapporo-out-day）
+- 記事93：札幌市の短期入所・日中一時支援
+
+変わった行の例：
+    ＋ 目次
+    ＋ より良いウェブサイトにするためにみなさまのご意見をお聞かせください
+    （なくなった行：114行）
+
+### https://www.city.sapporo.jp/shogaifukushi/jiritsushien/2-3_serviceriyou.html
+- 施設：札幌市 居宅介護（ホームヘルプ）（sapporo-city-home-care）
+
+変わった行の例：
+    ＋ 目次
+    ＋ より良いウェブサイトにするためにみなさまのご意見をお聞かせください
+    （なくなった行：112行）
+
+### https://www.city.sapporo.jp/shogaifukushi/jiritsushien/2-4_hiyouhutan_sougousienhou.html
+- 施設：札幌市 居宅介護（ホームヘルプ）（sapporo-city-home-care）
+
+変わった行の例：
+    ＋ 目次
+    ＋ 18歳未満/4,600円
+    ＋ 18歳以上/9,300円
+    ＋ グループホーム・宿泊型自立訓練（18歳以上）
+    ＋ ー
+    ＋ 補足給付、境界層対象者に対する負担軽減 （各申請書の裏面をご確認ください。）
+    ＋ より良いウェブサイトにするためにみなさまのご意見をお聞かせください
+    （なくなった行：91行）
+
+### https://www.city.sapporo.jp/shogaifukushi/jiritsushien/iryoutekikeajitou_ukeiretankinyuusyojigyousyohojyojigyou.html
+- 記事436：市や県が独自にお金を出している「医療型短期入所」の事業まとめ
+- 記事93：札幌市の短期入所・日中一時支援
+
+変わった行の例：
+    ＋ 目次
+    ＋ より良いウェブサイトにするためにみなさまのご意見をお聞かせください
+    （なくなった行：96行）
+
+### https://www.city.sapporo.jp/shogaifukushi/respite.html
+- 記事431：医療的ケア児の在宅レスパイト、市ごとのちがい
+- 記事93：札幌市の短期入所・日中一時支援
+
+変わった行の例：
+    ＋ 目次
+    ＋ 1.札幌市医療的ケア児レスパイト事業について
+    ＋ 【保護者向け】案内文（PDF：174KB） 【訪問看護事業所向け】手続きの流れ（PDF：64KB） レスパイト利用理由について（PDF：335KB）
+    ＋ 1.札幌市内又は札幌市と本事業の実施に関する協定を締結した市町村内（※）に住民登録があること
+    ＋ 2.訪問看護指示書が発行されていること
+    ＋ 3.医療保険制度適用による訪問看護を原則月1回以上継続して利用していること、又は原則月1回以上継続して利用する見込みであること
+    ＋ 1.給付時間 1人当たり48時間/年（ から翌年 まで）
+    ＋ 2.札幌市から訪問看護事業所への給付額 1時間当たり7,500円
+    （なくなった行：99行）
+
+### https://www.city.sapporo.jp/shogaifukushi/siteisidou/ikeazigyousyo.html
+- 施設：重症児デイサービス Hana（hokkaido-sapporo-shiroishi-hana-medical-therapy）
+- 施設：重症児デイサービス ソルキッズ（hokkaido-sapporo-chuo-solkids-medical-therapy）
+- 施設：重症児デイサービス ラナキッズ（hokkaido-sapporo-kita-ranakids-medical-therapy）
+- 施設：重心児デイサービス リノキッズ（hokkaido-sapporo-minami-linokids-medical-therapy）
+- 施設：障がい児保育園モアナ（多機能型重症児者デイサービス モアナ）（hokkaido-sapporo-kita-moana-medical-therapy）
+
+変わった行の例：
+    ＋ 目次
+    ＋ WAGAO株式会社
+    ＋ 合同会社 Smile gift
+    ＋ 株式会社MAKI
+    ＋ 児童デイサービス every（エブリ）
+    ＋ 合同会社 Smile gift
+    ＋ 重症児デイサービス Nico
+    ＋ こっこ川沿第3
+    （なくなった行：121行）
+
+### https://www.city.sapporo.jp/shogaifukushi/zigyoshasitei/9_shiteijigyousyaichiran.html
+- 施設：札幌市 移動支援・日中一時支援（hokkaido-sapporo-out-day）
+- 施設：札幌市 居宅介護（ホームヘルプ）（sapporo-city-home-care）
+
+変わった行の例：
+    ＋ 目次
+    ＋ より良いウェブサイトにするためにみなさまのご意見をお聞かせください
+    （なくなった行：113行）
 
 ### https://www.city.sayama.saitama.jp/fukushi/shogai/joseikyufu/shyougaishyateate/2020syougaijihukusit.html
 - 記事325：狭山市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 特別児童扶養手当
-    ＋ 狭山市難病患者見舞金
-    ＋ 母子及び父子並びに寡婦福祉資金貸付制度
-    ＋ 高等職業訓練促進給付金等支給制度
-    （なくなった行：4行）
+    ＋ 経過措置による福祉手当
+    ＋ 心身障害者扶養共済制度
+    ＋ 児童扶養手当制度
+    （なくなった行：3行）
 
 ### https://www.city.sayama.saitama.jp/fukushi/shogai/joseikyufu/shyougaishyateate/2020tokubetujidoufuy.html
 - 記事325：狭山市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ JR通勤定期乗車券の割引制度
-    ＋ 自立支援教育訓練給付金支給制度
-    ＋ 高等職業訓練促進給付金等支給制度
-    ＋ 子育て支援のご案内(ひとり親家庭)
-    ＋ 物価高対応子育て応援手当
+    ＋ 在宅心身障害者福祉手当
+    ＋ 妊産婦健康診査・新生児聴覚スクリーニング検査助成金制度（償還払い）
+    ＋ 妊娠の届出・母子（親子）健康手帳交付
+    ＋ 妊産婦健康診査の公費助成
+    ＋ 心身障害者扶養共済制度
     （なくなった行：5行）
 
 ### https://www.city.sayama.saitama.jp/fukushi/shogai/joseikyufu/shyougaishyateate/zaitakusinsin.html
 - 記事325：狭山市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 児童扶養手当制度
-    ＋ 障がい者福祉課
-    ＋ ひとり歩き高齢者安心シール交付事業
-    ＋ 心身障害児（者）生活サポート事業
-    （なくなった行：4行）
+    ＋ 高齢者おうちで安心見守り事業補助金
+    ＋ 心身障害者扶養共済制度
+    ＋ 狭山市介護保険住宅改修支給申請書
+    （なくなった行：3行）
 
 ### https://www.city.sayama.saitama.jp/fukushi/shogai/shienserbis/syoudaifukusiservis/2020idousien.html
 - 記事325：狭山市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 児童発達支援センターあんず
-    ＋ 心身障害児（者）生活サポート事業
+    ＋ 【介護保険事業者向け】新型コロナウイルス感染症に関連する情報
+    ＋ 介護保険事業者指定関係（指定・更新・変更等）
     （なくなった行：2行）
 
 ### https://www.city.sayama.saitama.jp/fukushi/shogai/shienserbis/syoudaifukusiservis/2020nittyuuitiji.html
 - 記事325：狭山市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 児童発達支援センターあんず
-    ＋ 介護保険事業者指定関係（指定・更新・変更等）
-    ＋ 障害児通所支援（児童福祉法）
-    （なくなった行：3行）
+    ＋ 【介護保険事業者向け】新型コロナウイルス感染症に関連する情報
+    ＋ 指定介護サービス事業者一覧
+    （なくなった行：2行）
 
 ### https://www.city.sayama.saitama.jp/fukushi/shogai/shienserbis/syoudaifukusiservis/2020seikatusupport.html
 - 記事325：狭山市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 高額障害福祉サービス等給付費・高額障害児（通所・入所）給付費
-    ＋ おりぴぃ健康マイレージ通信2026年5月号(VOL.21)
-    ＋ 在宅人工呼吸器使用者等のための災害時個別支援計画をご活用ください
-    ＋ 萩原義典議員の一般質問【 第1回定例会】
-    （なくなった行：4行）
+    ＋ 障害者等日中一時支援事業
+    ＋ 狭山市防犯のまちづくり推進条例
+    ＋ すこやかさやま健康カレンダー
+    （なくなった行：3行）
 
 ### https://www.city.sayama.saitama.jp/fukushi/shogai/shienserbis/syoudaifukusiservis/2020sougousienhou.html
 - 記事325：狭山市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 児童発達支援センターあんず
-    ＋ 自宅での自立に向けた日常生活を支援します。（在宅介護サービス）
-    ＋ 介護保険事業者指定関係（指定・更新・変更等）
-    ＋ 障がい者福祉課
-    ＋ 狭山市障害者就労支援事業
-    （なくなった行：5行）
+    ＋ 【介護保険事業者向け】新型コロナウイルス感染症に関連する情報
+    ＋ 「狭山市犯罪情報の住民提供等に関する協定」の締結
+    ＋ 公示送達（市県民税・軽自動車税・法人市民税）
+    ＋ 道路維持課
+    （なくなった行：4行）
 
 ### https://www.city.sayama.saitama.jp/fukushi/shogai/shienserbis/syoudaifukusiservis/2020syougaijituushok.html
 - 記事325：狭山市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 障害者成年後見制度利用支援事業
-    ＋ 公示送達（市県民税・軽自動車税・法人市民税）
-    ＋ 道路維持課
-    ＋ 新潟県津南町で農業体験（募集は終了しました）
-    （なくなった行：4行）
+    ＋ 利用者支援事業（基本型）
+    ＋ 「狭山市犯罪情報の住民提供等に関する協定」の締結
+    （なくなった行：2行）
 
 ### https://www.city.sayama.saitama.jp/fukushi/shogai/shienserbis/zaitakukobetsusien.html
 - 記事325：狭山市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 地方行政サービス改革の推進に関する取組状況
-    ＋ 障害者基幹相談支援センター【事業案内】
-    （なくなった行：5行）
+    （なくなった行：1行）
 
 ### https://www.city.sayama.saitama.jp/shisei/shisetsu/iryo/syogaisyakikansodan/jigyounaiyou.html
 - 記事325：狭山市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 障害者基幹相談支援センター【アクセス方法】
-    ＋ 障害者基幹相談支援センター【情報コーナー（リンク集）】
-    ＋ 障害福祉サービス（障害者総合支援法）
-    ＋ 狭山市犯罪被害者等支援条例
-    ＋ ホンデリングにご協力をお願いします
+    ＋ 戦傷病者の援護
+    ＋ 成人男性の風しん予防接種
+    ＋ 危機管理課入札結果
+    ＋ 令和7・8年度物品等競争入札参加資格審査に係る新規申請（随時）の受付
+    ＋ 入札参加資格の変更
     （なくなった行：5行）
 
-### https://www.city.shimotsuma.lg.jp/kenko-fukushi/shogaisya/subsidy/page000546.html
-- 記事518：下妻市の短期入所・日中一時支援
+### https://www.city.setagaya.lg.jp/03655/32576.html
+- 記事156：世田谷区の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 16,560円（ 改正）
     （なくなった行：1行）
 
-### https://www.city.shunan.lg.jp/soshiki/27/2929.html
-- 施設：周南市 移動支援事業（yamaguchi-shunan-mobility）
-- 施設：あい・周南ケアセンター（yamaguchi-shunan-ai-home-out）
-- 記事265：周南市の短期入所・日中一時支援
+### https://www.city.shikokuchuo.ehime.jp/site/taiyou/
+- 施設：四国中央市太陽の家 短期入所（ehime-shikokuchuo-taiyo-child-shortstay）
 
 変わった行の例：
-    ＋ 計画相談支援（者） [PDFファイル／69KB]
-    ＋ 計画相談支援（児） [PDFファイル／65KB]
-    ＋ 居宅介護・重度訪問介護 [PDFファイル／69KB]
-    ＋ 短期入所 [PDFファイル／71KB]
-    ＋ 生活介護 [PDFファイル／105KB]
-    ＋ 自立訓練（機能訓練） [PDFファイル／34KB]
-    ＋ 自立訓練（生活訓練） [PDFファイル／34KB]
-    ＋ 就労移行支援 [PDFファイル／33KB]
-    （なくなった行：18行）
+    ＋ 障害児入所施設 太陽の家 - 紙のまち～四国中央市～
+    （なくなった行：1行）
+
+### https://www.city.soja.okayama.jp/soshiki/22/3146.html
+- 施設：日中一時支援事業所 ここmama（okayama-soja-kokomama-day）
+- 記事426：総社市の短期入所・日中一時支援
 
 ### https://www.city.sumida.lg.jp/kenko_fukushi/syougai/kaiteki/ta80400020210113.html
 - 記事201：墨田区の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 障害者移動支援事業
-    ＋ 重症心身障害児（者）等介護者支援事業
-    ＋ 区内の児童発達支援・放課後等デイサービス・保育所等訪問支援事業所
-    （なくなった行：2行）
+    ＋ 手話通訳者・要約筆記者派遣サービス(聴覚障害者等コミュニケーション支援事業）
+    （なくなった行：1行）
 
 ### https://www.city.sumida.lg.jp/kenko_fukushi/syougai/otetudai/guideline.html
 - 記事201：墨田区の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 手話通訳者・要約筆記者派遣サービス(聴覚障害者等コミュニケーション支援事業）
-    ＋ 区内の児童発達支援・放課後等デイサービス・保育所等訪問支援事業所
-    （なくなった行：2行）
+    （なくなった行：1行）
 
 ### https://www.city.sumida.lg.jp/kenko_fukushi/syougai/otetudai/houmon_zigyou.html
 - 記事201：墨田区の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 税金の軽減
-    ＋ 所得税の障害者控除
-    ＋ 住民税の非課税
     （なくなった行：3行）
 
 ### https://www.city.sumida.lg.jp/kenko_fukushi/syougai/otetudai/kaigosya_shien.html
 - 記事201：墨田区の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 重度障害者等就労支援事業
-    ＋ しごと・雇用促進・施設整備
-    ＋ 児童発達支援・放課後等デイサービス
+    ＋ 手話通訳者・要約筆記者派遣サービス(聴覚障害者等コミュニケーション支援事業）
+    ＋ 補装具費の支給に係る事業者の登録・変更について
     （なくなった行：3行）
 
 ### https://www.city.sumida.lg.jp/kenko_fukushi/syougai/otetudai/kinkyuu_itizi_hogo.html
 - 記事201：墨田区の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 住民税の非課税
-    （なくなった行：3行）
+    ＋ 墨田区内の障害者（児）施設
+    （なくなった行：1行）
 
 ### https://www.city.sumida.lg.jp/kenko_fukushi/syougai/otetudai/kinkyuuitizikaigohi.html
 - 記事201：墨田区の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 住民税の障害者控除
-    ＋ 税金の軽減
-    ＋ 所得税の障害者控除
+    ＋ 墨田区内の障害者（児）施設
+    ＋ 心身障害者福祉手当（区の制度・身体障害または知的障害要件）
     （なくなった行：3行）
 
 ### https://www.city.sumida.lg.jp/kenko_fukushi/syougai/sisetu_nakama/s_sisetu.html
@@ -2042,121 +2213,199 @@
 - 記事201：墨田区の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 小児慢性特定疾病医療費助成制度
-    ＋ 未熟児の養育医療給付
-    （なくなった行：1行）
+    ＋ 6 地域生活支援拠点等
+    ＋ 3 自立支援医療
+    （なくなった行：2行）
 
 ### https://www.city.sumida.lg.jp/kenko_fukushi/syougai/tetyou_soudan/kikan_soudan.html
 - 記事201：墨田区の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 小児慢性特定疾病医療費助成制度
-    ＋ 未熟児の養育医療給付
-    ＋ 子どもの医療費の助成【マル乳・マル子・マル青】
-    （なくなった行：3行）
+    ＋ 小児精神障害者入院医療費助成
+    ＋ 障害者総合支援法に基づく障害福祉サービス
+    （なくなった行：2行）
 
 ### https://www.city.sumida.lg.jp/kenko_fukushi/syougai/tetyou_soudan/soudan_madoguti.html
 - 記事201：墨田区の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 墨田区休日応急診療所
-    ＋ 各種料金割引など
-    （なくなった行：3行）
-
-### https://www.city.tajimi.lg.jp/kenko_iryo_fukushi/fukushi/1006597/1006600.html
-- 記事447：多治見市の短期入所・日中一時支援
-
-変わった行の例：
-    ＋ 日常生活用具給付等事業利用申請書 （Word 60.0 KB）
-    ＋ 日常生活用具給付等事業利用申請書 （PDF 186.1 KB）
-    ＋ PDFファイルをご覧いただくには「Adobe Acrobat Reader」が必要です。お持ちでない方は アドビ社（新しいウィンドウ） から無料でダウンロードできます。
+    ＋ 障害者総合支援法に基づく障害福祉サービス
+    ＋ 3 自立支援医療
+    ＋ 1 障害者総合支援法のポイント
     （なくなった行：2行）
 
 ### https://www.city.takamatsu.kagawa.jp/kurashi/kenkou/shogai_shien/shogai_fukushi/shurui.html
 - 施設：高松市 移動支援・日中一時支援（kagawa-takamatsu-out-day）
 
 変わった行の例：
-    ＋ 自立支援医療（精神通院医療）（精）
-    ＋ マイナンバー制度開始に伴う、障がい福祉課窓口申請の変更点について
-    ＋ 高松市障がい福祉スペシャルサポーター（SSS）
+    ＋ エイズ
     （なくなった行：3行）
 
 ### https://www.city.takamatsu.kagawa.jp/kurashi/kenkou/shogai_shien/todokede/guru-pusien.html
 - 施設：高松市 移動支援・日中一時支援（kagawa-takamatsu-out-day）
 
 変わった行の例：
-    ＋ 「いちご」の答え
-    ＋ キャベツとパインのサラダ
-    ＋ は行の品物
-    （なくなった行：1行）
+    ＋ 「夏休み下水処理場探検！ ～下水道のヒミツを探ろう～」（ 度）の様子
+    ＋ 各種相談窓口
+    ＋ ごみ・リサイクル
+    （なくなった行：3行）
+
+### https://www.city.takarazuka.hyogo.jp/1060682/1060705/1062121/1000616.html
+- 記事221：宝塚市の短期入所・日中一時支援
+
+変わった行の例：
+    ＋ 障害福祉サービス等指定事業所一覧 （Excel 120.6 KB）
+    ＋ 障害児通所支援事業所一覧 （Excel 35.1 KB）
+    ＋ 特定・障害児相談支援事業所一覧表 （Excel 18.6 KB）
+    （なくなった行：3行）
 
 ### https://www.city.tokushima.tokushima.jp/kenko_fukushi/shogai_fukushi/kyuufu/fukushi_teate.html
 - 記事196：徳島市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 徳島市の昔の写真 No.53
-    （なくなった行：3行）
-
-### https://www.city.tokushima.tokushima.jp/kenko_fukushi/shogai_fukushi/kyuufu/nichijo_engo.html
-- 記事196：徳島市の短期入所・日中一時支援
-
-変わった行の例：
-    ＋ 徳島市教育振興基本計画(第4期)
-    （なくなった行：1行）
-
-### https://www.city.tokushima.tokushima.jp/kenko_fukushi/shogai_fukushi/shien/minaoshi.html
-- 施設：徳島赤十字ひのみね医療療育センター（tokushima-hinomine）
-
-変わった行の例：
-    ＋ 子供の健康診査
-    （なくなった行：1行）
+    ＋ 離乳食講習会・歯みがき教室
+    ＋ 歯みがき相談
 
 ### https://www.city.tokyo-nakano.lg.jp/kenko_hukushi/syogai/taisyohinmokukakujyu/kaigoshien/niccyuichijishien.html
 - 記事191：中野区の短期入所・日中一時支援
 
 変わった行の例：
-    （なくなった行：5行）
-
-### https://www.city.tokyo-nakano.lg.jp/kenko_hukushi/syogai/tecyo-teate-nenkin/syogaisyafukushi2.html
-- 記事191：中野区の短期入所・日中一時支援
-
-変わった行の例：
-    （なくなった行：5行）
+    ＋ 類似ページ
+    ＋ Su-Clu-Lab Terrace（サクラボテラス）
+    ＋ カサ デ オリーバ
+    ＋ あとりえふぁんとむ
+    ＋ すばるカンパニー
 
 ### https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/syogai/icare/nakanoissyomiline.html
 - 記事191：中野区の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ こころといのちの相談窓口
-    ＋ 知って！気付いて！ヤングケアラー
-    ＋ 子ども・若者支援センター 若者相談
-    （なくなった行：3行）
+    ＋ 【友だち募集中】中野区公式LINE
+    ＋ 国民生活センターがLINE公式アカウントを開設しました（消費者トラブル防止にお役立てください）
+    ＋ 印鑑登録
+    ＋ 【NIC＋】LINEを使った見守りサービス
+    （なくなった行：4行）
 
 ### https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/syogai/index.html
 - 記事191：中野区の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ 障害者等の保健福祉相談窓口
-    （なくなった行：2行）
+    ＋ 中野区子ども発達センターたんぽぽ
+    ＋ 移動支援・通学等支援
+    ＋ 心身障害者医療費助成制度
+    ＋ 子育て支援課
+    （なくなった行：1行）
+
+### https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/syogai/shien/ichijihogo.html
+- 記事191：中野区の短期入所・日中一時支援
+
+変わった行の例：
+    ＋ 類似ページ
+    ＋ 【友だち募集中】中野区公式LINE
+    ＋ 印鑑登録
+    ＋ 印鑑登録
+    ＋ 中野区安全・安心（防犯）メールが変わります
 
 ### https://www.city.tokyo-nakano.lg.jp/kosodate/kosodatesite_ohirune/mokuteki/teate/teate/jidoikusei.html
 - 記事191：中野区の短期入所・日中一時支援
 
 変わった行の例：
-    （なくなった行：3行）
+    ＋ 類似ページ
+    ＋ 児童手当の振込口座を変更できますか？
+    ＋ 子どもに関する手当・給付金は、どのようなものがありますか？
 
 ### https://www.city.tokyo-nakano.lg.jp/shisetsu/shogai/short/yayoi.html
 - 記事191：中野区の短期入所・日中一時支援
 
 変わった行の例：
-    （なくなった行：5行）
+    ＋ 類似ページ
+    ＋ 日常生活の支援
+    ＋ 中野区重度障害者等就労支援特別事業
+    ＋ 【介護保険事業者向け】中野区介護サービス情報
+    ＋ 重症心身障害児（者）等在宅レスパイト・就労等支援サービス
 
-### https://www.city.toshima.lg.jp/443/kenko/shogai/teate/013079.html
-- 記事194：豊島区の短期入所・日中一時支援
+### https://www.city.toshima.lg.jp/503/2305241542.html
+- 施設：豊島区 お子様の日中一時・移動支援（tokyo-toshima-child-day-support）
 
 変わった行の例：
-    ＋ 代理人が申請する場合は 委任状（PDF：183KB） （同一世帯のご家族が申請する場合は省略可）
+    ＋ 移動支援の利用に関する調査票（PDF：157KB）
+    ＋ 移動支援の利用に関する調査票（ワード：27KB）
+
+### https://www.city.tottori.lg.jp/soshiki/8.html
+- 記事186：鳥取市の短期入所・日中一時支援
+
+変わった行の例：
+    ＋ 更新 介護保険で利用できる主なサービス
     （なくなった行：1行）
+
+### https://www.city.tsuruoka.lg.jp/kenko/shogaifukushi/fukushi0120260319.html
+- 施設：鶴岡市 医療的ケア児（者）看護師派遣事業（yamagata-tsuruoka-medical-care-nurse-dispatch-home-out）
+
+変わった行の例：
+    ＋ 鶴岡市内障害福祉サービス事業所合同バザー「きてみて市」開催のお知らせ
+
+### https://www.city.yachimata.lg.jp/soshiki/12/1619.html
+- 記事500：八街市の短期入所・日中一時支援
+
+変わった行の例：
+    ＋ Post ＜外部リンク＞
+    （なくなった行：1行）
+
+### https://www.city.yachimata.lg.jp/soshiki/12/34132.html
+- 記事500：八街市の短期入所・日中一時支援
+
+変わった行の例：
+    ＋ Post ＜外部リンク＞
+    （なくなった行：1行）
+
+### https://www.city.yachimata.lg.jp/soshiki/12/47531.html
+- 記事500：八街市の短期入所・日中一時支援
+
+変わった行の例：
+    ＋ Post ＜外部リンク＞
+    （なくなった行：1行）
+
+### https://www.city.yachiyo.lg.jp/soshiki/26/51184.html
+- 記事239：八千代市の短期入所・日中一時支援
+
+変わった行の例：
+    ＋ 【日中一時支援】八千代市地域生活支援事業所一覧（ 時点） [PDFファイル／384KB]
+    ＋ 【移動支援】八千代市地域生活支援事業所一覧（ 時点） [PDFファイル／302KB]
+    （なくなった行：2行）
+
+### https://www.city.yamaguchi.lg.jp/soshiki/57/
+- 記事198：山口市の短期入所・日中一時支援
+
+変わった行の例：
+    ＋ 更新 度第２回山口市障がい福祉施策懇話会の会議録
+    ＋ 度第２回山口市障がい福祉施策懇話会の会議録
+
+### https://www.city.yamato.lg.jp/gyosei/soshik/57/shogaishafukushi/shogaifukushiservice/16085.html
+- 記事227：大和市の短期入所・日中一時支援
+
+変わった行の例：
+    ＋ 受給者証について
+    ＋ 地方公共団体情報システムの標準化に伴い、障害福祉サービス受給者証等につきましては、順次、国の定める様式に変更して発行することとなりました。なお、現在ご利用中のサービスへの影響はありません。
+    ＋ 新しい様式の障害福祉サービス受給者証等への変更は、今後の更新のタイミングで順次対応しますので、本件に関する手続きは不要です。
+    ＋ また、現在お手元にある変更前の障害福祉サービス受給者証等につきましては、そのままご使用いただけます。
+    ＋ ご不明な点などがございましたら、障がい福祉課までお問合せください。
+    ＋ 障害福祉サービス受給者証(PDFファイル:41.5KB)
+    ＋ 地域相談支援受給者証(PDFファイル:100.7KB)
+    ＋ 療養介護受給者証(PDFファイル:130.1KB)
+
+### https://www.city.yokkaichi.lg.jp/www/section/1480072588545/index.html
+- 記事213：四日市市の短期入所・日中一時支援
+
+変わった行の例：
+    ＋ 四日市市記者発表資料 四日市市手話言語条例制定記念イベントの開催について
+
+### https://www.city.yukuhashi.fukuoka.jp/soshiki/18/1352.html
+- 記事413：行橋市の短期入所・日中一時支援
+
+変わった行の例：
+    ＋ 月額30,450円（ 度）
+    ＋ 月額16,560円（ 度）
+    （なくなった行：2行）
 
 ### https://www.compass-mitsuba.com/facility/109
 - 施設：COMPASS発達支援センター三豊（kagawa-compass-mitoyo-therapy-visit）
@@ -2168,368 +2417,383 @@
 - 施設：ふくしサービスセンターびすけっと西部（saga-ureshino-biscuit-seibu-child-home-out）
 
 変わった行の例：
-    ＋ ★福祉用具体験研修～ノーリフトケアⓇ～★
-    ＋ 10月職場会議と定例会
-    ＋ 脳活教室２０回を無事に終了しました。
-    （なくなった行：4行）
-
-### https://www.gunmaseishi.com/about/gunmaseishi
-- 施設：群馬整肢療護園 発達支援センター ひなたぼっこ（gunma-hinatabokko-therapy）
-- 施設：群馬整肢療護園 短期入所（gunma-takasaki-gunma-seishi-shortstay）
-
-変わった行の例：
-    ＋ ★職員募集★ 短時間バイト職員(病棟)の募集について
-    ＋ 日中一時支援事業及び短期入所事業の一部再開について第2報
+    ＋ １１月ふれあいサロン
+    ＋ 事務所に彩りを添える、季節のお花
     （なくなった行：2行）
 
-### https://www.gunmaseishi.com/archives/1894
-- 施設：群馬整肢療護園 短期入所（gunma-takasaki-gunma-seishi-shortstay）
+### https://www.habilis-nara.com/
+- 施設：児童発達支援事業所 放課後等デイサービスはびりす（nara-kashihara-habilis-medical-therapy）
 
 変わった行の例：
-    ＋ ★職員募集★ 短時間バイト職員(病棟)の募集について
-    （なくなった行：2行）
-
-### https://www.gunmaseishi.com/service/hinatabokko
-- 施設：群馬整肢療護園 発達支援センター ひなたぼっこ（gunma-hinatabokko-therapy）
-
-変わった行の例：
-    ＋ ★職員募集★ 短時間バイト職員(病棟)の募集について
-    ＋ 日中一時支援事業及び短期入所事業の一部再開について第2報
-    （なくなった行：2行）
-
-### https://www.gunmaseishi.com/service/nyuen1
-- 施設：群馬整肢療護園 短期入所（gunma-takasaki-gunma-seishi-shortstay）
-
-変わった行の例：
-    ＋ ★職員募集★ 短時間バイト職員(病棟)の募集について
-    ＋ 日中一時支援事業及び短期入所事業の一部再開について第2報
-    （なくなった行：2行）
-
-### https://www.gunmaseishi.com/service/shortstay
-- 施設：群馬整肢療護園 短期入所（gunma-takasaki-gunma-seishi-shortstay）
-
-変わった行の例：
-    ＋ ★職員募集★ 短時間バイト職員(病棟)の募集について
-    ＋ 日中一時支援事業及び短期入所事業の一部再開について第2報
-    （なくなった行：2行）
+    ＋ 当施設は、 一般社団法人 人間力認定協会が定める審査基準を満たした『CDQ認証施設』に認定されました。支援の特徴や保護者様からの評価など、第三者視点での詳細情報は【https://ryouiku-quality.ninkyou.jp/exc
 
 ### https://www.hamamatsu-pippi.net/shiritai/shien/hoday/29066.html
 - 施設：ねお重心多機能型施設 入野（shizuoka-hamamatsu-neo-irino-pimd-therapy）
 
 変わった行の例：
-    ＋ 臨時休館のお知らせ【江西児童館、北星児童館】
-    ＋ いい夫婦の日。夫婦一緒に子育てをする心構えを教えて
-    ＋ 更新情報
-    ＋ 「子育て支援ひろば今月のチラシ」に12月分を掲載しました。
+    ＋ 《アンケート実施中！》年末年始は帰省する？あなたの帰省について教えて！
+    ＋ 浜松市の就園・就学に関する経済的支援について
+    ＋ 「浜松市子育て応援宣言事業所」を知っていますか？
     （なくなった行：3行）
 
 ### https://www.hamurashakyo.jp/pages/14/
 - 記事509：羽村市の短期入所・日中一時支援
 
 変わった行の例：
-    （なくなった行：33行）
+    ＋ 企業からの仕事 ☆自動車部品加工
+    ＋ ☆ダイレクトメールの封入作業（チラシを丁合し、封入します）
+    ＋ ☆梱包作業（色々な商品を梱包します）
+    ＋ 生活訓練事業 ☆余暇活動（第２・４水曜日にエアロビクスをします）
+    ＋ ９：３０ 朝の会（みんなで元気にあいさつをしてスタートです）
+    ＋ ９：４５～ 作業開始（作業内容は別記のとおり）
+    ＋ １２：００～１３：００ 昼休み（おいしい給食を食べて、休憩します）
+    ＋ １３：００～ 作業開始（作業内容は別記のとおり）
+    （なくなった行：15行）
 
-### https://www.happynet.or.jp/about/disclosure/
-- 施設：ゆめの園中野林ヘルパーステーション（saitama-nakanohayashi-helper）
-
-変わった行の例：
-    ＋ ゆめの園バンビ若葉事業所内保育所(202612)
-    （なくなった行：1行）
-
-### https://www.happynet.or.jp/facility/nakanohayashi/
-- 施設：ゆめの園中野林ヘルパーステーション（saitama-nakanohayashi-helper）
-
-### https://www.housei-haihai.com/
-- 施設：児童発達支援・放課後等デイサービス はいはい（oita-haihai-therapy）
+### https://www.i-ryouiku.com/
+- 施設：岩手県立療育センター（iwate-ryoiku）
 
 変わった行の例：
-    ＋ 【年末年始について】
-    ＋ ● ～ の年末年始は、お休みさせていただきます。
-    ＋ 年内は まで、年明けは より開所いたします。
-    ＋ ◎休み期間中も、ご相談やお問い合わせにつきましては、午後1時から午後4時までは電話対応いたします。（080-3451-7359）
-    ＋ ※営業電話などは固くお断りいたします。
+    ＋ 献立表 から 当センターでは、年間を通して行事食の提供を行っています。
+    ＋ お知らせ一覧
+    （なくなった行：2行）
+
+### https://www.i-ryouiku.com/zaitaku/kagayaki/
+- 施設：岩手県立療育センター（iwate-ryoiku）
+
+変わった行の例：
+    ＋ ♢生産活動「カボチャ団子作り」
 
 ### https://www.i-shinseikai.jp/pages/200/
 - 施設：みちのく療育園メディカルセンター（iwate-michinoku-medical-shortstay）
 
 変わった行の例：
-    ＋ 6
-    ＋ 2
+    ＋ 8
+    ＋ 1
+    ＋ 8
+    ＋ 8
     （なくなった行：2行）
 
-### https://www.ibaraki-fukusi.jp/
-- 施設：茨城県立あすなろの郷 日中一時支援・短期入所（ibaraki-mito-asunaro-day-shortstay）
+### https://www.iwamifukushikai.or.jp/news/
+- 施設：障害児入所施設 こくぶ学園（shimane-hamada-kokubu-day-shortstay）
 
 変わった行の例：
     （なくなった行：1行）
-
-### https://www.icare-yamanashi.jp/
-- 記事72：医療的ケア児支援センター一覧・47都道府県の相談窓口
-
-変わった行の例：
-    ＋ 山梨県医療的ケア児等支援者養成研修 現任者受講のお知らせ
-    ＋ 山梨県医療的ケア児等支援者養成研修 現任者受講のお知らせ
-    （なくなった行：2行）
-
-### https://www.ikeda-hakuaikai.org/%E9%9A%9C%E3%81%8C%E3%81%84%E8%80%85%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9/%E5%85%90%E7%AB%A5%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9/%E9%9A%9C%E3%81%8C%E3%81%84%E5%85%90%E5%85%A5%E6%89%80%E6%96%BD%E8%A8%AD-%E6%B1%A0%E7%94%B0%E5%AD%A6%E5%9C%92/
-- 施設：障がい児入所施設 池田学園（短期入所）（tokushima-miyoshi-ikeda-gakuen-child-stay）
-
-変わった行の例：
-    ＋ すぎのこ にこにこだより
-    ＋ (金, 20 11月 2026)
-    ＋ 箸蔵山荘 芋ほり交流会
-    ＋ (金, 20 11月 2026)
-    ＋ すぎのこ やきいも
-    ＋ (金, 20 11月 2026)
-    （なくなった行：6行）
-
-### https://www.ikeda-hakuaikai.org/%E9%9A%9C%E3%81%8C%E3%81%84%E8%80%85%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9/%E6%88%90%E4%BA%BA%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9/%E9%9A%9C%E3%81%8C%E3%81%84%E8%80%85%E6%94%AF%E6%8F%B4%E6%96%BD%E8%A8%AD-%E7%AE%B8%E8%94%B5%E5%B1%B1%E8%8D%98/
-- 施設：箸蔵山荘 多機能型通所支援事業所ひまわり（tokushima-miyoshi-himawari-child-therapy）
-
-変わった行の例：
-    ＋ すぎのこ にこにこだより
-    ＋ (金, 20 11月 2026)
-    ＋ 箸蔵山荘 芋ほり交流会
-    ＋ (金, 20 11月 2026)
-    ＋ すぎのこ やきいも
-    ＋ (金, 20 11月 2026)
-    （なくなった行：6行）
 
 ### https://www.kaigokensaku.mhlw.go.jp/12/index.php?JigyosyoCd=1272902279-00&ServiceCd=110&action_kouhyou_detail_001_kani=true
 - 施設：訪問介護たまゆら（chiba-kamagaya-tamayura-home）
 
 変わった行の例：
-    ＋ 訪問者数 ：589
+    ＋ 訪問者数 ：597
     （なくなった行：1行）
 
-### https://www.nozominoie.or.jp/facility/sansankan-afterschool/
-- 施設：さんさん館ｉ 放課後等デイサービス（のぞみの家福祉会）（niigata-shibata-sansankan-i-severe-child-afterschool）
+### https://www.nadeshiko-aozora.com/ohisama/
+- 施設：なでしこ青空支援センター 医療的ケア児日中一時支援（niigata-sanjo-nadeshiko-medical-day）
 
 変わった行の例：
-    ＋ 「防災機器等の取扱い講習会」を行いました。
-    ＋ こんにちは、さんさん館iです。 職員研修「防災機器等の取扱い講習会」を行いま...
+    ＋ 12月の予定はこちらからご確認ください。
+    ＋ あおぞらひろばだより12月号.pdf
+    ＋ 537.6 KB
+    （なくなった行：3行）
+
+### https://www.npo-fks.com/%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88%E3%82%B9%E3%83%86%E3%82%A4-%E3%81%82%E3%81%8A%E3%81%84%E3%81%86%E3%81%BF/
+- 施設：ショートステイ あおいうみ（yamagata-yonezawa-aoi-umi-shortstay）
+- 記事383：米沢市の短期入所・日中一時支援
+
+変わった行の例：
+    ＋ NEW!!!
+    ＋ 12月の行事になります。 ⇒ こちら
+    （なくなった行：2行）
+
+### https://www.npo-non.org/
+- 施設：放課後等デイサービス 暖太（のんた）（NPO法人暖）（kyoto-minami-nonta-after-school）
+
+変わった行の例：
+    ＋ 2026/11 暖太
+    ＋ ソーイング部🪡 くわしくはこちら ≫
+
+### https://www.nyuzen-shakyo.org/helper/
+- 施設：入善町社会福祉協議会 訪問介護ほほえみ（toyama-nyuzen-shakyo-hohoemi-child-home）
+
+変わった行の例：
+    ＋ 職員募集のお知らせ
+    （なくなった行：1行）
+
+### https://www.okayama-icare.com/
+- 記事72：医療的ケア児支援センター一覧・47都道府県の相談窓口
+- 記事122：倉敷市の短期入所・日中一時支援
+- 記事274：津山市の短期入所・日中一時支援
+- 記事426：総社市の短期入所・日中一時支援
+- 記事446：笠岡市の短期入所・日中一時支援
+- 記事462：真庭市の短期入所・日中一時支援
+
+変わった行の例：
+    ＋ 度 第1回岡山市医療的ケア児研修会のご案内
     （なくなった行：2行）
 
 ### https://www.okazaki-fukushi.or.jp/service/shogaisha/ichiji
 - 施設：にじの家（日中一時支援）（aichi-okazaki-niji-no-ie-medical-day）
 
 変わった行の例：
-    ＋ 職員募集 【追加募集】2027年4月採用 正規職員採用試験を実施します。
-    ＋ 高齢者 とはなす中央「冬休み宿題応援プロジェクト」を開催します
-    ＋ 今年も「冬休み宿題応援プロジェクト」を開催します！
-    ＋ 日時： 10時～15時
-    ＋ 場所：とはなす中央
-    ＋ 申し込み…
-    ＋ 障がい者 【のぞみの家 B型】避難訓練を行いました。🚒🚑
-    ＋ 避難訓練を行いました🚒🚑
-    （なくなった行：21行）
+    ＋ 高齢者 とはなす岡崎 「Shamoさんの TOY コンサート」を開催します！
+    ＋ 障がい者 そだちの家 秋のミニ運動会！
+    ＋ そだちの家では月に1回程度のペースで運動プログラムを実施しています😊
+    ＋ 今回は、秋のミニ運動会と題して全員参加型…
+    ＋ こども 放課後等デイサービスあずき 電車体験をしました。
+    ＋ に電車体験をしました。
+    ＋ 1人ずつ切符を入れて改札を通ります。
+    ＋ 電車来るかな？
+    （なくなった行：13行）
+
+### https://www.ono-shakyo.jp/contact/
+- 施設：放課後等デイサービスセンター えがおの教室（fukui-ono-egao-after-school-day）
+
+変わった行の例：
+    ＋ クリスマスリース 手作り講座
+    （なくなった行：1行）
+
+### https://www.ono-shakyo.jp/welfare/disabled/wd325/
+- 施設：放課後等デイサービスセンター えがおの教室（fukui-ono-egao-after-school-day）
+
+変わった行の例：
+    ＋ クリスマスリース 手作り講座
+    （なくなった行：1行）
 
 ### https://www.osaki-shakyo.com/archives/kaigo/houmon
 - 施設：大崎市社会福祉協議会 居宅介護・移動支援（miyagi-osaki-shakyo-home-out）
 - 記事290：大崎市の短期入所・日中一時支援
 
 変わった行の例：
-    ＋ ただいまメンテナンス中です
-    ＋ 平素より当サイトをご覧いただき、誠にありがとうございます。
-    ＋ 現在、システムメンテナンスのため、サイトを一時的にご利用いただけません。
-    ＋ ご不便をおかけしますが、何卒ご理解くださいますようお願い申し上げます。
-    ＋ お問い合わせ
-    ＋ 〒989-6154 宮城県大崎市古川三日町二丁目５－１
-    ＋ （大崎市古川保健福祉プラザ１階）
-    ＋ TEL： 50 FAX： 58
-    （なくなった行：62行）
+    ＋ 訪問介護事業 | 大崎市社会福祉協議会
+    ＋ %htitle% le="コンテンツへスキップ">コンテンツへスキップ
+    ＋ 大崎市社協概要
+    ＋ 会員会費
+    ＋ 定款・規程関係
+    ＋ 地域福祉活動計画
+    ＋ パンフレット
+    ＋ 情報の公表について
+    （なくなった行：8行）
 
 ### https://www.osaki-shakyo.com/furukawa/furukawa6
 - 施設：大崎市社会福祉協議会 居宅介護・移動支援（miyagi-osaki-shakyo-home-out）
 
 変わった行の例：
-    ＋ ただいまメンテナンス中です
-    ＋ 平素より当サイトをご覧いただき、誠にありがとうございます。
-    ＋ 現在、システムメンテナンスのため、サイトを一時的にご利用いただけません。
-    ＋ ご不便をおかけしますが、何卒ご理解くださいますようお願い申し上げます。
-    ＋ お問い合わせ
-    ＋ 〒989-6154 宮城県大崎市古川三日町二丁目５－１
-    ＋ （大崎市古川保健福祉プラザ１階）
-    ＋ TEL： 50 FAX： 58
-    （なくなった行：49行）
+    ＋ 大崎中央ヘルパーステーション | 大崎市社会福祉協議会
+    ＋ %htitle% le="コンテンツへスキップ">コンテンツへスキップ
+    ＋ 大崎市社協概要
+    ＋ 会員会費
+    ＋ 定款・規程関係
+    ＋ 地域福祉活動計画
+    ＋ パンフレット
+    ＋ 情報の公表について
+    （なくなった行：8行）
 
-### https://www.popponomori.jp/canon/
-- 施設：地域生活支援センターかのん 移動支援・行動援護（tokyo-machida-kanon-mobility-action）
-- 施設：地域生活支援センターかのん 児童発達支援・放課後等デイ・短期入所（tokyo-machida-kanon-child-therapy-shortstay）
-
-変わった行の例：
-    ＋ 1月空き情報カレンダー
-    ＋ 12月メニュー表
-    （なくなった行：2行）
-
-### https://www.pref.fukuoka.lg.jp/contents/shougaijishiteijigyousyo.html
-- 施設：こどもデイサービスYOOU飯塚（fukuoka-iizuka-yoou-medical-child-therapy）
+### https://www.pref.kochi.lg.jp/doc/kouji-2/
+- 施設：障害児入所施設 わかふじ寮 短期入所（kochi-shimanto-wakafuji-child-shortstay）
 
 変わった行の例：
-    ＋ 障がい児通所支援施設・事業所（全域） [Excelファイル／238KB]
-    ＋ 障がい児通所支援施設・事業所(全域）【PDF版】 [PDFファイル／3.47MB]
-    ＋ 障がい児相談支援事業所（全域） [Excelファイル／81KB]
-    （なくなった行：3行）
+    ＋ 01_居宅介護・重度訪問介護・同行援護・行動援護
+    ＋ 02_共同生活援助
+    ＋ 03_障害福祉サービス事業所、障害者支援施設
+    ＋ 04_短期入所
+    ＋ 05_相談支援事業所
+    ＋ 06-1_障害児通所支援
+    ＋ 06-2_共生型障害児通所支援
+    ＋ 06-3_障害児入所施設
+    （なくなった行：9行）
 
-### https://www.pref.fukushima.lg.jp/sec/21810a/iryoutekikeasiensenta.html
+### https://www.pref.miyagi.jp/soshiki/syoufuku/ikea-tankinyusyo.html
+- 施設：仙台エコー医療療育センター 医療型短期入所・日中一時支援（miyagi-sendai-echo-medical-shortstay-day）
+
+変わった行の例：
+    （なくなった行：1行）
+
+### https://www.pref.miyagi.jp/soshiki/syoufuku/ikeasoudansenntertirufa.html
+- 記事259：石巻市の短期入所・日中一時支援
+- 記事290：大崎市の短期入所・日中一時支援
+
+変わった行の例：
+    （なくなった行：1行）
+
+### https://www.pref.nagasaki.jp/bunrui/hukushi-hoken/hoken-iryo/seishinhoken/seishinhoken-kenhoku/kenhokushougaishigenmap/
+- 施設：うみかぜホースパーク（nagasaki-hirado-umikaze-horsepark-therapy）
+- 施設：セントケア平戸（nagasaki-hirado-centcare-child-home-out）
+- 施設：放課後等デイサービス まんてん（nagasaki-hirado-manten-after-school）
+
+変わった行の例：
+    ＋ 01 表紙・目次、サービス利用の流れ、サービス内容(P1~5) (PDF 763KB)
+    ＋ 02 事業所一覧・所在地(P6~17) (PDF 4.26MB)
+    ＋ 03 行政窓口(P18~22) (PDF 668KB)
+    ＋ 04 相談支援事業所(P23-35) (PDF 2.66MB)
+    ＋ 05 事業所紹介1(P36~67) (PDF 5.85MB)
+    ＋ 06 事業所紹介2(P68~92) (PDF 4.54MB)
+    ＋ 07 事業所紹介3(P93~112) (PDF 4.26MB)
+    ＋ 08 事業所紹介4(P113~131) (PDF 3.73MB)
+    （なくなった行：13行）
+
+### https://www.pref.niigata.lg.jp/site/humagumi/hamagumi.html
+- 施設：新潟県はまぐみ小児療育センター（niigata-hamagumi）
+
+変わった行の例：
+    （なくなった行：1行）
+
+### https://www.pref.saitama.lg.jp/a0605/library-info/iryotekikeajitoushien.html
 - 記事72：医療的ケア児支援センター一覧・47都道府県の相談窓口
-- 記事307：会津若松市の短期入所・日中一時支援
-- 記事385：須賀川市の短期入所・日中一時支援
+- 記事240：上尾市の短期入所・日中一時支援
+- 記事255：熊谷市の短期入所・日中一時支援
+- 記事338：鴻巣市の短期入所・日中一時支援
+- 記事360：朝霞市の短期入所・日中一時支援
+- 記事452：ふじみ野市の短期入所・日中一時支援
+- 記事453：富士見市の短期入所・日中一時支援
+- 記事454：坂戸市の短期入所・日中一時支援
+- ほか15か所
 
 変わった行の例：
-    ＋ 福島県医療的ケア児等コーディネーター養成研修修了者について
-    ＋ 福島県医療的ケア児等コーディネーター養成研修修了者となります。
-    ＋ 福島県医療的ケア児等コーディネーター養成研修修了者一覧（R1～R8） [PDFファイル／361KB]
-    ＋ ＜修了者の所属等に変更があった場合＞
-    ＋ 掲載情報は、基本的に修了時点のものです。
-    ＋ 所属や連絡先等に変更があった際は、医療的ケア児支援センターへメールで変更届を提出してください。
-    ＋ 変更届に基づき、修了者一覧を更新します。
-    ＋ 変更届様式 [Wordファイル／14KB]
-    （なくなった行：2行）
-
-### https://www.pref.ishikawa.lg.jp/fukusi/iryoutekikeaji.html
-- 施設：国立病院機構 医王病院 デイサービス・短期入所（ishikawa-kanazawa-iou-medical-child-therapy-shortstay）
-
-### https://www.pref.saitama.lg.jp/a0605/iryoutekikeajitou/ikea_kenshuu.html
-- 記事318：戸田市の短期入所・日中一時支援
-- 記事325：狭山市の短期入所・日中一時支援
-- 記事326：入間市の短期入所・日中一時支援
-
-変わった行の例：
-    （なくなった行：1行）
-
-### https://www.pref.saitama.lg.jp/a0605/library-info/ikeajishien/kazokukaiitiran.html
-- 記事469：医療的ケア児の家族会・親の会のさがし方
-
-変わった行の例：
-    （なくなった行：1行）
+    ＋ 医療的ケア児等の災害対策について
+    ＋ 当事者・御家族向け「防災ガイドブック」
+    ＋ 市町村向け「個別避難計画作成の手引き」
+    （なくなった行：3行）
 
 ### https://www.pref.yamanashi.jp/akbn-iryo/54083608629.html
 - 施設：山梨県立あけぼの医療福祉センター（yamanashi-akebono）
 
 変わった行の例：
-    ＋ 富士・東部教育事務所
+    ＋ 子どものこころサポートプラザ
     （なくなった行：1行）
 
 ### https://www.pref.yamanashi.jp/akbn-iryo/90232332119.html
 - 施設：山梨県立あけぼの医療福祉センター（yamanashi-akebono）
 
 変わった行の例：
-    ＋ 富士・東部教育事務所
+    ＋ 子どものこころサポートプラザ
     （なくなった行：1行）
 
-### https://www.pref.yamanashi.jp/shogai-fks/iryougatatankinyuusyo_sougeishienn.html
-- 施設：富士・東部圏域 医療型短期入所利用時送迎支援（yamanashi-fuji-tobu-medical-shortstay-transport）
+### https://www.pref.yamanashi.jp/kenko-zsn/nanbyoukodomocf/kangoninnhaken.html
+- 施設：山梨県 難病のこどもの看護人派遣事業（在宅レスパイト型）（yamanashi-pref-nanbyo-child-nurse-respite-home）
 
-### https://www.pref.yamanashi.jp/shogai-fks/mimamori.html
-- 施設：山梨県 医療型短期入所利用時夜間見守り体制支援（yamanashi-medical-shortstay-night-watch）
-
-### https://www.pref.yamanashi.jp/shogai-fks/shiteikanri/r7-ikusei.html
-- 施設：山梨県立育精福祉センター児童寮（yamanashi-ikusei-child）
-
-### https://www.qoler.jp/bambino/
-- 施設：児童発達支援センター クオラバンビーノ（kagoshima-satsuma-qoler-bambino-therapy）
+### https://www.seishi.isg.or.jp/isg_kodomo/shortstay/index.html
+- 施設：金沢こども医療福祉センター 日中一時支援・短期入所（ishikawa-kanazawa-kodomo-day-shortstay）
 
 変わった行の例：
-    ＋ 【2026年度】給食だより秋号
-    （なくなった行：1行）
-
-### https://www.rehab-hiroshima.org/wakaba/
-- 施設：わかば療育園 短期入所（hiroshima-wakaba-shortstay）
-
-変わった行の例：
+    ＋ ・アレルギーについて（ ・食物アレルギーの部分除去食品チェック表 、 ・食物アレルギー指示書 ）
     （なくなった行：1行）
 
 ### https://www.seishi.isg.or.jp/kodomo_index.html
 - 施設：金沢こども医療福祉センター 日中一時支援・短期入所（ishikawa-kanazawa-kodomo-day-shortstay）
 
 変わった行の例：
-    ＋ 「リハビリテーション（部門別集合写真）」、「 リハビリ活動記録 」、「 スタッフ紹介 」更新しました。
-    （なくなった行：1行）
-
-### https://www.skys1001.info/
-- 施設：児童発達支援・放課後等デイサービス Sky's the Limit（osaka-miyakojima-skys-the-limit-pimd-therapy）
-
-変わった行の例：
-    ＋ 大阪市で安心して過ごせる放課後デイサービス｜Without You
+    ＋ 「 短期入所・日中一時支援 」を更新しました。
     （なくなった行：1行）
 
 ### https://www.soramame-sky.com/
 - 施設：ことばの教室そらまめキッズ東餅田（kagoshima-aira-soramame-higashimochida-therapy）
 
 変わった行の例：
-    ＋ 「筆箱を開けたらなんにも入ってない…！」 そんな経験ありませんか？😭 毎日チェックしていても、 い
-    ＋ . 「お片付けしてね！」と声をかけても反応がなかったり、 おもちゃを出しっぱなしにしてしまったり
-    ＋ 1人採用するのに 約100万円かかると言われる時代💸 そのお金、人材紹介会社ではなく 「現場で頑張
+    ＋ 小学生なのに文章問題が苦手…その理由は？家庭でできる教え方と支援のコツ
+    ＋ 「周りの子からワンテンポ遅れる…」 それ、運動が苦手だからだけでは ないかもしれません👀✨ お家に
+    ＋ 悪気はないのに、 ついお友だちを強く叩いてしまうことって ありませんか？😭😭 それ、もしかすると
     （なくなった行：3行）
+
+### https://www.ssw.or.jp/facilities/disabilities/kofuen
+- 施設：光風園 子どもの短期入所（shimane-izumo-kofuen-child-shortstay）
+
+変わった行の例：
+    ＋ サンドイッチ はつらつ棟編
+    ＋ サンドイッチ はつらつ棟編
+    （なくなった行：1行）
 
 ### https://www.taiyokai.or.jp/pages/42/
 - 施設：慈愛福祉学園デイサービスセンター（iwate-ofunato-jiai-child-day-therapy）
 
 変わった行の例：
-    ＋ 7
-    ＋ 9
-    （なくなった行：2行）
+    ＋ 8
+    （なくなった行：1行）
 
 ### https://www.tajimi-hospital.jp/
 - 施設：岐阜県立多治見病院 医療型短期入所（gifu-tajimi-pref-hospital-medical-shortstay）
+
+変わった行の例：
+    ＋ 正面玄関前に花の寄せ植えが届きました
+    （なくなった行：1行）
 
 ### https://www.takamatsushi-shakyo.or.jp/use/nursing-insurance/handicap.html
 - 施設：高松市社会福祉協議会 居宅介護・移動支援（kagawa-takamatsu-shakyo-home）
 
 変わった行の例：
-    ＋ 国分寺デイサービス
-    ＋ 四国八十八か所の八十番札所国分寺があり、盆栽とオリーブの町、国分寺町に立地しています。 バリアフリ...
-    ＋ 本所デイサービス
-    ＋ 明るく、広々としたデイルームで車いすや歩行器でもストレスなく移動ができ、のびのびと体を動かせます...
+    ＋ 訪問看護
+    ＋ 看護師等が主治医の指示を受けて本人の居宅を訪れ、療養上の世話や必要な診療の補助を行います。具体的...
+    ＋ 訪問入浴
+    ＋ 指定訪問入浴介護事業 要介護状態となっても、可能な限り自宅で自立した日常生活を営むことができるよう...
     （なくなった行：4行）
 
 ### https://www.tochinomi.or.jp/
 - 施設：とちのみホームヘルプサービス（tochigi-sano-tochinomi-home-helper）
 
 変わった行の例：
-    ＋ とちのみ学園 【とちのみ学園】セブンイレブンがやって来た！
-    （なくなった行：1行）
+    ＋ もりのひろば もりのひろば 初めてのエアロですっきりしました
+    ＋ フロム浅沼 『フロム浅沼運動会』を開催しました☆
+    （なくなった行：2行）
 
 ### https://www.tochinomi.or.jp/%E7%AC%AC%EF%BC%92%E3%81%A8%E3%81%A1%E3%81%AE%E3%81%BF%E5%AD%A6%E5%9C%92%E6%95%B4%E5%82%99%E5%B7%A5%E4%BA%8B%E3%80%80%E9%80%B2%E6%8D%97%E7%8A%B6%E6%B3%81%EF%BC%88%EF%BC%94%E6%9C%88%E6%9C%AB%E7%8F%BE/
 - 施設：第二とちのみ学園 短期入所（tochigi-sano-daini-tochinomi-shortstay）
 
 変わった行の例：
-    ＋ 【とちのみ学園】セブンイレブンがやって来た！
-    ＋ とちのみ学園 (23)
-    ＋ 2026年11月 (10)
-    （なくなった行：3行）
+    ＋ もりのひろば 初めてのエアロですっきりしました
+    ＋ 『フロム浅沼運動会』を開催しました☆
+    ＋ フロム浅沼 (19)
+    ＋ もりのひろば (60)
+    ＋ 2026年11月 (12)
+    （なくなった行：5行）
 
 ### https://www.tochinomi.or.jp/category/home_help/
 - 施設：とちのみホームヘルプサービス（tochigi-sano-tochinomi-home-helper）
 
 変わった行の例：
-    ＋ 【とちのみ学園】セブンイレブンがやって来た！
-    ＋ とちのみ学園 (23)
-    ＋ 2026年11月 (10)
-    （なくなった行：3行）
+    ＋ もりのひろば 初めてのエアロですっきりしました
+    ＋ 『フロム浅沼運動会』を開催しました☆
+    ＋ フロム浅沼 (19)
+    ＋ もりのひろば (60)
+    ＋ 2026年11月 (12)
+    （なくなった行：5行）
 
-### https://www.town.koryo.nara.jp/0000003465.html
-- 施設：広陵町 お子様の移動・日中一時支援（nara-koryo-child-out-day-support）
-
-変わった行の例：
-    ＋ 度第2回広陵町障がい者施策推進協議会を開催しました
-    （なくなった行：1行）
-
-### https://www.toyama-reha.or.jp/care_suisin
-- 記事72：医療的ケア児支援センター一覧・47都道府県の相談窓口
-- 記事256：高岡市の短期入所・日中一時支援
+### https://www.tokyo-sola.com/syoufuen
+- 施設：短期入所 松風園（ibaraki-tsukuba-shoufuen-shortstay）
 
 変わった行の例：
-    ＋ 医療的ケア児等支援に関する協議会が開催されました
+    ＋ 大阪へ出陣！初参加の日本COG-TR学会で、”自立”につながるコグトレ実践を発表してきました！ コグトレ通信｜1019-1025｜物語つくり・あいう算、そしてテスト。 コグトレ通信｜1012-1018｜記号探し・物語作り・この人はどんな気持
     （なくなった行：1行）
+
+### https://www.town.saitama-misato.lg.jp/0000000240.html
+- 施設：美里町 移動・日中一時・生活サポート（saitama-misato-child-out-day-support-system）
+
+変わった行の例：
+    ＋ 障害者手帳等診断書料助成制度について
+
+### https://www.town.taketomi.lg.jp/soshiki/1712708496/1561527081/syougaisiori/
+- 施設：竹富町 障がい児の移動支援（制度・申請窓口）（okinawa-taketomi-child-mobility-system-202609）
+
+変わった行の例：
+    ＋ 「竹富町こども計画」策定に係るアンケート調査について
+
+### https://www.ysjk.jp/komachi/business/welfare-shortstay/
+- 施設：横浜市多機能型拠点こまち（yokohama-komachi）
+
+変わった行の例：
+    ＋ 開所日のお知らせ 変更.pdf
+
+### https://www.ysjk.jp/komachi/info/
+- 施設：横浜市多機能型拠点こまち（yokohama-komachi）
+
+変わった行の例：
+    ＋ 福祉型強化短期入所 ２月開所日変更のお知らせについてアップしました。
+    ＋ 福祉型強化短期入所R9.2月の開所日の変更になります。 開所日のお知らせ2月 変更.pdf...
+    （なくなった行：2行）
 
 ### https://y-tewotsunagu.or.jp/ikusei/
 - 施設：山梨県立育精福祉センター児童寮（yamanashi-ikusei-child）
 
 変わった行の例：
-    ＋ 3
-    ＋ 3
+    ＋ 2
     （なくなった行：1行）
 
 ## 読めなかったページ（2回つづけて）
@@ -2564,6 +2828,8 @@
     - 記事354：海老名市の短期入所・日中一時支援
 - https://genki-jirushi.com/welfare/nonkids/（HTTP 404）
     - 施設：のんきっず（重心児多機能型デイサービス）（mie-yokkaichi-nonkids-pimd-child-therapy）
+- https://genkinamori.1web.jp/contactus.html（URLError: <urlopen error timed out>）
+    - 施設：元気な杜 日中一時支援（現在登録・受付は要確認）（saitama-kazo-genki-no-mori-child-day）
 - https://greens-villageone.jimdofree.com/ご利用案内/（UnicodeEncodeError: 'ascii' codec can't encode characters in position 5-9: ordinal not in range(128)）
     - 施設：児童デイサービス グリーンズ（nagasaki-city-greens-pimd-therapy）
 - https://greens-villageone.jimdofree.com/よくあるご質問/（UnicodeEncodeError: 'ascii' codec can't encode characters in position 5-11: ordinal not in range(128)）
@@ -2578,10 +2844,6 @@
     - 施設：国立病院機構 広島西医療センター 医療型短期入所（hiroshima-otake-west-medical-shortstay）
 - https://honobonokazokuimai.jimdofree.com/ほっとハウス/（UnicodeEncodeError: 'ascii' codec can't encode characters in position 5-10: ordinal not in range(128)）
     - 施設：ほっとハウス（児童発達支援・放課後等デイサービス・日中一時支援）（fukui-wakasa-hot-house-child-therapy-day）
-- https://hoyukai.iuhw.ac.jp/guide/index.html（URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.）
-    - 施設：なす療育園 短期入所（tochigi-otawara-nasu-medical-shortstay）
-- https://hoyukai.iuhw.ac.jp/rihacenter/guide/nasuryouikuen.html（URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.）
-    - 施設：なす療育園 短期入所（tochigi-otawara-nasu-medical-shortstay）
 - https://ikicity-csw.jp/toiawase.html（URLError: <urlopen error timed out>）
     - 施設：壱岐市社会福祉協議会 郷ノ浦支所（ジュニアデイ）（nagasaki-iki-junior-day-support）
 - https://ikusapotoyama.city.toyama.lg.jp/lgarticle/file?file=25682_1.児童発達支援R8.11.pdf（UnicodeEncodeError: 'ascii' codec can't encode characters in position 33-38: ordinal not in range(128)）
@@ -2727,6 +2989,8 @@
     - 施設：天草学園（日中一時支援・障害児短期入所）（kumamoto-amakusa-amakusa-gakuen-child-day-shortstay）
 - https://www.city.amakusa.kumamoto.jp/kiji0039390/3_9390_74090_up_opa2e3yx.pdf（HTTP 404）
     - 施設：南海寮（日中一時支援・お子様の短期入所）（kumamoto-amakusa-nankairyo-child-day-shortstay）
+- https://www.city.anjo.aichi.jp/kurasu/fukushikaigo/shogai/documents/r0804anjoguidebook.pdf（HTTP 404）
+    - 記事313：安城市の短期入所・日中一時支援
 - https://www.city.anjo.aichi.jp/kurasu/fukushikaigo/shogai/documents/syougaiji.pdf（HTTP 404）
     - 記事313：安城市の短期入所・日中一時支援
 - https://www.city.aomori.aomori.jp/_res/projects/default_project/_page_/001/002/911/20261015sya.pdf（HTTP 404）
@@ -2755,6 +3019,8 @@
     - 記事520：秩父市の短期入所・日中一時支援
 - https://www.city.chigasaki.kanagawa.jp/_res/projects/default_project/_page_/001/048/052/1216shiori.pdf（HTTP 404）
     - 記事212：茅ヶ崎市の短期入所・日中一時支援
+- https://www.city.chitose.lg.jp/_res/projects/default_project/_page_/001/005/610/______________________7_8__.pdf（HTTP 404）
+    - 記事382：千歳市の短期入所・日中一時支援
 - https://www.city.chitose.lg.jp/docs/7772.html（HTTP 404）
     - 記事382：千歳市の短期入所・日中一時支援
 - https://www.city.ebina.kanagawa.jp/guide/shogaisha/shogaisha/shiori/1003214.html（HTTP 404）
@@ -2868,7 +3134,7 @@
     - 施設：ままはぐいわき事業所（fukushima-iwaki-mamahug-pimd-therapy）
     - 施設：多機能型重心児者デイサービス どりーむず（fukushima-iwaki-dreams-pimd-therapy）
     - 施設：多機能型重心児者デイサービス かむ（fukushima-iwaki-kamu-pimd-therapy）
-- https://www.city.kaga.ishikawa.jp/material/files/group/119/r6-25.pdf（URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1081)>）
+- https://www.city.kaga.ishikawa.jp/material/files/group/119/r6-25.pdf（HTTP 404）
     - 施設：国立病院機構 石川病院 重症心身障害児（者）短期入所（ishikawa-kaga-ishikawa-hospital-pimd-shortstay）
 - https://www.city.kagoshima.lg.jp/kenkofukushi/chouju/shidoukansa/kenko/fukushi/kansa/documents/06_tannki.pdf（HTTP 404）
     - 記事7：短期入所（ショートステイ）の見学ポイント10こ・聞いておきたいこと
@@ -2876,6 +3142,8 @@
     - 記事114：鹿児島市の短期入所・日中一時支援
 - https://www.city.kagoshima.lg.jp/kenkofukushi/fukushi/syofuku/kenko/fukushi/shogai/ryoiku/documents/jidoutuusyo.pdf（HTTP 404）
     - 施設：生活支援センターえがおⅡ（kagoshima-city-egao2-medical-therapy-day-shortstay）
+- https://www.city.kainan.lg.jp/kakubusho/kurashibu/shakaifukushika/shakaifukushikatorikumi/syougaisya/syougaifukusisabisu/1483508238540.html（HTTP 404）
+    - 施設：海南市 お子様の移動支援・日中一時支援（wakayama-kainan-child-out-day-support）
 - https://www.city.kariya.lg.jp/_res/projects/default_project/_page_/001/003/545/050401zenpage.pdf（HTTP 404）
     - 記事293：刈谷市の短期入所・日中一時支援
 - https://www.city.kariya.lg.jp/kurashi/fukushikaigo/shogaifukushi/1003545/1003577/1003579.html（HTTP 404）
@@ -3013,6 +3281,8 @@
     - 記事253：都城市の短期入所・日中一時支援
 - https://www.city.miyazaki.miyazaki.jp/fs/8/0/1/2/3/7/_/801237.pdf（HTTP 404）
     - 記事132：宮崎市の短期入所・日中一時支援
+- https://www.city.miyazaki.miyazaki.jp/fs/8/9/9/1/9/8/_/__________8_10____.pdf（HTTP 404）
+    - 施設：ヘルパー派遣事業「やっど！」 居宅介護・外出介護（miyazaki-city-yahdo-child-home-out）
 - https://www.city.moriguchi.osaka.jp/material/files/group/77/fukusikeikaku.pdf（HTTP 404）
     - 記事309：守口市の短期入所・日中一時支援
 - https://www.city.morioka.iwate.jp/kenkou/shogai/1019076/1041131.html（HTTP 404）
@@ -3201,6 +3471,8 @@
     - 施設：介護サービスそら（移動支援）（shizuoka-shimizu-sora-child-mobility）
 - https://www.city.shizuoka.lg.jp/documents/2924/0201suruga.pdf（HTTP 404）
     - 施設：介助派遣サービス ひだまり（移動支援）（shizuoka-suruga-hidamari-child-mobility）
+- https://www.city.shunan.lg.jp/uploaded/attachment/107992.pdf（HTTP 404）
+    - 施設：あい・周南ケアセンター（yamaguchi-shunan-ai-home-out）
 - https://www.city.sodegaura.lg.jp/uploaded/attachment/45370.pdf（HTTP 404）
     - 記事476：袖ケ浦市の短期入所・日中一時支援
 - https://www.city.soja.okayama.jp/data/open/cnt/3/1393/1/5zidouhukusihou.pdf（HTTP 404）
@@ -3339,6 +3611,8 @@
     - 施設：居宅介護事業所 ヘルプグループ“KAI”（miyagi-ishinomaki-kai-home-out）
 - https://www.inacity.jp/iryo_kenko_fukushi/shogaishafukushi/zaitakuservice/riyo_homehelp.html（HTTP 404）
     - 施設：伊那市 お子様の居宅介護（ホームヘルプ）（nagano-ina-child-home-care）
+- https://www.info.city.naha.okinawa.jp/shogaishafukushi/y000500.html（ConnectionResetError: [Errno 104] Connection reset by peer）
+    - 施設：那覇市 居宅介護（ホームヘルプ）（okinawa-naha-home-care）
 - https://www.ishasubaru.com/%E4%BA%8B%E6%A5%AD%E5%86%85%E5%AE%B9/（HTTP 403）
     - 施設：介助ステーション・グッドライフ（移動支援）（chiba-kashiwa-goodlife-child-mobility）
 - https://www.jal.co.jp/jp/ja/jalpri/pre-application/oxygen.html（HTTP 403）
@@ -3381,10 +3655,6 @@
     - 施設：吉野学園 短期入所（nara-oyodo-yoshino-gakuen-shortstay）
 - https://www.miyoshinoen.jp/yo/（HTTP 403）
     - 施設：吉野学園 短期入所（nara-oyodo-yoshino-gakuen-shortstay）
-- https://www.nagaoka-shakyo.or.jp/kaigo/（URLError: <urlopen error timed out>）
-    - 施設：デイサービスセンターサンパルコなかのしま 日中一時支援（niigata-nagaoka-sanparuko-child-day）
-- https://www.nagaoka-shakyo.or.jp/kaigo/kayoi-2/%E6%97%A5%E4%B8%AD%E4%B8%80%E6%99%82%E6%94%AF%E6%8F%B4%EF%BC%88%E3%83%87%E3%82%A4%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%EF%BC%89/（URLError: <urlopen error timed out>）
-    - 施設：デイサービスセンターサンパルコなかのしま 日中一時支援（niigata-nagaoka-sanparuko-child-day）
 - https://www.ono-wakouen.jp/wakouen/tokuyo（URLError: <urlopen error [Errno 111] Connection refused>）
     - 施設：大野和光園ユニット型ショートステイ事業所（fukui-ono-wakoen-unit-shortstay）
 - https://www.open-mind.jp/about/outline/（URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid f）
@@ -3513,6 +3783,8 @@
     - 施設：コミナス訪問看護ステーション（saga-takeo-kominasu-child-home-nursing）
     - 施設：聖マリア病院鳥栖訪問看護ステーション（saga-tosu-st-mary-child-home-nursing）
     - 施設：訪問看護ステーション・ALTON（saga-taku-alton-child-home-nursing）
+- https://www.pref.saga.lg.jp/kiji0033428/3_3428_up_i6i21t52.xlsx（HTTP 404）
+    - 施設：医療的ケア対応 重心型デイ にこっと（saga-nicotto-medical-therapy）
 - https://www.pref.saga.lg.jp/kiji00334483/3_34483_up_j017acn2.pdf（HTTP 404）
     - 施設：聖マリア病院鳥栖訪問看護ステーション（saga-tosu-st-mary-child-home-nursing）
 - https://www.pref.saga.lg.jp/kiji00354449/3_54449_396104_up_402y4nxd.pdf（HTTP 404）
@@ -3559,8 +3831,14 @@
     - 施設：星風会病院 星風院（tochigi-city-seifuin-medical-shortstay）
 - https://www.pref.tochigi.lg.jp/e05/welfare/shougaisha/fukushi/documents/20260309100705.pdf（HTTP 404）
     - 施設：ゆのGarden〜ひまわり〜（tochigi-nasushiobara-yuno-garden-himawari-child-stay-day）
+- https://www.pref.tochigi.lg.jp/e05/welfare/shougaisha/fukushi/documents/20261001113129.pdf（HTTP 404）
+    - 施設：とちのみホームヘルプサービス（tochigi-sano-tochinomi-home-helper）
+    - 施設：支援センターすぎのこ（包括支援すぎのこ）（tochigi-city-suginoko-child-home-out）
 - https://www.pref.tochigi.lg.jp/e05/welfare/shougaisha/fukushi/documents/20261001115129.pdf（HTTP 404）
     - 施設：第二とちのみ学園 短期入所（tochigi-sano-daini-tochinomi-shortstay）
+- https://www.pref.tochigi.lg.jp/e05/welfare/shougaisha/fukushi/documents/20261005140937.pdf（HTTP 404）
+    - 施設：那須赤十字病院 短期入所事業所 まい（小児の短期入所）（tochigi-otawara-nasu-redcross-mai-medical-child-shortstay）
+    - 施設：あしかがの森足利病院 短期入所（ショートステイ）（tochigi-ashikaga-ashikaganomori-pimd-shortstay）
 - https://www.pref.tottori.lg.jp/secure/1084878/R８　通所パンフレット.pdf（UnicodeEncodeError: 'ascii' codec can't encode characters in position 21-30: ordinal not in range(128)）
     - 施設：鳥取県立鳥取療育園 児童発達支援センター きらり（tottori-tottori-ryoikuen-kirari-therapy）
 - https://www.pref.wakayama.lg.jp/prefg/040100/shisetsu/index_d/fil/02_jidoufukushi.pdf（HTTP 404）
@@ -3585,6 +3863,9 @@
     - 施設：信愛医療療育センター（aichi-shinai-day）
 - https://www.sw-shimasei.or.jp/side05（HTTP 404）
     - 施設：西部島根医療福祉センター 短期入所・日中一時支援（shimane-seibu-shortstay-day）
+- https://www.tapic-reha.or.jp/support/helperstation/（HTTP 503）
+    - 施設：あわせヘルパーステーション（okinawa-okinawa-awase-home）
+    - 記事297：沖縄市の短期入所・日中一時支援
 - https://www.tepco.co.jp/pg/consignment/for-general/pdf/20250401_information.pdf（HTTP 403）
     - 記事78：医療的ケア児の災害・停電へのそなえ・今日からできること
 - https://www.tobu-ryoiku.jp/guide/outvisitshortterm.php（HTTP 403）
